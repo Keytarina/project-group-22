@@ -1,24 +1,76 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
+body {
+	font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+}
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	width: 100%;
+}
+.list {
+	list-style: none;
+}
+.link {
+	text-decoration: none;
+}
+.btn {
+	cursor: pointer;
+}
+
 @import url('./reset.css');
-@import url('./vite-promo.css');
+@import url('./header.css');
+@import url('./footer.css');
+/* ---------- MAIN PAGE -------------- */
+@import url('./hero-main-page.css');
+@import url('./about-restaurant.css');
+@import url('./details-restaurant.css');
+@import url('./about-hotel.css');
+@import url('./details-hotel.css');
+@import url('./contacts.css');
+/* --------- RESTAURANT PAGE ---------------*/
+@import url('./hero-restaurant-page.css');
+@import url('./about-kitchen.css');
+@import url('./menu.css');
+/* ---------- RESTAURANT PAGE -------------- */
+@import url('./hero-hotel-page.css');
+@import url('./room-luxe-2-adult.css');
+@import url('./room-3-adult.css');
+@import url('./room-2-adult.css');
+/* ---------- HOTEL PAGE -------------- */
+@import url('./hero-room-page.css');
+@import url('./amenities.css');
+/* ---------- MODALS -------------- */
+@import url('./modals.css');
+
+@font-face {
+  font-family: "Film P3";
+  font-style: normal;
+  font-weight: 700;
+  src: local("FilmP3"),
+       url("../fonts/FilmP3-Bold.woff2") format("woff2"),
+       url("../fonts/FilmP3-Bold.woff") format("woff"),
+       url("../fonts/FilmP3-Bold.ttf") format("ttf");
+}
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+	--accent-color: #F3C653; /* Akzent yellow */
+  --brown-color: #C79002; /* Brown */
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  --text-grey-color: #7A7A7A;
+  --title-mimino-color:  #494848;
+  --overhead-title-text: #B4B4B4;;
 
-  font-synthesis: none;
+  --bg-light-section: #FFFDEE; /* Fon lemon */
+  --bg-dark-section: #F0ECD6; /* Fon dark lemon */
+  --bg-footer: #0E0C07;
+
+  /* font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; */
 }
