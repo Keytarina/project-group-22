@@ -9,11 +9,14 @@ ul {
 }
 
 .footer {
-  max-width: 414px;
   background-color: var(--bg-footer);
   margin: 0 auto;
-  padding-top: 40px;
-  padding-bottom: 40px;
+}
+
+@media screen and (max-width: 1023px) {
+  .footer {
+    max-width: 414px;
+  }
 }
 
 @media and (min-width: 1024px;) {
@@ -30,8 +33,17 @@ ul {
 
 .footer-items {
   display: flex;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
+@media screen and (min-width: 1024px) {
+  .footer-items {
+    align-items:center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
 .logo {
   display: flex;
   color: var(--accent-color);
@@ -40,24 +52,55 @@ ul {
   letter-spacing: 0.3em;
   line-height: 1, 075;
   margin-left: 59px;
-  margin-right: 85px;
   align-items: center;
 }
 
+@media screen and (min-width: 1024px) {
+  .logo {
+    font-size: 64px;
+    margin-left: 154px;
+    margin-right: 164px;
+  }
+}
+
+@media screen and (min-width:1280px){
+    .logo{
+        margin-left:216px;
+        margin-right:231px;
+    }
+}
 .nav-links {
   color: var(--accent-color);
   font-family: inherit;
+  font-size:20px;
 }
 
-.footer-nav-list {
-  margin-bottom: 32px;
+@media screen and (max-width:1023px){
+    .footer-nav-list {
+        margin-bottom: 32px;
+      }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer-nav-list {
+    margin-right: 137px;
+  }
+}
+
+@media screen and (min-width:1280px){
+    .footer-nav-list{
+        margin-right:199px;
+    }
 }
 
 .footer-nav-list .item:not(:last-child) {
   margin-bottom: 16px;
 }
 
-@media screen and (max-width: 1024px) {
+.social-text {
+  color: var(--accent-color);
+}
+@media screen and (max-width: 1023px) {
   .social-links {
     display: flex;
     gap: 20px;
@@ -65,5 +108,29 @@ ul {
 
   .social-text {
     display: none;
+  }
+}
+
+@media screen and (max-width:1023px){
+.footer-lists{
+    margin:auto;
+}
+}
+
+@media screen and (min-width: 1024px) {
+  .footer-lists {
+    display: flex;
+  }
+
+  .social-links .link {
+    display: flex;
+    padding: 8px 12px 8px 12px;
+    align-items: center;
+    border: 0.5px solid #f3c653;
+    border-radius: 2px;
+  }
+
+  .social-links .item:not(:last-child) {
+    margin-bottom: 12px;
   }
 }
