@@ -1,4 +1,5 @@
 @import url('./reset.css');
+@import url('./fonts.css');
 @import url('./header.css');
 @import url('./footer.css');
 /* ---------- MAIN PAGE -------------- */
@@ -23,15 +24,6 @@
 /* ---------- MODALS -------------- */
 @import url('./modals.css');
 
-@font-face {
-  font-family: "Film P3";
-  font-style: normal;
-  font-weight: 700;
-  src: local("FilmP3"),
-       url("../fonts/FilmP3-Bold.woff2") format("woff2"),
-       url("../fonts/FilmP3-Bold.woff") format("woff"),
-       url("../fonts/FilmP3-Bold.ttf") format("ttf");
-}
 
 :root {
 	--accent-color: #F3C653; /* Akzent yellow */
