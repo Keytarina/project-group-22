@@ -25,7 +25,9 @@ img {
     margin: 0;
     padding: 0;
 }
-
+.double__lux {
+    background-color: var(--bg-light-section);
+}
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -39,7 +41,11 @@ img {
     font-weight: 400;
     font-size: 20px;
     line-height: 1.15;
-    color: #B4B4B4;
+<<<<<<< Updated upstream
+    color: var(--overhead-title-text);
+=======
+    color: ;
+>>>>>>> Stashed changes
     margin-bottom: 8px;
 }
 
@@ -51,7 +57,7 @@ img {
     font-size: 40px;
     line-height: 1.07;
     letter-spacing: 0.3em;
-    color: #494848;
+    color: var(--title-mimino-color);
     margin-bottom: 32px;
     cursor: pointer;
 }
@@ -74,7 +80,7 @@ img {
     font-size: 12px;
     line-height: 1.15;
     letter-spacing: 0.02em;
-    color: #7A7A7A;
+    color: var(-text-grey-color);
     margin-right: auto;
 }
 
@@ -111,7 +117,7 @@ img {
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.02em;
-    color: #F3C653;
+    color: var(--accent-color);
     width: 100%;
     display: block;
     white-space: nowrap;
@@ -144,9 +150,9 @@ img {
 .room__button:focus,
 .room__link:hover,
 .room__link:focus {
-    color: #F3C653;
+    color: var(--accent-color);
     background-color: #ffffff;
-    border-color: #F3C653;
+    border-color: var(--accent-color);
 }
 
 @media screen and (max-width: 1023px) {
@@ -193,9 +199,12 @@ img {
 
 @media screen and (min-width: 1024px) {
     .container {
-        max-width: 1024px;
-        padding-left: 47px;
-        padding-right: 47px;
+        max-width: 960px;
+<<<<<<< Updated upstream
+
+=======
+       
+>>>>>>> Stashed changes
     }
 
     .double__lux .subtitle {
@@ -263,9 +272,7 @@ img {
 
 @media screen and (min-width: 1280px) {
     .container {
-        max-width: 1280px;
-        padding-right: 85px;
-        padding-left: 85px;
+        max-width: 1140px;
     }
 
     .double__lux .subtitle {
