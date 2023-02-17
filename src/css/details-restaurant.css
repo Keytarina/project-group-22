@@ -1,11 +1,3 @@
-.container {
-    max-width: 414px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 15px;
-    background-color:rgba(0, 0, 0, 0.65);
-}
-
 .details-restaurant {
     padding-bottom: 40px;
     padding-top: 24px;
@@ -15,23 +7,6 @@
 .details-restaurant__top-div {
     width: 269px;
     margin-left: auto;
-}
-
-.logo {
-    display: block;
-    margin-bottom: 12px;
-
-    font-family: 'Amatic', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 1.08;
-    text-transform: uppercase;
-    /* Надо пофиксить на 
-    letter-spacing: 0.3em; */
-    letter-spacing: 0em;
-    
-    color: #FFFFFF;
 }
 
 .details-restaurant__title {
