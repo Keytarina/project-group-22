@@ -1,8 +1,5 @@
 .container {
   display: flex;
-  width: 405px;
-  margin: 0 auto;
-  padding: 0 14px;
 }
 .header__nav{
   display: flex;
