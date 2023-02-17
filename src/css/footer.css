@@ -102,7 +102,7 @@
     gap: 20px;
   }
 
-  .social-links__text {
+  .social-links .link {
     display: none;
   }
 }
@@ -129,4 +129,12 @@
   .social-links .item:not(:last-child) {
     margin-bottom: 12px;
   }
+
+  .social-links__icon {
+    margin-left: 18px;
+  }
+}
+
+.social-links__icon {
+  fill: var(--accent-color);
 }
