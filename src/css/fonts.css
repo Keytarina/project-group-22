@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "Film P3";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local("FilmP3"),
+         url("../fonts/FilmP3-Bold.woff2") format("woff2"),
+         url("../fonts/FilmP3-Bold.woff") format("woff"),
+         url("../fonts/FilmP3-Bold.ttf") format("ttf");
+}
