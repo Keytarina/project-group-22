@@ -16,7 +16,6 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
 article, aside, details, figcaption, figure, 
@@ -33,7 +32,6 @@ ol {
 }
 
 a {
-  color: currentColor;
   text-decoration: none;
 }
 
