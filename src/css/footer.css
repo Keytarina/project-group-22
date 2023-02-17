@@ -36,8 +36,8 @@
     padding-bottom: 80px;
   }
 }
-/* LOGO STYLES */
-.logo {
+/* logo-footer STYLES */
+.logo-footer-footer {
   display: flex;
   color: var(--accent-color);
   font-family: 'Film P3';
@@ -49,7 +49,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .logo {
+  .logo-footer {
     font-size: 64px;
     margin-left: 154px;
     margin-right: 164px;
@@ -57,7 +57,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .logo {
+  .logo-footer {
     margin-left: 216px;
     margin-right: 231px;
   }
