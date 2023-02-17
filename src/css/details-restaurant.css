@@ -1,44 +1,15 @@
-h1,
-h2,
-h3,
-h4,
-p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-ul,
-ol {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-}
-
-.list {
-  list-style: none;
-}
-
-.link {
-  text-decoration: none;
-}
-
-/* ================================================== */
 .container {
     max-width: 414px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 15px;
-    background-color: rgb(50, 48, 48);
+    background-color:rgba(0, 0, 0, 0.65);
 }
 
 .details-restaurant {
     padding-bottom: 40px;
     padding-top: 24px;
+    background-image: url(../img/homepage/bg-imgs/1-mob-1x.jpg);
 }
 
 .details-restaurant__top-div {
@@ -90,14 +61,15 @@ img {
 }
 
 .details-restaurant__slider {
-    width: 100%;
+    width: 274px;
     padding-left: 25px;
 }
 
 .details-restaurant__slider-list {
     display: flex;
-    column-gap: 24px;
+    column-gap: 20px;
     margin-bottom: 16px;
+    overflow-x: hidden;
 }
 
 .slider-list {
