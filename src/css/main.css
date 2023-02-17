@@ -25,20 +25,21 @@
 @import url('./modals.css');
 
 .container {
-  width: 405px;
+  width: 414px;
+  padding: 0 15px;
   margin: 0 auto;
-  padding: 0 14px;
 }
 @media screen and (min-width: 1024px) {
   .container {
-    width: 957px;
+    width: 960px;
   }
 }
 @media screen and (min-width: 1280px) {
   .container {
-    width: 1134px;
+    width: 1140px;
   }
 }
+
 :root {
 	--accent-color: #F3C653; /* Akzent yellow */
   --brown-color: #C79002; /* Brown */
