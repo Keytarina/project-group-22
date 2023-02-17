@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  width: 405px;
+  margin: 0 auto;
+  padding: 0 14px;
+}
+.header__nav{
+  display: flex;
+}
+.header__logo {
+  font-family: 'Film P3';
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.08;
+  letter-spacing: 0.3em;
+  padding-top: 16px;
+  color: #fdfbec;
+}
+
+.heater__list {
+  display: flex;
+  padding-top: 28px;
+}
+
+.header__item {
+}
+
+.header__link {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #f3c653;
+}
+
+.header__tel {
+  visibility: hidden;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #f3c653;
+}
+.header__list-soc {
+  display: none;
+}
