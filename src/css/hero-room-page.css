@@ -30,6 +30,11 @@
 .room-hero {
   padding: 64px 15px 14px;
 }
+@media screen and (max-width: 340px) {
+  .room-hero {
+    padding: 64px 2px 14px;
+  }
+}
 .hero-adress__link {
   display: flex;
   width: 210px;

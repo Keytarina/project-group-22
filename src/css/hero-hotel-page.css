@@ -28,6 +28,11 @@
 .hotel-hero {
   padding: 64px 15px 20px;
 }
+@media screen and (max-width: 340px) {
+  .hotel-hero {
+    padding: 64px 2px 20px;
+  }
+}
 .hotel-hero__title {
   width: 303px;
   margin: 0 auto;

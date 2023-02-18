@@ -28,6 +28,11 @@
 .rest-hero {
   padding: 64px 15px 20px;
 }
+@media screen and (max-width: 340px) {
+  .rest-hero {
+    padding: 64px 2px 20px;
+  }
+}
 .rest-hero__title {
   width: 303px;
   margin: 0 auto;
@@ -44,7 +49,7 @@
   color: #ffffff;
 }
 .rest-hero__category {
-  width: 83px;
+  max-width: 83px;
   margin: 0 auto;
   margin-bottom: 44px;
 
