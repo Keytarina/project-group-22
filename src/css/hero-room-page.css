@@ -3,9 +3,13 @@
   margin: 0 auto;
 
   background-color: var(--brown-color);
-  background-image: 
-  linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.55) 9%, rgba(0, 0, 0, 0) 19%), 
-  url(../img/hero/room/slider/1-mob-1x.jpg);
+  background-image: linear-gradient(
+      180deg,
+      #000000 0%,
+      rgba(0, 0, 0, 0.55) 9%,
+      rgba(0, 0, 0, 0) 19%
+    ),
+    url(../img/hero/room/slider/1-mob-1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -13,19 +17,18 @@
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .hero-overlay {
+  .room-hero__overlay {
     background-image: url('../img/hero/room/slider/1-mob-2x.jpg');
   }
 }
 .room-hero {
   padding: 64px 15px 14px;
 }
-
 .hero-adress__link {
   display: flex;
   width: 210px;
-  padding: 8px 3px 9px 6px;
-  margin-bottom: 239px;
+  padding: 7px 3px 8px 6px;
+
   margin-left: auto;
   align-items: center;
 
@@ -54,6 +57,7 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 93px;
+  margin-top: 239px;
 }
 .room-hero__btn {
   display: block;
@@ -90,7 +94,7 @@
 
   color: #ffffff;
 }
-.hero__contacts-item + .hero__contacts-item {
+.room-hero__contacts + .room-hero__contacts {
   margin-top: 8px;
 }
 .hero__contacts-link {
