@@ -18,8 +18,8 @@
     }
 }
 .room-hero {
-    padding-bottom: 14px;
-    padding-top: 350px;
+    
+    padding: 350px 15px 14px;
 }
 .room-hero .container {
     background-color: transparent;
