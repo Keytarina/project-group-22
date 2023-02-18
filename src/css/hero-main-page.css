@@ -1,3 +1,28 @@
-.hero {
-    background-color: tomato;
+.container {
+    width: 384px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
+.container {
+    width: 929px;
+}
+.desktop {
+    width: 1110px;
+}
+
+.container {
+    width: 414px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+@media screen and (min-width: 1024px) {
+    .container {
+      width: 960px;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .container {
+      width: 1140px;
+    }
+}
+
