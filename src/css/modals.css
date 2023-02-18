@@ -33,8 +33,8 @@ input::-webkit-inner-spin-button {
   transform: translate(-50%, -50%);
   z-index: 30;
 
-  background-color: #fffdee;
-  border: 1px solid #f3c653;
+  background-color: var(--bg-light-section);
+  border: 1px solid var(--accent-color);
   border-radius: 2px;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -71,7 +71,7 @@ input::-webkit-inner-spin-button {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.02em;
-  color: #c79002;
+  color: var(--brown-color);
   margin-left: 15px;
 }
 
@@ -87,7 +87,7 @@ input::-webkit-inner-spin-button {
   height: 54px;
   background-color: transparent;
   outline: none;
-  border: 1px solid #c79002;
+  border: 1px solid var(--brown-color);
   padding: 17px 12px;
   margin-bottom: 8px;
 
@@ -106,7 +106,7 @@ input::-webkit-inner-spin-button {
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
-  border: 1px solid #c79002;
+  border: 1px solid var(--brown-color);
   background-color: transparent;
   outline: none;
   padding: 16px 42px 16px 12px;
@@ -144,7 +144,7 @@ input::-webkit-inner-spin-button {
 .modal__btn {
   display: block;
   background-color: #000000;
-  border: 1px solid #f3c653;
+  border: 1px solid var(--accent-color);
   border-radius: 2px;
   text-transform: uppercase;
   padding: 20px 43px;
@@ -163,8 +163,8 @@ input::-webkit-inner-spin-button {
 .modal__btn:hover,
 .modal__btn:focus,
 .modal__btn:active {
-  background-color: #f3c653;
-  border: 1px solid #f3c653;
+  background-color: var(--accent-color);
+  border: 1px solid var(--accent-color);
   color: #000000;
   outline: none;
 }
