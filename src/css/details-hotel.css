@@ -127,7 +127,7 @@
 .details-hotel {
   max-width: 1280px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    url(../img/homepage/bg-imgs/2-mob-1x.jpg);
+    url(./img/homepage/bg-imgs/2-mob-1x.jpg);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -142,7 +142,7 @@
   screen and (min-resolution: 2dppx) and (max-width: 413px) {
   .details-hotel {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(../img/homepage/bg-imgs/2-mob-2x.jpg);
+      url(./img/homepage/bg-imgs/2-mob-2x.jpg);
   }
 }
 /* 
@@ -176,9 +176,6 @@
 /* ==========================TABET============================= */
 
 @media screen and (min-width: 1024px) {
-  .container {
-    width: 930px;
-  }
   .details-hotel__container {
     display: flex;
     flex-direction: row;
@@ -188,7 +185,7 @@
   }
   .details-hotel {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(../img/homepage/bg-imgs/2-tab-1x.jpg);
+      url(./img/homepage/bg-imgs/2-tab-1x.jpg);
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px),
@@ -199,7 +196,7 @@
           rgba(0, 0, 0, 0.65),
           rgba(0, 0, 0, 0.65)
         ),
-        url(../img/homepage/bg-imgs/2-tab-2x.jpg);
+        url(./img/homepage/bg-imgs/2-tab-2x.jpg);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -242,13 +239,9 @@
 /* ==========================DESKTOP============================= */
 
 @media screen and (min-width: 1280px) {
-  .container {
-     width: 1110px;
-  }
-
   .details-hotel {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(../img/homepage/bg-imgs/2-desk-1x.jpg);
+      url(./img/homepage/bg-imgs/2-desk-1x.jpg);
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
@@ -259,7 +252,7 @@
           rgba(0, 0, 0, 0.65),
           rgba(0, 0, 0, 0.65)
         ),
-        url(../img/homepage/bg-imgs/2-desk-2x.jpg);
+        url(./img/homepage/bg-imgs/2-desk-2x.jpg);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
