@@ -55,8 +55,18 @@
 
 
 /*==============SLIDER ================*/
+.details-hotel_slider-list {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+  margin-left: -405px;
 
-.details-hotel_slider {
+}
+
+.details-hotel-slider__buttons {
+  display: flex;
+}
+/* .details-hotel__slider {
   display: flex;
   flex-direction: row-reverse;
   position: relative;
@@ -105,7 +115,7 @@
 }
 .details-hotel-slider__item:not(:last-child) {
   margin-right: 32px;
-}
+} */
 
 /*==============/SLIDER ================*/
 
