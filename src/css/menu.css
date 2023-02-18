@@ -16,9 +16,7 @@
 .menu-content{
     display: flex;
     flex-wrap: wrap;
-}
-.menu__hot{
-    max-width: 384px;
+    
 }
 .menu__item{
     margin-bottom: 8px;
@@ -34,7 +32,7 @@
     color: #000000;
 }
 .menu__item-title{
-    max-width: 220px;
+    width: 217px;
     margin-bottom: 4px;
     font-family: Montserrat;
     font-weight: 500;
@@ -43,12 +41,13 @@
     color: #000000;
 }
 .abount{
+    width: 384px;
     display: flex;
     justify-content: space-between;
     
 }
 .menu__item-texte{
-    max-width: 220px;
+    width: 220px;
     font-family: Montserrat;
     font-weight: 400;
     font-size: 10px;
@@ -66,7 +65,7 @@
 .menu__item-price{
     min-width: 60px;
     margin-left: 32px;
-    text-align: end;
+    
     font-family: Montserrat;
     font-weight: 700;
     font-size: 14px;
@@ -90,3 +89,44 @@
     background-color: #000000;
 }
 
+@media screen and (min-width: 1024px){
+.menu-content{
+    column-gap: 88px;
+ }
+.menu__list-title{
+    margin-bottom: 20px;
+}
+.menu{
+    padding-top: 58px;
+    padding-bottom: 40px;
+    background-color: var(--bg-dark-section);
+}
+.menu__title{
+    margin-bottom: 40px;
+}
+.menu__item-title{
+    margin-bottom: 8px;
+    width: 220px;
+}
+.menu__item-texte{
+    width: 217px;
+}
+.menu__btn{
+    margin-right: 0px;
+}
+.menu-content{
+    align-items: flex-start;
+}
+.menu__left{
+    min-width: 411px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.menu__right{
+   min-width: 430px;
+   display: flex;
+   flex-direction: column; 
+   row-gap: 20px;
+}
+}
