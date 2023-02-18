@@ -68,7 +68,17 @@
 .arrow-list svg {
     fill: #000000;
 }
+.button__arrow {
+    border: none;
+    background-color: inherit;
 
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button__arrow:hover,
+.button__arrow:focus {
+    fill: var(--accent-color);
+}
 .room__button,
 .room__link {
     padding: 14px 37px;
@@ -98,6 +108,7 @@
 .button__list {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
 }
