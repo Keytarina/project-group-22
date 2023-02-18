@@ -6,7 +6,6 @@
 
 @media screen and (max-width: 1023px) {
   .footer {
-    max-width: 414px;
     padding-right: 33px;
   }
 
@@ -29,9 +28,6 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .footer {
-    width: 1024px;
-  }
 
   .footer-items {
     align-items: center;
@@ -39,7 +35,7 @@
     padding-bottom: 80px;
   }
   
-  .logo {
+  .footer__logo {
     font-size: 64px;
     margin-left: 154px;
     margin-right: 164px;
@@ -71,11 +67,8 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .footer {
-    width: 1280px;
-  }
 
-  .logo {
+  .footer__logo {
     margin-left: 216px;
     margin-right: 231px;
   }
@@ -92,7 +85,7 @@
 }
 
 /* LOGO STYLES */
-.logo {
+.footer__logo {
   display: flex;
   color: var(--accent-color);
   font-family: 'Film P3';
