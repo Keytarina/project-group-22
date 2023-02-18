@@ -84,9 +84,21 @@ var maskOptions = {
 };
 var mask = IMask(element, maskOptions);
 
-let pricePerUnit = 1000;
+let price2 = 500;
 
-document.getElementById('nights').addEventListener('change', e => {
-  document.getElementById('price').innerHTML = e.target.value * pricePerUnit;
+document.getElementById('nights2').addEventListener('change', e => {
+  document.getElementById('price2').innerHTML = e.target.value * price2;
+});
+
+let price2l = 1000;
+
+document.getElementById('nights2l').addEventListener('change', e => {
+  document.getElementById('price2l').innerHTML = e.target.value * price2l;
+});
+
+let price3 = 1500;
+
+document.getElementById('nights3').addEventListener('change', e => {
+  document.getElementById('price3').innerHTML = e.target.value * price3;
 });
 // modal end
