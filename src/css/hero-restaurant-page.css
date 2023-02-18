@@ -1,0 +1,104 @@
+.rest-hero__overlay {
+  max-width: 1280px;
+  margin: 0 auto;
+
+  background-color: var(--brown-color);
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url(../img/hero/restautrant/mob-1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .rest-hero__overlay {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url('../img/hero/restautrant/mob-2x.jpg');
+  }
+}
+.rest-hero {
+  padding: 64px 15px 20px;
+}
+.rest-hero__title {
+  width: 303px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 70px;
+
+  font-family: 'Film P3';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 1.07;
+  letter-spacing: 0.3em;
+
+  color: #ffffff;
+}
+.rest-hero__category {
+  width: 83px;
+  margin: 0 auto;
+  margin-bottom: 44px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+
+  color: #fdfbec;
+}
+.rest-hero__sub {
+  display: block;
+  width: 318px;
+  margin: 0 auto;
+  margin-bottom: 113px;
+
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.15;
+  letter-spacing: 0.05em;
+
+  color: #fdfbec;
+}
+.hero__btns-list {
+  display: block;
+  margin-bottom: 58px;
+}
+.hero__btn {
+  width: 236px;
+  display: block;
+  padding: 12px 21px;
+  margin: 0 auto;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+
+  letter-spacing: 0.02em;
+
+  color: #f3c653;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+}
+.hero__btns-item + .hero__btns-item {
+  margin-top: 24px;
+}
+.rest-hero .hero__contacts-list {
+  display: flex;
+  gap: 20px;
+}
