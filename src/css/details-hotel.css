@@ -2,6 +2,7 @@
 .details-hotel__container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   padding-top: 24px;
   padding-bottom: 40px;
   margin: 0 auto;
@@ -19,7 +20,7 @@
   display: block;
   margin-bottom: 12px;
   /* Надо пофиксить при подключении шрифтов на мимино*/
-  font-family: 'Film P3', sans-serif;
+  font-family: "Film P3", sans-serif;
   font-style: normal;
   font-weight: 700;
   text-align: end;
@@ -31,8 +32,6 @@
   letter-spacing: 0em;
   color: #ffffff;
 }
-
-
 
 .details-hotel__container-first-title {
   margin-bottom: 20px;
@@ -54,6 +53,34 @@
   color: #bababa;
 }
 
+
+/*==============SLIDER ================*/
+
+.details-hotel_slider {
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  max-width: 349px; 
+  margin-bottom: 16px;
+  
+}
+
+.details-hotel__slider-three {
+  display: none;
+}
+
+.details-hotel__slider-one,
+.details-hotel__slider-two {
+  width: 274px;
+  height: 270px;
+  max-width: none;
+  margin-right: 20px;
+}
+
+.details-hotel_slider_two {
+  opacity: 0.6;
+}
+
 .details-hotel-slider__list {
   display: flex;
   justify-content: end;
@@ -65,9 +92,10 @@
   display: flex;
   justify-content: end;
   margin-bottom: 32px;
+  padding-right: 20px;
 }
 .details-hotel-slider__icon {
-  fill: white;
+  fill: #fff;
 }
 .details-hotel-slider__item {
   border: none;
@@ -78,6 +106,9 @@
 .details-hotel-slider__item:not(:last-child) {
   margin-right: 32px;
 }
+
+/*==============/SLIDER ================*/
+
 .details-hotel__container-second-link {
   display: inline-block;
 
@@ -94,7 +125,7 @@
   font-size: 16px;
   line-height: 1.25;
   font-weight: 700;
-  color: #f3c653;
+  color: var(--accent-color);
   letter-spacing: 0.02em;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.4);;
@@ -111,8 +142,8 @@
 .details-hotel__container-second-link:hover,
 .details-hotel__container-second-link:focus,
 .details-hotel__container-second-link:active {
-  background-color: #ffffff;
-  border-color: #f3c653;
+  background-color: #fff;
+  border-color: var(--accent-color);
 }
 
 .details-hotel__container-second {
@@ -127,7 +158,7 @@
 .details-hotel {
   max-width: 1280px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    url(./img/homepage/bg-imgs/2-mob-1x.jpg);
+    url(../img/homepage/bg-imgs/2-mob-1x.jpg);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -142,7 +173,7 @@
   screen and (min-resolution: 2dppx) and (max-width: 413px) {
   .details-hotel {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(./img/homepage/bg-imgs/2-mob-2x.jpg);
+      url(../img/homepage/bg-imgs/2-mob-2x.jpg);
   }
 }
 /* 
@@ -183,9 +214,10 @@
     padding-top: 48px;
     padding-bottom: 40px;
   }
+
   .details-hotel {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(./img/homepage/bg-imgs/2-tab-1x.jpg);
+      url(../img/homepage/bg-imgs/2-tab-1x.jpg);
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px),
@@ -196,7 +228,7 @@
           rgba(0, 0, 0, 0.65),
           rgba(0, 0, 0, 0.65)
         ),
-        url(./img/homepage/bg-imgs/2-tab-2x.jpg);
+        url(../img/homepage/bg-imgs/2-tab-2x.jpg);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -205,6 +237,35 @@
 
   .details-hotel__container {
     gap: 29px;
+  }
+
+  .details-hotel_slider {
+    max-width: none;
+    gap: 20px;
+  }
+
+  .details-hotel__slider {
+    max-width:none;
+  }
+
+  .details-hotel__slider-three {
+    display: block;
+  }
+
+  .details-hotel__slider-one,
+  .details-hotel__slider-two,
+  .details-hotel__slider-three {
+    margin-right: 0;
+  }
+
+  .details-hotel__slider-two,
+  .details-hotel__slider-three {
+    width: 162px;
+    height: 270px;
+  }
+
+  .towell {
+    margin-left: 0;
   }
 
   .details-hotel__text-wrapper {
@@ -241,7 +302,7 @@
 @media screen and (min-width: 1280px) {
   .details-hotel {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(./img/homepage/bg-imgs/2-desk-1x.jpg);
+      url(../img/homepage/bg-imgs/2-desk-1x.jpg);
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
@@ -252,7 +313,7 @@
           rgba(0, 0, 0, 0.65),
           rgba(0, 0, 0, 0.65)
         ),
-        url(./img/homepage/bg-imgs/2-desk-2x.jpg);
+        url(../img/homepage/bg-imgs/2-desk-2x.jpg);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
