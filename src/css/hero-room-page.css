@@ -1,0 +1,99 @@
+.room-hero__overlay {
+    max-width: 1280px;
+    margin: 0 auto;
+  
+    background-color: var(--brown-color);
+    background-image: 
+      url(../img/hero/room/slider/1-mob-1x.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+}
+@media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-overlay {
+      background-image: 
+      url('../img/hero/room/slider/1-mob-2x.jpg');
+    }
+}
+.room-hero {
+    padding-bottom: 14px;
+    padding-top: 350px;
+}
+.room-hero .container {
+    background-color: transparent;
+}
+.room-hero__btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 93px;
+}
+.room-hero__btn {
+    display: block;
+    padding: 0;
+
+    background-color: rgba(0, 0, 0, 0.65);
+    border: none;
+}
+.arrow-icon {
+    display: block;
+    fill: var(--accent-color);
+}
+.room-hero__title {
+    width: 325px;
+    margin-bottom: 14px;
+
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.14;
+    letter-spacing: 0.05em;
+
+    color: #ffffff;
+}
+.room-hero__sub {
+    width: 325px;
+    margin-bottom: 16px;
+
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+
+    color: #ffffff;
+}
+.hero__contacts-item + .hero__contacts-item {
+    margin-top: 8px;
+}
+.hero__contacts-link { 
+    width: 24px;
+}
+.hero__contacts-icon {
+    display: block;
+    fill: var(--accent-color);
+}
+.room-hero__thumb {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 325px;
+}
+.hero-prices__btn {
+    display: block;
+    padding: 12px 33px;
+
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    text-align: center;
+
+    background-color: rgba(0, 0, 0, 0.4);;
+    color: var(--accent-color);
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+}
