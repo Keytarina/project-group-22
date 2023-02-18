@@ -3,7 +3,13 @@
   margin: 0 auto;
 
   background-color: var(--brown-color);
-  background-image: url(../img/hero/room/slider/1-mob-1x.jpg);
+  background-image: linear-gradient(
+      180deg,
+      #000000 0%,
+      rgba(0, 0, 0, 0.55) 9%,
+      rgba(0, 0, 0, 0) 19%
+    ),
+    url(../img/hero/room/slider/1-mob-1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -11,21 +17,30 @@
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .hero-overlay {
-    background-image: url('../img/hero/room/slider/1-mob-2x.jpg');
+  .room-hero__overlay {
+    background-image: linear-gradient(
+        180deg,
+        #000000 0%,
+        rgba(0, 0, 0, 0.55) 9%,
+        rgba(0, 0, 0, 0) 19%
+      ),
+      url('../img/hero/room/slider/1-mob-2x.jpg');
   }
 }
 .room-hero {
-  padding: 100px 15px 14px;
+  padding: 64px 15px 14px;
 }
-.room-hero .container {
-  background-color: transparent;
+@media screen and (max-width: 340px) {
+  .room-hero {
+    padding: 64px 2px 14px;
+  }
 }
 .room-hero__btns {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 93px;
+  margin-top: 239px;
 }
 .room-hero__btn {
   display: block;
@@ -37,6 +52,13 @@
 .arrow-icon {
   display: block;
   fill: var(--accent-color);
+  transition-property: background-color, fill;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.arrow-icon:hover,
+.arrow-icon:focus {
+  fill: #fff;
+  background-color: var(--accent-color);
 }
 .room-hero__title {
   max-width: 325px;
@@ -62,15 +84,8 @@
 
   color: #ffffff;
 }
-.hero__contacts-item + .hero__contacts-item {
+.room-hero__contacts + .room-hero__contacts {
   margin-top: 8px;
-}
-.hero__contacts-link {
-  width: 24px;
-}
-.hero__contacts-icon {
-  display: block;
-  fill: var(--accent-color);
 }
 .room-hero__thumb {
   display: flex;
@@ -93,4 +108,11 @@
   color: var(--accent-color);
   border: 2px solid #ffffff;
   border-radius: 25px;
+  transition-property: background-color, border, color;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-prices__btn:hover,
+.hero-prices__btn:focus {
+  background-color: #fff;
+  border: 2px solid var(--accent-color);
 }
