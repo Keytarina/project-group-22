@@ -95,23 +95,19 @@
   margin-left: 59px;
   align-items: center;
 }
-
 /* NAV LIST STYLES */
 .footer-lists__links {
   color: var(--accent-color);
   font-family: inherit;
   font-size: 20px;
 }
-
 .footer-lists__list .item:not(:last-child) {
   margin-bottom: 16px;
 }
-
 /* SOCIAL LIST STYLES */
 .social-links__text {
   color: var(--accent-color);
 }
-
 .social-links__icon {
   fill: var(--accent-color);
 }
