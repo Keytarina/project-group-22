@@ -42,13 +42,14 @@ img {
 .details-restaurant__container-first-paragraph {
   display: block;
   margin-bottom: 12px;
+  /* Надо пофиксить при подключении шрифтов на мимино*/
   font-family: 'Amatic', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 64px;
   line-height: 1.08;
   text-transform: uppercase;
-  /* Надо пофиксить на 
+  /* Надо пофиксить при подключении шрифтовна 
      letter-spacing: 0.3em; */
   letter-spacing: 0em;
   color: #ffffff;
@@ -151,7 +152,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0;
   position: relative;
   overflow: hidden;
 }
@@ -166,8 +167,9 @@ img {
 }
 
 @media screen and (min-width: 414px) {
-  .details-restaurant__container {
+  .container {
     width: 384px;
+    padding: 0 15px;
   }
   .details-restaurant {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
@@ -194,9 +196,12 @@ img {
 /* ==========================TABET============================= */
 
 @media screen and (min-width: 1024px) {
-  .details-restaurant__container {
+  .container {
     width: 930px;
+  }
+  .details-restaurant__container {
     padding-top: 48px;
+    padding-bottom: 40px;
   }
   .details-restaurant {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
@@ -260,10 +265,10 @@ img {
 /* ==========================DESKTOP============================= */
 
 @media screen and (min-width: 1280px) {
-  .details-restaurant__container {
-    width: 1110px;
-    margin: 0 auto;
+  .container {
+     width: 1110px;
   }
+
   .details-restaurant {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../img/homepage/bg-imgs/1-desk-1x.jpg);
