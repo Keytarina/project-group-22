@@ -1,17 +1,17 @@
 {
-  "name": "vanilla-app-template",
+  "name": "project-group-22",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/vanilla-app-template/",
+    "build": "vite build --base=/project-group-22/",
     "preview": "vite preview"
   },
   "devDependencies": {
     "vite": "^4.0.0"
   },
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Kateryna Yakubych <kateryna.yakubych@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "vite-plugin-full-reload": "^1.0.5",

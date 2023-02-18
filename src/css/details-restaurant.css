@@ -1,10 +1,3 @@
-/* ==========================MOBILE============================== */
-.details-restaurant__container {
-  padding-top: 24px;
-  padding-bottom: 40px;
-  margin: 0 auto;
-}
-
 .details-restaurant__text-wrapper {
   width: 269px;
   margin-left: auto;
@@ -14,14 +7,13 @@
   display: block;
   margin-bottom: 12px;
   /* Надо пофиксить при подключении шрифтов на мимино*/
-  font-family: 'Amatic', sans-serif;
-  font-style: normal;
+  font-family: 'Film F3';
   font-weight: 700;
   font-size: 64px;
   line-height: 1.08;
   text-transform: uppercase;
   /* Надо пофиксить при подключении шрифтовна 
-     letter-spacing: 0.3em; */
+    letter-spacing: 0.3em; */
   letter-spacing: 0em;
   color: #ffffff;
 }
@@ -48,7 +40,6 @@
   letter-spacing: 0.02em;
   color: #bababa;
 }
-
 .details-restaurant-slider__list {
   display: flex;
   column-gap: 20px;

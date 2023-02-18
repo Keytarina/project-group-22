@@ -1,28 +1,46 @@
-<nav>
-  <a href="../index.html">MIMINO</a>
-  <ul>
-    <li> <a href="../restaurant.html">Ресторан</a>
-      <a href="tel:0955559533">095 555 95 33</a>
-    </li>
-    <li> <a href="../hotel.html">Готель</a>
-      <a href="tel:0668491089">066 849 10 89</a>
-    </li>
-  </ul>
-</nav>
-<ul>
-  <li>
-    <svg>
-      <use></use>
-    </svg>
-  </li>
-  <li>
-    <svg>
-      <use></use>
-    </svg>
-  </li>
-  <li>
-    <svg>
-      <use></use>
-    </svg>
-  </li>
-</ul>
+<header class="header">
+  <div class="container">
+    <nav class="header__nav">
+      <a href="./index.html" class="header__logo">MIMINO</a>
+      <ul class="header__list">
+        <li class="header__item">
+          <a class="header__link" href="./restaurant.html">Ресторан</a>
+          <a class="header__tel " href="tel:0955559533"><svg class="header__svg" width="24" height="24">
+              <use href="./img/svg/sprite.svg#icon-phone"></use>
+            </svg><span class="header__number">095 555 95 33</span></a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="./hotel.html">Готель</a>
+          <a class="header__tel" href="tel:0668491089"><svg class="header__svg" width="24" height="24">
+              <use href="./img/svg/sprite.svg#icon-phone"></use>
+            </svg><span class="header__number">066 849 10 89</span></a>
+        </li>
+      </ul>
+    </nav>
+    <ul class="header__list-soc">
+      <li>
+        <a href="">
+          <svg width="22" height="22">
+            <use href="./img/svg/icons/instagram.svg"></use>
+          </svg>
+        </a>
+      </li>
+
+      <li>
+        <a href="">
+          <svg width="22" height="22">
+            <use href="./img/svg/icons/facebook.svg"></use>
+          </svg>
+        </a>
+      </li>
+
+      <li>
+        <a href="">
+          <svg width="22" height="22">
+            <use href="./img/svg/icons/telegram.svg"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>
