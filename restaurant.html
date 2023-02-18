@@ -19,8 +19,8 @@
       rel="stylesheet"
     />
     
-    <script type="module" crossorigin src="/project-group-22/assets/main-ec808ebb.js"></script>
-    <link rel="stylesheet" href="/project-group-22/assets/main-d3cf1336.css">
+    <script type="module" crossorigin src="/project-group-22/assets/main-3eb36e24.js"></script>
+    <link rel="stylesheet" href="/project-group-22/assets/main-aa7f2a2e.css">
   </head>
   <body>
     <header class="header">
@@ -397,7 +397,357 @@
 </footer>
 
 
-    
+    <div class="modal modal-table" data-modal="1">
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    class="modal__cross js-modal-close"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M20.5713 2.57153L2.57129 20.5715"
+      stroke="#808080"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <path
+      d="M2.57129 2.57153L20.5713 20.5715"
+      stroke="#808080"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg>
+
+  <h3 class="modal__title modal-table__title">ЗАБРОНЮВАТИ СТОЛИК</h3>
+
+  <form class="modal-table__form">
+    <span class="modal-table__form-wrapper">
+      <label class="modal__form-field">
+        <input
+          class="modal__input"
+          required
+          name="user_name"
+          pattern="[a-zA-Zа-яА-Я]+"
+          minlength="2"
+          type="text"
+          placeholder="Ваше ім’я"
+        />
+        <span class="modal__subtext modal-price__form-subtext"
+          >На кого забронювати столик?</span
+        >
+      </label>
+      <label class="modal__form-field">
+        <span class="modal__form-inner">
+          <select class="modal__choice" name="seats" required>
+            <option value="1">1</option>
+            <option value="2" selected>2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </span>
+        <span class="modal__subtext">Столик на яку кількість осіб?</span>
+      </label>
+      <label class="modal__form-field">
+        <input
+          class="modal__input"
+          type="tel"
+          name="user_phone"
+          required
+          id="table-phone"
+          placeholder="+38 (___) ___-__-__"
+        />
+        <span class="modal__subtext modal-price__form-subtext"
+          >Номер телефону</span
+        >
+      </label>
+      <label class="modal__form-field">
+        <span class="modal__form-inner">
+          <input
+            class="modal__choice modal-room__data"
+            type="date"
+            name="date"
+            min="2023-02-17"
+            required
+          />
+        </span>
+        <span class="modal__subtext">На яку дату бронювати?</span>
+      </label>
+    </span>
+    <button class="modal__btn" type="submit">ЗАБРОНЮВАТИ НОМЕР</button>
+  </form>
+</div>
+
+<div class="modal modal-room" data-modal="2">
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    class="modal__cross js-modal-close"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M20.5713 2.57153L2.57129 20.5715"
+      stroke="#808080"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <path
+      d="M2.57129 2.57153L20.5713 20.5715"
+      stroke="#808080"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg>
+
+  <h3 class="modal__title modal-room__title">ЗАБРОНЮВАТИ НОМЕР</h3>
+
+  <form class="modal-room__form">
+    <span class="modal-room__form-wrapper">
+      <label class="modal__form-field">
+        <input
+          class="modal__input"
+          required
+          name="user_name"
+          pattern="[a-zA-Zа-яА-Я]+"
+          minlength="2"
+          type="text"
+          placeholder="Ваше ім’я"
+        />
+        <span class="modal__subtext modal-room__form-subtext"
+          >На кого забронювати номер?</span
+        >
+      </label>
+      <label class="modal__form-field">
+        <input
+          class="modal__input"
+          type="tel"
+          name="user_phone"
+          required
+          id="room-phone"
+          placeholder="+38 (___) ___-__-__"
+        />
+        <span class="modal__subtext modal-room__form-subtext"
+          >Номер телефону</span
+        >
+      </label>
+    </span>
+    <label class="modal__form-field modal-room__field">
+      <span class="modal__form-inner">
+        <select class="modal__choice" name="type_of_number" required>
+          <option value="1">Двомісний</option>
+          <option value="2" selected>Двомісний Люкс</option>
+          <option value="3">Трьохмісний</option>
+        </select>
+      </span>
+      <span class="modal__subtext">Категорія номеру</span>
+    </label>
+    <span class="modal-room__form-inner">
+      <label class="modal__form-field">
+        <span class="modal__form-inner">
+          <input
+            class="modal__choice modal-room__data"
+            type="date"
+            required
+            min="2023-02-17"
+            name="arrival_date"
+          />
+        </span>
+        <span class="modal__subtext">Дата заїзду</span>
+      </label>
+      <label class="modal__form-field">
+        <span class="modal__form-inner">
+          <input
+            class="modal__choice modal-room__data"
+            type="date"
+            required
+            min="2023-02-17"
+            name="date_of_departure"
+          />
+        </span>
+        <span class="modal__subtext">Дата виїзду</span>
+      </label>
+    </span>
+    <button class="modal__btn" type="submit">ОФОРМИТИ БРОНЮВАННЯ</button>
+  </form>
+</div>
+
+<div class="modal modal-price" data-modal="3">
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    class="modal__cross js-modal-close"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M20.5713 2.57153L2.57129 20.5715"
+      stroke="#808080"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <path
+      d="M2.57129 2.57153L20.5713 20.5715"
+      stroke="#808080"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg>
+
+  <h3 class="modal__title modal-price__title">ЦІНИ НА НОМЕР</h3>
+  <p class="modal-price__type">Двомісний</p>
+  <p class="modal__subtext modal-price__subtext">Категорія номеру</p>
+  <form class="modal-price__form">
+    <span class="modal-price__form-wrapper">
+      <label class="modal__form-field">
+        <span class="modal__form-inner">
+          <select id="nights2" class="modal__choice" name="period" required>
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select>
+        </span>
+        <span class="modal__subtext">Кількість ночей</span>
+      </label>
+      <label class="modal__form-field">
+        <span id="price2" class="modal__input modal-price__price">500</span>
+        <span class="modal__subtext">грн</span>
+      </label>
+    </span>
+    <button class="modal__btn modal-price__form-btn" type="submit">
+      ЗАБРОНЮВАТИ НОМЕР
+    </button>
+  </form>
+</div>
+
+<div class="modal modal-price" data-modal="4">
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    class="modal__cross js-modal-close"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M20.5713 2.57153L2.57129 20.5715"
+      stroke="#808080"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <path
+      d="M2.57129 2.57153L20.5713 20.5715"
+      stroke="#808080"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg>
+
+  <h3 class="modal__title modal-price__title">ЦІНИ НА НОМЕР</h3>
+  <p class="modal-price__type">Двомісний люкс</p>
+  <p class="modal__subtext modal-price__subtext">Категорія номеру</p>
+  <form class="modal-price__form">
+    <span class="modal-price__form-wrapper">
+      <label class="modal__form-field">
+        <span class="modal__form-inner">
+          <select id="nights2l" class="modal__choice" name="period" required>
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select>
+        </span>
+        <span class="modal__subtext">Кількість ночей</span>
+      </label>
+      <label class="modal__form-field">
+        <span id="price2l" class="modal__input modal-price__price">1000</span>
+        <span class="modal__subtext">грн</span>
+      </label>
+    </span>
+    <button class="modal__btn modal-price__form-btn" type="submit">
+      ЗАБРОНЮВАТИ НОМЕР
+    </button>
+  </form>
+</div>
+
+<div class="modal modal-price" data-modal="5">
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    class="modal__cross js-modal-close"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M20.5713 2.57153L2.57129 20.5715"
+      stroke="#808080"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <path
+      d="M2.57129 2.57153L20.5713 20.5715"
+      stroke="#808080"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg>
+
+  <h3 class="modal__title modal-price__title">ЦІНИ НА НОМЕР</h3>
+  <p class="modal-price__type">Трьохмісний</p>
+  <p class="modal__subtext modal-price__subtext">Категорія номеру</p>
+  <form class="modal-price__form">
+    <span class="modal-price__form-wrapper">
+      <label class="modal__form-field">
+        <span class="modal__form-inner">
+          <select id="nights3" class="modal__choice" name="period" required>
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select>
+        </span>
+        <span class="modal__subtext">Кількість ночей</span>
+      </label>
+      <label class="modal__form-field">
+        <span id="price3" class="modal__input modal-price__price">1500</span>
+        <span class="modal__subtext">грн</span>
+      </label>
+    </span>
+    <button class="modal__btn modal-price__form-btn" type="submit">
+      ЗАБРОНЮВАТИ НОМЕР
+    </button>
+  </form>
+</div>
+
+<div class="overlay js-overlay-modal"></div>
+
+<script src="https://unpkg.com/imask"></script>
+<script src="./main.js"></script>
+
 
     
   </body>
