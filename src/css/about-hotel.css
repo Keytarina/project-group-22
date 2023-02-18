@@ -32,10 +32,6 @@ background-color: transparent;
   height: 32px;
 }
 
-.box {
-  height: 100px;
-}
-
 .about_hotel {
   position: relative;
   background-color: #fffdee;
@@ -100,7 +96,7 @@ background-color: transparent;
   margin-bottom: 32px;
 }
 .slide_btn_left {
-  margin-right: 40px;
+  margin-right: 32px;
 }
 .about_hotel_slider {
   display: flex;
