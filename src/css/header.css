@@ -1,4 +1,7 @@
-.container {
+.header {
+  position: absolute;
+  left: -50%;
+  right: -50%;
 }
 
 .header__nav {
@@ -24,11 +27,12 @@
 }
 
 .header__item {
+  display: flex;
+  gap: 6px;
 }
 
 .header__link {
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
@@ -36,15 +40,8 @@
   color: var(--accent-color);
 }
 
-.header__tel {
-  visibility: hidden;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.02em;
-  color: var(--accent-color);
+.header__number {
+  display: none;
 }
 
 .header__list-soc {
@@ -52,4 +49,38 @@
 }
 
 .header__svg {
+  fill: var(--accent-color);
+}
+
+@media screen and (min-width: 1024px) {
+  .header__logo {
+    font-size: 40px;
+    line-height: 1.07;
+  }
+
+  .header__link {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .header__tel {
+    display: flex;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+  }
+  .header__number {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header__tel {
+    font-size: 16px;
+    line-height: 1.25;
+  }
 }
