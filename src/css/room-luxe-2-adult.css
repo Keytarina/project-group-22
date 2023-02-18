@@ -2,7 +2,7 @@
     position: relative;
     background-color: var(--bg-light-section);
     padding-top: 32px;
-    padding-bottom: 20px;
+    padding-bottom: 32px;
 }
 
 .double__lux .subtitle {
@@ -44,7 +44,7 @@
     font-size: 12px;
     line-height: 1.25;
     letter-spacing: 0.02em;
-    color: var(-text-grey-color);
+    color: var(--text-grey-color);
     margin-right: auto;
     width: 258px;
 }
@@ -56,9 +56,14 @@
 .room-pic__list .item {
     max-width: 194px;
 }
-
+.main__pic {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+            0px 1px 1px rgba(46, 47, 66, 0.16),
+            0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .arrow__list {
     display: flex;
+    margin-bottom: 20px;
 }
 
 .arrow__list .item:not(:last-child) {
@@ -68,7 +73,17 @@
 .arrow-list svg {
     fill: #000000;
 }
+.button__arrow {
+    border: none;
+    background-color: inherit;
 
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button__arrow:hover,
+.button__arrow:focus {
+    fill: var(--accent-color);
+}
 .room__button,
 .room__link {
     padding: 14px 37px;
@@ -98,8 +113,10 @@
 .button__list {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
+    align-items: center;
 }
 
 .room__button,
