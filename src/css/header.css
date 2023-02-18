@@ -1,9 +1,10 @@
 .container {
+}
+
+.header__nav {
   display: flex;
 }
-.header__nav{
-  display: flex;
-}
+
 .header__logo {
   font-family: 'Film P3';
   font-weight: 700;
@@ -11,12 +12,15 @@
   line-height: 1.08;
   letter-spacing: 0.3em;
   padding-top: 16px;
-  color: #fdfbec;
+  padding-bottom: 9px;
+  color: #fff;
 }
 
-.heater__list {
+.header__list {
   display: flex;
   padding-top: 28px;
+  margin-left: auto;
+  gap: 20px;
 }
 
 .header__item {
@@ -29,7 +33,7 @@
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.02em;
-  color: #f3c653;
+  color: var(--accent-color);
 }
 
 .header__tel {
@@ -40,8 +44,12 @@
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.02em;
-  color: #f3c653;
+  color: var(--accent-color);
 }
+
 .header__list-soc {
   display: none;
+}
+
+.header__svg {
 }
