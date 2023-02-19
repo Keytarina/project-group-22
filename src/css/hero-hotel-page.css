@@ -1,5 +1,4 @@
 .hotel-hero__overlay {
-  max-width: 1280px;
   margin: 0 auto;
 
   background-color: var(--brown-color);
@@ -25,14 +24,9 @@
       url('../img/hero/hotel/mob-2x.jpg');
   }
 }
-.hotel-hero {
-  padding: 64px 15px 20px;
-}
-@media screen and (max-width: 340px) {
-  .hotel-hero {
-    padding: 64px 2px 20px;
-  }
-}
+
+/* TITLES */
+
 .hotel-hero__title {
   width: 303px;
   margin: 0 auto;
@@ -62,33 +56,91 @@
 
   color: #ffffff;
 }
-.hero__btns-list {
-  display: block;
-  margin-bottom: 58px;
-}
-.hero__btn {
-  width: 236px;
-  display: block;
-  padding: 12px 21px;
-  margin: 0 auto;
 
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.25;
-
-  letter-spacing: 0.02em;
-
-  color: #f3c653;
-  background-color: rgba(0, 0, 0, 0.4);
-  border: 2px solid #ffffff;
-  border-radius: 25px;
+/* ---------------TABLET--------------- */
+/* bg-features */
+@media screen and (min-width: 600px) {
+  .hotel-hero__overlay {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(../img/hero/hotel/tab-1x.jpg);
+    background-color: var(--accent-color);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hotel-hero__overlay {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url('../img/hero/hotel/tab-2x.jpg');
+      background-color: var(--accent-color);
+    }
+  }
 }
-.hero__btns-item + .hero__btns-item {
-  margin-top: 24px;
+/* main-features */
+@media screen and (min-width: 1024px) {
+  .hotel-hero__title {
+    width: 404px;
+    margin-bottom: 32px;
+    margin-top: 0;
+
+    font-size: 128px;
+    line-height: 1.07;
+  }
+  .hotel-hero__category {
+    margin-bottom: 226px;
+  }
 }
-.hotel-hero .hero__contacts-list {
-  display: flex;
-  gap: 20px;
+
+/* ---------------DESKTOP--------------- */
+/* bg-geatures */
+@media screen and (min-width: 1280px) {
+  .hotel-hero__overlay {
+    background-color: var(--accent-color);
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(../img/hero/hotel/desk-1x.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hotel-hero__overlay {
+      background-color: var(--accent-color);
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url('../img/hero/hotel/desk-2x.jpg');
+    }
+  }
+  /* TITLES */
+  .hotel-hero__title {
+    margin-bottom: 32px;
+  }
+  .hotel-hero__category {
+    margin-bottom: 249px;
+  }
+}
+
+/* BG-4K */
+@media screen and (min-width: 1440px) {
+  .hotel-hero__overlay {
+    background-color: var(--accent-color);
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(../img/hero/hotel/desk-4k.jpg);
+  }
 }
