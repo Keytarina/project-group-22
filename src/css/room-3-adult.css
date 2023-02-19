@@ -51,5 +51,13 @@
   letter-spacing: 0.02em;
   color: var(--text-grey-color);
   margin-right: auto;
+  margin-bottom: 32px;
   width: 258px;
+}
+
+.triple__room-picture{
+  margin-bottom: 32px;
+}
+.triple__room .picture__list{
+  margin-bottom: 32px;
 }
