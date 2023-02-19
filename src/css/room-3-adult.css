@@ -29,6 +29,7 @@
 }
 
 .triple__room-title {
+  text-align: right;
   font-family: 'Times New Roman';
   font-weight: 700;
   font-size: 24px;
