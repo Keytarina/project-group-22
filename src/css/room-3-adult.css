@@ -15,7 +15,7 @@
   color: var(--overhead-title-text);
 }
 
-.triple__rom-link {
+.triple__rom-logo {
   display: block;
   text-align: right;
   font-family: 'Film P3';
@@ -28,8 +28,12 @@
   cursor: pointer;
 }
 
+.triple__room-description {
+  display: block;
+  margin-left: auto;
+  max-width: 304px;
+}
 .triple__room-title {
-  text-align: right;
   font-family: 'Times New Roman';
   font-weight: 700;
   font-size: 24px;
