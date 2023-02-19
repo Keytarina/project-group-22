@@ -14,13 +14,11 @@
     color: #000000;
 }
 .menu-content{
-    display: flex;
-    flex-wrap: wrap;
-    
+    margin-bottom: 32px;
 }
 .menu__item{
     margin-bottom: 8px;
-        
+     
 }
 .menu__list-title{
     margin-bottom: 16px;
@@ -32,7 +30,7 @@
     color: #000000;
 }
 .menu__item-title{
-    width: 217px;
+    max-width: 217px;
     margin-bottom: 4px;
     font-family: Montserrat;
     font-weight: 500;
@@ -41,18 +39,21 @@
     color: #000000;
 }
 .abount{
-    width: 384px;
     display: flex;
     justify-content: space-between;
-    
 }
 .menu__item-texte{
-    width: 220px;
+    max-width: 220px;
     font-family: Montserrat;
     font-weight: 400;
     font-size: 10px;
     line-height: 1.22;
     color: #000000; 
+}
+.category{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 32px;
 }
 .menu__item-weight{
     min-width: 39px;
@@ -64,8 +65,7 @@
 }
 .menu__item-price{
     min-width: 60px;
-    margin-left: 32px;
-    
+        
     font-family: Montserrat;
     font-weight: 700;
     font-size: 14px;
@@ -88,10 +88,38 @@
     color: var(--accent-color);
     background-color: #000000;
 }
-
+@media screen and (min-width: 320px) and (max-width: 414px){
+.abount{
+    margin-left: auto;
+    } 
+.menu__title{
+    font-size: 8vw;
+}
+.menu__item-title{
+    font-size: 3vw;
+    max-width: 45vw;
+}
+.menu__item-texte{
+    font-size: 2vw;
+}
+.menu__list-title{
+    font-size: 5vw;
+}
+.menu__item-weight{
+    font-size: 3vw;
+}
+.menu__item-price{
+    font-size: 3vw;
+}
+.menu__item-texte{
+    max-width: 43vw;
+}
+}
 @media screen and (min-width: 1024px){
 .menu-content{
-    column-gap: 88px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
  }
 .menu__list-title{
     margin-bottom: 20px;
@@ -106,10 +134,10 @@
 }
 .menu__item-title{
     margin-bottom: 8px;
-    width: 220px;
+    max-width: 220px;
 }
 .menu__item-texte{
-    width: 217px;
+    max-width: 217px;
 }
 .menu__btn{
     margin-right: 0px;
@@ -129,4 +157,32 @@
    flex-direction: column; 
    row-gap: 20px;
 }
+}
+@media screen and (min-width: 1280px){
+.menu__list-title{
+   font-size: 24px; 
+}
+.menu__item{
+    margin-bottom: 12px;
+        
+}
+.menu__item-title{
+   max-width: 291px;
+   margin-bottom: 4px;
+   font-size: 16px;
+   
+}
+.menu__item-texte{
+   max-width: 256px;
+}
+.category{
+   column-gap: 60px;  
+}
+.menu__left{
+   min-width: 485px;   
+}
+.menu__right{
+   min-width: 485px; 
+}
+
 }
