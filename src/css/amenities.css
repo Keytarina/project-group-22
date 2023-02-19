@@ -57,13 +57,14 @@ padding: 19px 42px;
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 500;
-font-size: 20px;
+font-size: 4vw;
 line-height: 1.2;
 
 color: #FFFFFF;
 display: block;
 margin: 0 auto;
 margin-bottom: 20px;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -74,6 +75,7 @@ margin-bottom: 20px;
 }
 
 .amenities__link {
+
     display: flex;
     gap: 12px;
     justify-content: center;
@@ -81,11 +83,11 @@ margin-bottom: 20px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 4vw;
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: var(--brown-color);
-    /* transition: background-color var(--accent-color) ;  */
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .amenities__button:hover,
@@ -95,7 +97,8 @@ margin-bottom: 20px;
 }
 
 .amenities__icon {
-    fill: var(--brown-color)
+    fill: var(--brown-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
 .amenities__link:hover,
@@ -127,6 +130,14 @@ margin-bottom: 20px;
 /* ------------MOBILE----------- */
 @media screen and (min-width: 414px) {
     
+.amenities__button {
+    font-size: 20px;
+}
+
+.amenities__link {
+    font-size: 16px;
+}
+
 .amenities__button {
     font-size: 20px;
 }
