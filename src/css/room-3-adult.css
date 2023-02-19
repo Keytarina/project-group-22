@@ -1,0 +1,50 @@
+.triple__room {
+  position: relative;
+  background-color: var(--bg-dark-section);
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.triple__room-subtitle {
+  text-align: right;
+  font-family: 'Times New Roman';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  margin-bottom: 8px;
+  color: var(--overhead-title-text);
+}
+
+.triple__rom-link {
+  display: block;
+  text-align: right;
+  font-family: 'Film P3';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.07;
+  letter-spacing: 0.3em;
+  color: var(--title-mimino-color);
+  margin-bottom: 32px;
+  cursor: pointer;
+}
+
+.triple__room-title {
+  font-family: 'Times New Roman';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.triple__room-txt {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--text-grey-color);
+  margin-right: auto;
+  width: 258px;
+}
