@@ -19,24 +19,21 @@
 .details-hotel__container-first-paragraph {
   display: block;
   margin-bottom: 12px;
-  /* Надо пофиксить при подключении шрифтов на мимино*/
-  font-family: "Film P3", sans-serif;
+  font-family: "Film P3";
   font-style: normal;
   font-weight: 700;
   text-align: end;
   font-size: 64px;
   line-height: 1.08;
-  text-transform: uppercase;
-  /* Надо пофиксить при подключении шрифтовна 
-     letter-spacing: 0.3em; */
-  letter-spacing: 0em;
+  letter-spacing: 0.3em;
   color: #ffffff;
 }
 
 .details-hotel__container-first-title {
   margin-bottom: 20px;
+  padding-right: 20px;
   font-family: 'Montserrat';
-  font-size: 24px;
+  font-size: 20px;
   text-align: end;
   line-height: 1.21;
   letter-spacing: 0.02em;
@@ -65,7 +62,38 @@
 
 .details-hotel-slider__buttons {
   display: flex;
+  justify-content: end;
+  margin-bottom: 32px;
 }
+
+.details-hotel__slider-two {
+  opacity: 0.6;
+  overflow: hidden;
+}
+
+.details-hotel__slider-three {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .details-hotel__slider-three {
+    display: block;
+  } 
+}
+
+.details-hotel-slider__icon {
+  fill: #fff;
+}
+
+.details-hotel-slider__buttons {
+  gap: 32px;
+}
+
+.details-hotel_slider-list {
+  margin-bottom: 16px;
+}
+
+
 /* .details-hotel__slider {
   display: flex;
   flex-direction: row-reverse;
@@ -75,9 +103,6 @@
   
 }
 
-.details-hotel__slider-three {
-  display: none;
-}
 
 .details-hotel__slider-one,
 .details-hotel__slider-two {
@@ -85,10 +110,6 @@
   height: 270px;
   max-width: none;
   margin-right: 20px;
-}
-
-.details-hotel_slider_two {
-  opacity: 0.6;
 }
 
 .details-hotel-slider__list {
@@ -167,7 +188,7 @@
 }
 .details-hotel {
   max-width: 1280px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../img/homepage/bg-imgs/2-mob-1x.jpg);
   background-position: 50%;
   background-repeat: no-repeat;
@@ -182,7 +203,7 @@
   screen and (min-resolution: 192dpi) and (max-width: 413px),
   screen and (min-resolution: 2dppx) and (max-width: 413px) {
   .details-hotel {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
       url(../img/homepage/bg-imgs/2-mob-2x.jpg);
   }
 }
@@ -193,7 +214,7 @@
     padding: 0 15px;
   }
   .details-hotel {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
       url(../img/homepage/bg-imgs/1-tab-1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -205,7 +226,7 @@
   screen and (min-resolution: 192dpi) and (min-width: 414px),
   screen and (min-resolution: 2dppx) and (min-width: 414px) {
   .details-hotel {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
       url(../img/homepage/bg-imgs/1-tab-2x.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -226,7 +247,7 @@
   }
 
   .details-hotel {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
       url(../img/homepage/bg-imgs/2-tab-1x.jpg);
   }
 
@@ -235,8 +256,8 @@
     screen and (min-resolution: 2dppx) and (min-width: 1024px) {
     .details-hotel {
       background-image: linear-gradient(
-          rgba(0, 0, 0, 0.65),
-          rgba(0, 0, 0, 0.65)
+          rgba(0, 0, 0, 0.7),
+          rgba(0, 0, 0, 0.7)
         ),
         url(../img/homepage/bg-imgs/2-tab-2x.jpg);
       background-repeat: no-repeat;
@@ -311,7 +332,7 @@
 
 @media screen and (min-width: 1280px) {
   .details-hotel {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
       url(../img/homepage/bg-imgs/2-desk-1x.jpg);
   }
 
@@ -320,8 +341,8 @@
     screen and (min-resolution: 2dppx) and (min-width: 1280px) {
     .details-hotel {
       background-image: linear-gradient(
-          rgba(0, 0, 0, 0.65),
-          rgba(0, 0, 0, 0.65)
+          rgba(0, 0, 0, 0.7),
+          rgba(0, 0, 0, 0.7)
         ),
         url(../img/homepage/bg-imgs/2-desk-2x.jpg);
       background-repeat: no-repeat;
