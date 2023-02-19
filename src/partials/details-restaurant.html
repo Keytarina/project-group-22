@@ -1,52 +1,131 @@
 <section class="details-restaurant">
-  <div class="details-restaurant__container container">
-    <div class="details-restaurant__container-first">
-      <div class="details-restaurant__text-wrapper">
-        <p class="details-restaurant__container-first-paragraph">міміно</p>
-        <h2 class="details-restaurant__container-first-title">Ресторан</h2>
-        <p class="details-restaurant__container-first-description">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-          amet sint. Velit officia consequat duis enim velit mollit.
-        </p>
+  <div class="container">
+    <div class="details-restaurant__container">
+      <div class="details-restaurant__container-first">
+        <div class="details-restaurant__text-wrapper">
+          <p class="details-restaurant__container-first-paragraph">MIMIHO</p>
+          <h2 class="details-restaurant__container-first-title">Ресторан</h2>
+          <p class="details-restaurant__container-first-description">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit.
+          </p>
+        </div>
+        <div class="details-restaurant__slider">
+          <ul class="details-restaurant_slider-list">
+            <li class="details-restaurant_slider-item">
+              <picture class="towell">
+                <source
+                  srcset="
+                    ./img/homepage/small-img/slider2/1-desk-1x.jpg 1x,
+                    ./img/homepage/small-img/slider2/1-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./img/homepage/small-img/slider2/1-tab-1x.jpg 1x,
+                    ./img/homepage/small-img/slider2/1-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 1024px)"
+                />
+                <source
+                  srcset="
+                    ./img/homepage/small-img/slider2/1-mob-1x.jpg 1x,
+                    ./img/homepage/small-img/slider2/1-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="details-restaurant__slider-one"
+                  src="./img/homepage/small-img/slider2/1-mob-2x.jpg 2x"
+                  alt="restaurant slider two"
+                />
+              </picture>
+            </li>
+            <li class="details-restaurant_slider-item">
+              <picture class="towell">
+                <source
+                  srcset="
+                    ./img/homepage/small-img/slider2/2-desk-1x.jpg 1x,
+                    ./img/homepage/small-img/slider2/2-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+
+                <source
+                  srcset="
+                    ./img/homepage/small-img/slider2/2-tab-1x.jpg 1x,
+                    ./img/homepage/small-img/slider2/2-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 1024px)"
+                />
+                <source
+                  srcset="
+                    ./img/homepage/small-img/slider2/2-mob-1x.jpg 1x,
+                    ./img/homepage/small-img/slider2/2-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="details-restaurant__slider-two"
+                  src="./img/homepage/small-img/slider2/2-mob-2x.jpg 2x"
+                  alt="restaurant slider two"
+                />
+              </picture>
+            </li>
+            <li class="details-restaurant_slider-item">
+              <picture class="towell">
+                <source
+                  srcset="
+                    ./img/homepage/small-img/slider2/3-desk-1x.jpg 1x,
+                    ./img/homepage/small-img/slider2/3-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./img/homepage/small-img/slider2/3-tab-1x.jpg 1x,
+                    ./img/homepage/small-img/slider2/3-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 1024px)"
+                />
+                <source
+                  srcset="
+                    ./img/homepage/small-img/slider2/3-mob-1x.jpg 1x,
+                    ./img/homepage/small-img/slider2/3-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="details-restaurant__slider-three"
+                  src="./img/homepage/small-img/slider2/3-mob-2x.jpg 2x"
+                  alt="restaurant slider two"
+                />
+              </picture>
+            </li>
+          </ul>
+          <ul class="details-restaurant-slider__buttons">
+            <li class="details-restaurant-slider__item">
+              <svg class="details-restaurant-slider__icon" width="32" height="32">
+                <use href="./img/svg/sprite.svg#icon-arrow-left"></use>
+              </svg>
+            </li>
+            <li class="details-restaurant-slider__item">
+              <svg class="details-restaurant-slider__icon" width="32" height="32">
+                <use href="./img/svg/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="details-restaurant-slider__wrapper">
-        <ul class="details-restaurant-slider__list">
-          <li>
-            <img src="./img/homepage/small-img/slider2/1-desk-1x.jpg" alt="" width="270" height="270">
-          </li>
-        </ul>
-        <ul class="details-restaurant-slider__buttons">
-          <li class="details-restaurant-slider__item">
-            <svg
-              class="details-restaurant-slider__icon"
-              width="32"
-              height="32"
-            >
-              <use href="./img/svg/sprite.svg#icon-arrow-left"></use>
-            </svg>
-          </li>
-          <li class="details-restaurant-slider__item">
-            <svg
-              class="details-restaurant-slider__icon"
-              width="32"
-              height="32"
-            >
-              <use href="./img/svg/sprite.svg#icon-arrow-right"></use>
-            </svg>
-          </li>
-        </ul>
+      <div class="details-restaurant__container-second">
+        <button class="details-restaurant__container-second-btn" type="button">
+          Забронювати номер
+        </button>
+        <a class="details-restaurant__container-second-link" href=""
+          >Переглянути меню</a
+        >
       </div>
-    </div>
-    <div class="details-restaurant__container-second">
-      <button
-        class="details-restaurant__container-second-btn"
-        type="button"
-      >
-        Забронювати столик
-      </button>
-      <a class="details-restaurant__container-second-link" href=""
-        >Переглянути меню</a
-      >
     </div>
   </div>
 </section>
