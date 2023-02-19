@@ -37,6 +37,10 @@ a {
 
 button {
   cursor: pointer;
+  /* transition: color var(--transition-property),
+		background-color var(--transition-property),
+		box-shadow var(--transition-property),
+		border-color var(--transition-property); */
 }
 
 img {
