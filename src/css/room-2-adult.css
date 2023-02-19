@@ -59,7 +59,7 @@
 
 .main__pic,
 .room-pic__list picture {
-    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
 }
 
 .arrow__list {
