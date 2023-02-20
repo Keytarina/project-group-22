@@ -1,0 +1,97 @@
+.hidden {
+    display: none;
+}
+.contacts {
+    background-color: var(--bg-light-section);
+    padding-top: 36px;
+    padding-bottom: 32px;
+}
+.contacts__logo {
+    display: block;
+    margin-bottom: 12px;
+    font-family: 'Film P3';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.075;
+    letter-spacing: 0.3em;
+    color: var(--title-mimino-color);
+}
+.contacts__logo__text {
+    display: block;
+    margin-bottom: 16px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: var(--text-grey-color);
+}
+.address-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    margin-bottom: 32px;
+}
+.address-list__item {
+    display: flex;
+    align-items: center;
+    column-gap: 22px;
+}
+.address-list__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    min-width: 102px;
+    color: var(--brown-color);
+}
+.address-list__phones {
+    display: flex;
+    align-items: center;
+    padding: 9px 7px 8px 8px; 
+    background-color: #fff;
+    border: 0.5px solid var(--accent-color);
+    border-radius: 2px;
+}
+.address-list__icon {
+    margin-right: 8px;
+    fill: var(--brown-color);
+}
+.address-list__phone {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--title-mimino-color);
+}
+.address-list__two-phones {
+    display: flex;
+    gap: 12px;
+}
+.address-list__address {
+    display: flex;
+    align-items: center;
+    margin-left: 124px;
+    padding: 8px 33px 7px 10px;
+    background-color: #fff;
+    border: 0.5px solid var(--accent-color);
+    border-radius: 2px;
+} 
+.address__text {
+    max-width: 185px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+}
+.contacts__map {
+    border: 1px solid #bababa;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+}

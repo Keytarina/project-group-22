@@ -1,46 +1,63 @@
-<section>
-  <h1 class="hidden">Контакти</h1>
-  <a href="">MIMIHO</a>
-  <p>Ресторанно-готельний комплекс</p>
-  <address>
-    <ul>
-      <li>
-        <h3>Ресторан</h3>
-        <div>
-          <svg width="24" height="24">
-            <use></use>
-          </svg>
-          <a href="">095 555 95 33</a>
-        </div>
-      </li>
-      <li>
-        <h3>Готель</h3>
-        <div>
-          <svg width="24" height="24">
-            <use></use>
-          </svg>
-          <a href="">066 849 10 89</a>
-          <a href="">067 275 85 40</a>
-        </div>
-      </li>
-      <li>
-        <h3 class="hidden">Мicце знаходження</h3>
-        <div>
-          <svg width="24" height="24">
-            <use></use>
-          </svg>
-          <p>Україна, м. Полтава, вул. Маршала Бірюзова, 15</p>
-        </div>
-      </li>
-    </ul>
-  </address>
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d160750.01095653544!2d34.270158242238494!3d49.60168947438368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d825e425e6ba6b%3A0xcf3e6bdfb9e4ca82!2z0J_QvtC70YLQsNCy0LAsINCf0L7Qu9GC0LDQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNC40L3QsCwgMzYwMDA!5e1!3m2!1sru!2snl!4v1676558669590!5m2!1sru!2snl"
-    width="384"
-    height="220"
-    style="border: 0"
-    allowfullscreen=""
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade"
-  ></iframe>
+<section class="contacts">
+  <div class="container">
+    <h1 class="hidden">Контакти</h1>
+    <a href="./index.html" class="contacts__logo">MIMIHO</a>
+    <p class="contacts__logo__text">Ресторанно-готельний комплекс</p>
+    <address>
+      <ul class="address-list">
+        <li class="address-list__item">
+          <h3 class="address-list__title">Ресторан</h3>
+          <div class="address-list__phones">
+            <svg width="24" height="24" class="address-list__icon">
+              <use href="./img/svg/sprite.svg#icon-phone"></use>
+            </svg>
+            <a href="tel:+380955559533" class="address-list__phone"
+              >095 555 95 33</a
+            >
+          </div>
+        </li>
+        <li class="address-list__item">
+          <h3 class="address-list__title">Готель</h3>
+          <div class="address-list__phones">
+            <svg width="24" height="24" class="address-list__icon">
+              <use href="./img/svg/sprite.svg#icon-phone"></use>
+            </svg>
+            <div class="address-list__two-phones">
+              <a href="tel:+380668491089" class="address-list__phone"
+                >066 849 10 89</a
+              >
+              <a href="tel:+380672758540" class="address-list__phone"
+                >067 275 85 40</a
+              >
+            </div>
+          </div>
+        </li>
+        <li class="address-list__item">
+          <h3 class="address-list__title hidden">Мicце знаходження</h3>
+          <a
+            class="address-list__address"
+            href="https://goo.gl/maps/bPco8az8Pxiguq2k8"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <svg width="24" height="24" class="address-list__icon">
+              <use href="./img/svg/sprite.svg#icon-location"></use>
+            </svg>
+            <p class="address__text">
+              Україна, м. Полтава, вул. Маршала Бірюзова, 15
+            </p>
+          </a>
+        </li>
+      </ul>
+    </address>
+    <iframe
+      class="contacts__map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2431.0373602243485!2d34.5265463!3d49.59919399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d82601f3347a5f%3A0x36f3f9aeec44a6a!2z0LLRg9C70LjRhtGPINCc0LDRgNGI0LDQu9CwINCR0ZbRgNGO0LfQvtCy0LAsIDE1LCDQn9C-0LvRgtCw0LLQsCwg0J_QvtC70YLQsNCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDM2MDAw!5e1!3m2!1suk!2sua!4v1676852833684!5m2!1suk!2sua"
+      width="384"
+      height="220"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
 </section>
