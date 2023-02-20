@@ -47,6 +47,109 @@
   color: #bababa;
 }
 
+/*============================ SLIK-SLIDER============================ */
+
+.wrapper{
+	display: flex;
+	position: relative;
+	justify-content: start;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.arrows {
+	margin-left: 15px;
+  position: absolute;
+  bottom: -16px;
+  transform: translateY(100%);
+}
+
+
+
+/* Основные стили */
+
+/* Слайдер */
+.slick-slider{
+	min-width: 0;
+}
+.slider {
+	width: 384px;
+}
+/* Ограничивающая оболочка */
+.slick-list {
+	overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+	display: flex;
+	align-items: flex-start;
+}
+
+.slick-slide {
+	opacity: 0.6;
+}
+.slick-current {
+	
+	opacity: 1;
+}
+
+/* Стрелка влево */
+.slick-arrow.slick-prev{
+	background: url('../img/arrow-left.svg') 0 0 / 100% no-repeat;}
+/* Стрелка вправо */
+.slick-arrow.slick-next{	
+	background: url('../img/arrow-right.svg') 0 0 / 100% no-repeat;
+}
+
+.slick-arrow:not(:last-child) {
+	margin-right: 32px;
+}
+/* Конкретный слайдер */
+
+
+.slick-prev, .slick-next {
+	z-index: 10;
+	font-size: 0;
+	width: 32px;
+	height: 32px;
+  /* border: none; */
+  
+}
+
+.slider__item {
+	padding-right: 24px;
+	text-align: center;
+}
+.slider__item img{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+@media (min-width: 1024px) {
+	.slider__item {
+		padding-right: 34px;
+	}
+  .slick-slide {
+    opacity: 1 ;
+  }
+
+  .slider {
+    width: 662px;
+  }
+	
+}
+
+@media (min-width: 1280px) {
+	.slider__item {
+		padding-right: 86px;
+	}
+  .slider {
+    width: 842px;
+  }
+}
+
+/*============================ /SLIK-SLIDER============================ */
+
 
 /*==============SLIDER ================*/
 .details-restaurant_slider-list {
@@ -60,6 +163,8 @@
 .details-restaurant-slider__buttons {
   display: flex;
   margin-bottom: 32px;
+  margin-left: 15px;
+  margin-top: 16px;
 }
 
 .details-restaurant__slider-two {
@@ -88,6 +193,12 @@
 
 .details-restaurant-slider__icon {
   fill: #fff;
+}
+
+.details-restaurant-slider__icon:hover,
+.details-restaurant-slider__icon:active
+ {
+  fill: var(--accent-color);
 }
 
 .details-restaurant-slider__buttons {
@@ -377,6 +488,10 @@
     margin: 0;
   }
 
+  .details-restaurant__text-wrapper {
+    margin-left: -15px;
+  }
+
   .details-restaurant_slider-list {
     gap: 86px;
   }
@@ -385,6 +500,7 @@
     width: 270px;
     height: 270px;
   }
+
 
 }
 /* ==========================/DESKTOP============================= */
