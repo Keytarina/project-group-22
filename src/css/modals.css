@@ -63,7 +63,7 @@ input::-webkit-inner-spin-button {
 }
 
 .modal-table {
-  height: 668px;
+  height: 100%;
 }
 
 .modal-room {
@@ -71,7 +71,7 @@ input::-webkit-inner-spin-button {
 }
 
 .modal-price {
-  height: 572px;
+  height: 100%;
 }
 
 .modal__title {
