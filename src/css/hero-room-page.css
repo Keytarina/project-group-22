@@ -27,10 +27,15 @@
   }
 }
 .room-hero__section {
-  max-width: 2000px;
+  max-width: 414px;
   margin: 0 auto;
   padding: 64px 15px 14px;
   position: relative;
+}
+@media screen and (min-width:1024px) {
+  .room-hero__section {
+    max-width: none;
+  }
 }
 
 /* SLIDER */
@@ -89,7 +94,7 @@
 }
 @media screen and (max-width: 346px) {
   .room-hero__section {
-    padding: 64px 6px 40px;
+    padding: 64px 6px 14px;
   }
   .room-hero__title {
     font-size: 27px;
@@ -171,6 +176,7 @@
 /* main-features */
 @media screen and (min-width: 1024px) {
   .room-hero__section {
+    width: 1024px;
     padding: 340px 47px 36px;
   }
   /* ADRESS-LINK */
@@ -245,6 +251,7 @@
   }
   /* main-features */
   .room-hero__section {
+    width: 1280px;
     padding: 412px 85px 48px;
   }
   /* ADRESS-LINK */
