@@ -1,116 +1,130 @@
 .hidden {
-  display: none;
+    display: none;
 }
-
 .contacts {
-  background-color: var(--bg-light-section);
-
-  padding-top: 36px;
-  padding-bottom: 32px;
+    background-color: var(--bg-light-section);
+    padding-top: 36px;
+    padding-bottom: 32px;
 }
-
 .contacts__logo {
-  font-family: 'Film P3';
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 1.075;
-  letter-spacing: 0.3em;
-
-  color: var(--title-mimino-color);
+    display: block;
+    margin-bottom: 12px;
+    font-family: 'Film P3';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.075;
+    letter-spacing: 0.3em;
+    color: var(--title-mimino-color);
 }
-
 .contacts__logo__text {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.02em;
+    display: block;
+    margin-bottom: 16px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: var(--text-grey-color);
 }
-
+.address-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    margin-bottom: 32px;
+}
 .address-list__item {
-  display: flex;
-  align-items: center;
-  margin-top: 16px;
-  column-gap: 22px;
+    display: flex;
+    align-items: center;
+    column-gap: 22px;
 }
-
 .address-list__title {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  width: 102px;
-
-  color: var(--brown-color);
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    min-width: 102px;
+    color: var(--brown-color);
 }
-
 .address-list__phones {
-  display: flex;
-  align-items: center;
-  padding-top: 9px;
-  padding-bottom: 7px;
-  padding-left: 8px;
-  padding-right: 8px;
-
-  background-color: #fff;
-  border: 0.5px solid var(--accent-color);
-  border-radius: 2px;
+    display: flex;
+    align-items: center;
+    padding: 9px 7px 8px 8px; 
+    background-color: #fff;
+    border: 0.5px solid var(--accent-color);
+    border-radius: 2px;
 }
-
 .address-list__icon {
-  margin-right: 8px;
-  fill: var(--brown-color);
+    margin-right: 8px;
+    fill: var(--brown-color);
 }
-
 .address-list__phone {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.2;
-
-  color: var(--title-mimino-color);
+    font-family: 'Montserrat';
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--title-mimino-color);
 }
-
-.address-list__phone__first {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.2;
-
-  color: var(--title-mimino-color);
-
-  margin-right: 12px;
+.address-list__two-phones {
+    display: flex;
+    gap: 12px;
 }
 .address-list__address {
-  display: flex;
-  align-items: center;
-  padding-top: 9px;
-  padding-bottom: 7px;
-  padding-left: 8px;
-  padding-right: 8px;
-
-  background-color: #fff;
-  border: 0.5px solid var(--accent-color);
-  border-radius: 2px;
-  margin-left: 124px;
-  margin-bottom: 32px;
-}
-
+    display: flex;
+    align-items: center;
+    margin-left: 124px;
+    padding: 8px 33px 7px 10px;
+    background-color: #fff;
+    border: 0.5px solid var(--accent-color);
+    border-radius: 2px;
+} 
 .address__text {
-  max-width: 185px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.01em;
+    max-width: 185px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
 }
-
 .contacts__map {
-  width: 384px;
-  height: 220px;
-  border: 1px solid #bababa;
-
-  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-  border-radius: 2px;
+    display: block;
+    width: 384px;
+    height: 220px;
+    border: 1px solid #bababa;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+}
+@media screen and (min-width: 320px) and (max-width: 414px) {
+    .address-list__title {
+        font-size: 4vw;
+    }
+    .address-list__title {
+        width: 80px;
+    }
+    .address-list__phones {
+        margin-left: auto;
+    }
+    .address-list__phone {
+        font-size: 3vw;
+    }
+    .address__text {
+        font-size: 3vw;
+    }
+    
+    .contacts__map { 
+        width: 290px;
+    }
+}
+@media screen and (min-width: 414px) {
+    .address-list__item {
+        column-gap: 22px;
+    }
+    .address-list__title {
+        min-width: 102px;
+    }
+    .address-list__phone {
+        font-size: 14px;
+    }
+    .address__text {
+        font-size: 16px;
+    }
 }

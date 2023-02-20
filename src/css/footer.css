@@ -32,6 +32,11 @@
 }
 .footer-lists__link {
   display: none;
+  transition: border-color var(--transition-property),
+  color var(--transition-property);
+}
+.social-links__text {
+  transition: color var(--transition-property);
 }
 .footer-lists__list {
   margin-bottom: 32px;
@@ -50,7 +55,7 @@
 }
 .footer-lists__link:hover, .footer-lists__link:focus, .footer-lists__link:active {
   color: #fff;
-  border: #fff 2px solid;;
+  border-color: #fff;
 }
 .footer-lists__link:hover .social-links__icon, .footer-lists__link:focus .social-links__icon, .footer-lists__link:active .social-links__icon,
 .footer-lists__link:hover .social-links__text, .footer-lists__link:focus .social-links__text, .footer-lists__link:active .social-links__text {

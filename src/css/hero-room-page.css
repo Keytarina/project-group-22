@@ -1,13 +1,11 @@
 .room-hero__overlay {
-  max-width: 1280px;
   margin: 0 auto;
 
-  background-color: var(--brown-color);
+  background-color: var(--accent-color);
   background-image: linear-gradient(
-      180deg,
-      #000000 0%,
-      rgba(0, 0, 0, 0.55) 9%,
-      rgba(0, 0, 0, 0) 19%
+      to right,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
     ),
     url(../img/hero/room/slider/1-mob-1x.jpg);
   background-repeat: no-repeat;
@@ -18,6 +16,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .room-hero__overlay {
+    background-color: var(--accent-color);
     background-image: linear-gradient(
         180deg,
         #000000 0%,
@@ -27,14 +26,15 @@
       url('../img/hero/room/slider/1-mob-2x.jpg');
   }
 }
-.room-hero {
+.room-hero__section {
+  max-width: 2000px;
+  margin: 0 auto;
   padding: 64px 15px 14px;
+  position: relative;
 }
-@media screen and (max-width: 340px) {
-  .room-hero {
-    padding: 64px 2px 14px;
-  }
-}
+
+/* SLIDER */
+
 .room-hero__btns {
   display: flex;
   align-items: center;
@@ -60,6 +60,9 @@
   fill: #fff;
   background-color: var(--accent-color);
 }
+
+/* TITLES */
+
 .room-hero__title {
   max-width: 325px;
   margin-bottom: 14px;
@@ -74,7 +77,7 @@
 }
 .room-hero__sub {
   max-width: 325px;
-  margin-bottom: 16px;
+  margin-bottom: 17px;
 
   font-family: 'Montserrat';
   font-weight: 700;
@@ -84,17 +87,36 @@
 
   color: #ffffff;
 }
-.room-hero__contacts + .room-hero__contacts {
-  margin-top: 8px;
+@media screen and (max-width: 346px) {
+  .room-hero__section {
+    padding: 64px 6px 40px;
+  }
+  .room-hero__title {
+    font-size: 27px;
+  }
+  .main-hero__sub {
+    font-size: 31px;
+  }
 }
+
+/* LINKS */
+
 .room-hero__thumb {
   display: flex;
   align-items: center;
   justify-content: space-between;
   max-width: 325px;
 }
-.hero-prices__btn {
+.room__soc-list {
   display: block;
+}
+.room__soc-item + .room__soc-item {
+  margin-top: 8px;
+}
+
+/* BTN */
+
+.room__prices-btn {
   padding: 12px 33px;
 
   font-family: 'Montserrat';
@@ -102,17 +124,159 @@
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.02em;
-  text-align: center;
 
   background-color: rgba(0, 0, 0, 0.4);
   color: var(--accent-color);
   border: 2px solid #ffffff;
   border-radius: 25px;
-  transition-property: background-color, border, color;
+  transition-property: background-color, border;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hero-prices__btn:hover,
-.hero-prices__btn:focus {
+.room__prices-btn:hover,
+.room__prices-btn:focus {
   background-color: #fff;
   border: 2px solid var(--accent-color);
+}
+
+
+/* ---------------TABLET--------------- */
+
+/* bg-features */
+@media screen and (min-width: 600px) {
+  .room-hero__overlay {
+    background-image: linear-gradient(
+        180deg,
+        #000000 0%,
+        rgba(0, 0, 0, 0.55) 9%,
+        rgba(0, 0, 0, 0) 19%
+      ),
+      url(../img/hero/room/slider/1-tab-1x.jpg);
+    background-color: var(--accent-color);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .room-hero__overlay {
+      background-image: linear-gradient(
+          180deg,
+          #000000 0%,
+          rgba(0, 0, 0, 0.55) 9%,
+          rgba(0, 0, 0, 0) 19%
+        ),
+        url('../img/hero/room/slider/1-tab-2x.jpg');
+      background-color: var(--accent-color);
+    }
+  }
+}
+/* main-features */
+@media screen and (min-width: 1024px) {
+  .room-hero__section {
+    padding: 340px 47px 36px;
+  }
+  /* ADRESS-LINK */
+  .room-hero__section .hero-adress__link {
+    bottom: 22px;
+  }
+  /* SLIDER */
+  .room-hero__btns {
+    margin-bottom: 88px;
+    margin-top: 0;
+  }
+  /* TITLES */
+  .room-hero__title {
+    max-width: 509px;
+    margin-bottom: 24px;
+
+    font-size: 36px;
+    line-height: 1.13;
+  }
+  .room-hero__sub {
+    max-width: 400px;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  /* SOC-LINKS */
+  .room-hero__thumb {
+    max-width: 100%;
+  }
+  .room__soc-list {
+    display: flex;
+    margin-top: 47px;
+    margin-left: 372px;
+  }
+  .room__soc-item + .room__soc-item {
+    margin-top: 0px;
+    margin-left: 20px;
+  }
+  /* BTN */
+  .room__prices-btn {
+    margin-bottom: 26px;
+    margin-left: auto;
+  }
+}
+
+/* ---------------DESKTOP--------------- */
+/* bg-geatures */
+@media screen and (min-width: 1280px) {
+  .room-hero__overlay {
+    background-color: var(--accent-color);
+    background-image: linear-gradient(
+        180deg,
+        #000000 0%,
+        rgba(0, 0, 0, 0.55) 9%,
+        rgba(0, 0, 0, 0) 19%
+      ),
+      url(../img/hero/room/slider/1-desk-1x.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .room-hero__overlay {
+      background-color: var(--accent-color);
+      background-image: linear-gradient(
+          180deg,
+          #000000 0%,
+          rgba(0, 0, 0, 0.55) 9%,
+          rgba(0, 0, 0, 0) 19%
+        ),
+        url('../img/hero/room/slider/1-desk-2x.jpg');
+    }
+  }
+  /* main-features */
+  .room-hero__section {
+    padding: 412px 85px 48px;
+  }
+  /* ADRESS-LINK */
+  .room-hero__section .hero-adress__link {
+    display: none;
+  }
+  /* SOC-LINKS */
+  .room-hero__thumb {
+    position: absolute;
+    bottom: 66px;
+    right: 85px;
+    max-width: 234px;
+  }
+  .room__soc-list {
+    display: none;
+  }
+  /* BTN */
+  .room__prices-btn {
+    margin: 0;
+  }
+}
+
+/* BG-4K */
+@media screen and (min-width: 1440px) {
+  .room-hero__overlay {
+    background-color: var(--accent-color);
+    background-image: linear-gradient(
+        180deg,
+        #000000 0%,
+        rgba(0, 0, 0, 0.55) 9%,
+        rgba(0, 0, 0, 0) 19%
+      ),
+      url(../img/hero/room/slider/1-desk-4k.jpg);
+  }
 }
