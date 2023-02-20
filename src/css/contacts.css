@@ -1,5 +1,5 @@
 .hidden {
-    display: none;
+  z-index: -1;
 }
 .contacts {
     background-color: var(--bg-light-section);
@@ -35,7 +35,6 @@
 .address-list__item {
     display: flex;
     align-items: center;
-    column-gap: 22px;
 }
 
 .address-list__title{
@@ -49,7 +48,6 @@
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    min-width: 102px;
     color: var(--brown-color);
 }
 .address-list__phones {
@@ -82,7 +80,6 @@
 .address-list__address {
     display: flex;
     align-items: center;
-    margin-left: 124px;
     padding: 8px 33px 7px 10px;
     background-color: #fff;
     border: 0.5px solid var(--accent-color);
@@ -110,7 +107,8 @@
         font-size: 4vw;
     }
     .address-list__title{
-        width: 80px;
+        width: 50px;
+        margin-right:40px;
     }
 
     .address-list__address{
@@ -131,6 +129,7 @@
     .address-list__item {
         column-gap: 22px;
     }
+
     .address-list__title{
         min-width: 102px;
     }
