@@ -163,9 +163,6 @@
   background-color: rgba(0, 0, 0, 0.4);;
   border: 2px solid #fff;
   border-radius: 25px;
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .details-restaurant__container-second-btn:hover,
@@ -188,7 +185,8 @@
   gap: 16px;
 }
 .details-restaurant {
-  max-width: 1280px;
+  width: 100%;
+  /* max-width: 1280px; */
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../img/homepage/bg-imgs/1-mob-1x.jpg);
   background-position: 50%;
@@ -248,6 +246,7 @@
   }
 
   .details-restaurant {
+    width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
       url(../img/homepage/bg-imgs/1-tab-1x.jpg);
   }
@@ -350,6 +349,7 @@
 
 @media screen and (min-width: 1280px) {
   .details-restaurant {
+    width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
       url(../img/homepage/bg-imgs/1-desk-1x.jpg);
   }
