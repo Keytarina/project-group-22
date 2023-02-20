@@ -44,6 +44,22 @@
   }
 }
 
+button {
+  transition: color var(--transition-property),
+		background-color var(--transition-property),
+		box-shadow var(--transition-property),
+		border-color var(--transition-property);
+}
+a {
+  transition: color var(--transition-property),
+		background-color var(--transition-property),
+		box-shadow var(--transition-property),
+		border-color var(--transition-property);
+}
+svg {
+  transition: fill var(--transition-property)
+}
+
 :root {
 	--accent-color: #F3C653; /* Akzent yellow */
   --brown-color: #C79002; /* Brown */
