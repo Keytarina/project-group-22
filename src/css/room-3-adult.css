@@ -61,3 +61,162 @@
 .triple__room .picture__list {
   margin-bottom: 32px;
 }
+
+@media screen and (max-width: 1023px) {
+    .room__picture {
+        max-width: 244px;
+    }
+
+    .double__lux .room-text {
+        max-width: 258px;
+    }
+
+    .room__picture {
+        margin-left: auto;
+    }
+
+    .double div:not(.picture__list) {
+        margin-bottom: 32px;
+    }
+
+    .room-pic__list .item:not(:last-child) {
+        margin-right: 16px;
+        margin-left: -120px;
+    }
+
+    .room-pic__list {
+        margin-bottom: 20px;
+    }
+
+    .arrow__list {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (max-width: 413px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 414px) {
+
+
+    .double__lux .room__text {
+        width: 258px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .double__lux {
+        padding-top: 62px;
+        padding-bottom: 40px;
+    }
+
+    .double__lux .subtitle {
+        font-size: 32px;
+        line-height: 1.15;
+        margin-bottom: 4px;
+    }
+
+    .double__lux .main__text {
+        font-size: 64px;
+        line-height: 1.07;
+        margin-bottom: 62px;
+    }
+
+    .double__lux .room__title {
+        font-size: 30px;
+        line-height: 1.13;
+        margin-bottom: 16px;
+    }
+
+    .double__lux .room__text {
+        font-size: 16px;
+        line-height: 1.25;
+        width: 439px;
+        margin-bottom: 176px;
+    }
+
+    .double {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .room__picture {
+        width: 400px;
+    }
+
+    .main__pic {
+        position: absolute;
+        top: -30px;
+    }
+
+    .room__description {
+        margin-right: 26px;
+    }
+
+    .room-pic__list {
+        margin-bottom: 32px;
+    }
+
+    .room-pic__list .item:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    .arrow__list {
+        justify-content: right;
+    }
+
+    .button__list {
+        margin-left: 266px;
+        margin-top: 41px;
+        flex-direction: column;
+    }
+
+
+}
+
+@media screen and (min-width: 1280px) {
+    .double__lux {
+        padding-top: 72px;
+        padding-bottom: 40px;
+    }
+
+    .double__lux .main__text {
+        margin-bottom: 72px;
+    }
+
+    .double__lux .room__title {
+        font-size: 36px;
+        line-height: 1.13;
+        margin-bottom: 24px;
+    }
+
+    .double__lux .room__text {
+        width: 400px;
+    }
+
+    .room__description {
+        margin-right: 40px;
+    }
+
+    .room__picture {
+        width: 460px;
+    }
+
+    .room-pic__list .item {
+        max-width: 254px;
+    }
+
+    .room-pic__list {
+        margin-bottom: 40px;
+    }
+
+    .buttons {
+        margin-left: auto;
+    }
+
+}
