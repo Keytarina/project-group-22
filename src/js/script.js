@@ -1,32 +1,28 @@
 $(document).ready(function(){
-	$(".slider").slick({
+	$('.details-restaurant__slider').slick({
     inverse: true,
     loop: true,
     dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-	adaptiveHeight: true,
-	spaceBetween: 20,
-
-    // centerMode: true,
+    adaptiveHeight: true,
+    spaceBetween: 20,
     variableWidth: true,
-
-    // responsive: [
-    //   {
-    //     breakpoint: 1024,
-    //     settings: {
-    //       spaceBetween: 34,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 1280,
-    //     settings: {
-    //       slidesToShow: 1,
-    //     },
-    //   },
-    // ],
-    appendArrows: $(".arrows"),
+    appendArrows: $('.details-restaurant__slider__arrows'),
+  });
+  
+  $('.details-hotel__slider').slick({
+    inverse: true,
+    loop: true,
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    adaptiveHeight: true,
+    spaceBetween: 20,
+    variableWidth: true,
+    appendArrows: $('.details-hotel__slider__arrows'),
   });
 });
 

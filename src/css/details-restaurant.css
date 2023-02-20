@@ -47,7 +47,7 @@
   color: #bababa;
 }
 
-/*============================ SLIK-SLIDER============================ */
+/*============================ SLICK-SLIDER============================ */
 
 .wrapper{
 	display: flex;
@@ -57,7 +57,7 @@
 	flex-wrap: wrap;
 }
 
-.arrows {
+.details-restaurant__slider__arrows {
 	margin-left: 15px;
   position: absolute;
   bottom: -16px;
@@ -71,7 +71,7 @@
 .slick-slider{
 	min-width: 0;
 }
-.slider {
+.details-restaurant__slider {
 	width: 384px;
 }
 /* Ограничивающая оболочка */
@@ -97,39 +97,39 @@
 	font-size: 0;
 	width: 32px;
 	height: 32px;
-  border: none;
+  /* border: none; */
   
 }
 
-.slider__item {
+.details-restaurant__slider__item {
 	padding-right: 24px;
 	text-align: center;
 }
-.slider__item img{
+.details-restaurant__slider__item img{
 	max-width: 100%;
 	max-height: 100%;
 }
 
 @media (min-width: 1024px) {
-	.slider__item {
+	.details-restaurant__slider__item {
 		padding-right: 34px;
 	}
-  .slider {
+  .details-restaurant__slider {
     width: 662px;
   }
 	
 }
 
 @media (min-width: 1280px) {
-	.slider__item {
+	.details-restaurant__slider__item {
 		padding-right: 86px;
 	}
-  .slider {
+  .details-restaurant__slider {
     width: 842px;
   }
 }
 
-/*============================ /SLIK-SLIDER============================ */
+/*============================ /SLICK-SLIDER============================ */
 
 
 /*==============SLIDER ================*/
@@ -274,7 +274,7 @@
   gap: 16px;
 }
 .details-restaurant {
-  max-width: 1280px;
+  width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../img/homepage/bg-imgs/1-mob-1x.jpg);
   background-position: 50%;
