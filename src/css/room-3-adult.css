@@ -61,3 +61,161 @@
 .triple__room .picture__list {
   margin-bottom: 32px;
 }
+.triple__room-img{
+  display: flex;
+}
+
+@media screen and (max-width: 1023px) {
+  .room__picture {
+    max-width: 244px;
+  }
+
+  .triple__room .room-text {
+    max-width: 258px;
+  }
+
+  .room__picture {
+    margin-left: auto;
+  }
+
+  .double div:not(.picture__list) {
+    margin-bottom: 32px;
+  }
+
+  .room-pic__list .item:not(:last-child) {
+    margin-right: 16px;
+    margin-left: -120px;
+  }
+
+  .room-pic__list {
+    margin-bottom: 20px;
+  }
+
+  .arrow__list {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .triple__room-txt {
+    width: 258px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .triple__room {
+    padding-top: 62px;
+    padding-bottom: 40px;
+  }
+
+  .triple__room-subtitle {
+    font-size: 32px;
+    line-height: 1.15;
+    margin-bottom: 4px;
+  }
+
+  .triple__rom-logo {
+    font-size: 64px;
+    line-height: 1.07;
+    margin-bottom: 62px;
+  }
+  .triple__room-description {
+    max-width: 439px;
+  }
+
+  .triple__room-title {
+    font-size: 30px;
+    line-height: 1.13;
+    margin-bottom: 16px;
+  }
+
+  .triple__room-txt {
+    font-size: 16px;
+    line-height: 1.25;
+    width: 439px;
+    margin-bottom: 176px;
+  }
+
+  .double {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .triple__room-picture {
+    width: 400px;
+  }
+
+  .main__pic {
+    position: absolute;
+    top: -30px;
+  }
+
+  .room__description {
+    margin-right: 26px;
+  }
+
+  .room-pic__list {
+    margin-bottom: 32px;
+  }
+
+  .room-pic__list .item:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  .arrow__list {
+    justify-content: right;
+  }
+
+  .button__list {
+    margin-left: 266px;
+    margin-top: 41px;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .triple__room {
+    padding-top: 72px;
+    padding-bottom: 40px;
+  }
+
+  .triple__rom-logo {
+    margin-bottom: 72px;
+  }
+
+  .triple__room-title {
+    font-size: 36px;
+    line-height: 1.13;
+    margin-bottom: 24px;
+  }
+
+  .double__lux .room__text {
+    width: 400px;
+  }
+
+  .room__description {
+    margin-right: 40px;
+  }
+
+  .room__picture {
+    width: 460px;
+  }
+
+  .room-pic__list .item {
+    max-width: 254px;
+  }
+
+  .room-pic__list {
+    margin-bottom: 40px;
+  }
+
+  .buttons {
+    margin-left: auto;
+  }
+}
