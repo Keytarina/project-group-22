@@ -136,29 +136,29 @@
   margin-bottom: 58px;
 }
 .hero__prices-btn {
-  display: block;
-  padding: 12px 22px;
+  /* display: block; */
+  /* padding: 12px 22px; */
   margin: 0 auto;
 
-  font-family: 'Montserrat';
+  /* font-family: 'Montserrat';
   font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.02em;
-  text-align: center;
+  text-align: center; */
 
-  background-color: rgba(0, 0, 0, 0.4);
+  /* background-color: rgba(0, 0, 0, 0.4);
   color: var(--accent-color);
   border: 2px solid #ffffff;
   border-radius: 25px;
   transition-property: background-color, border, color;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
-.hero__prices-btn:hover,
+/* .hero__prices-btn:hover,
 .hero__prices-btn:focus {
   background-color: #fff;
   border: 2px solid var(--accent-color);
-}
+} */
 .hero__btns-item + .hero__btns-item {
   margin-top: 24px;
 }
