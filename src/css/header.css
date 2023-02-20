@@ -22,7 +22,6 @@
 
 .header__list {
   display: flex;
-  padding-top: 28px;
   gap: 20px;
   margin-left: auto;
 }
@@ -33,12 +32,19 @@
 }
 
 .header__link {
+  padding-top: 28px;
+  padding-bottom: 16px;
   font-family: 'Montserrat';
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+
+.header__tel-wraper {
+  padding-top: 24px;
+  padding-bottom: 13px;
 }
 
 .header__number {
@@ -82,21 +88,41 @@
     width: 100%;
     max-width: 1024px;
   }
+  .header__logo {
+    width: 114px;
+    margin-right: 52px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   .header__logo {
+    width: 127px;
+    padding-top: 24px;
+    padding-bottom: 33px;
+    margin-right: 207px;
     font-size: 40px;
     line-height: 1.07;
   }
 
+  .header__list {
+    gap: 80px;
+  }
+
+  .header__item {
+    gap: 30px;
+  }
+
   .header__link {
+    padding-top: 36px;
+    padding-bottom: 40px;
     font-size: 20px;
     line-height: 1.2;
   }
 
   .header__tel {
     display: flex;
+    height: 40px;
+    padding: 8px;
     font-family: 'Montserrat';
     font-weight: 500;
     font-size: 14px;
@@ -108,6 +134,11 @@
     border: 1px solid rgba(243, 198, 83, 0.7);
     border-radius: 2px;
   }
+  .header__tel-wraper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
   .header__number {
     display: flex;
   }
@@ -115,8 +146,18 @@
 
 @media screen and (min-width: 1280px) {
   .header {
+    /* position: absolute; */
+    top: 5%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
     width: 100%;
     max-width: 1280px;
+  }
+
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
   }
 
   .header__container-desktop {
@@ -124,9 +165,17 @@
     justify-content: space-between;
   }
 
+  .header__logo {
+    margin-right: 135px;
+  }
+
   .header__tel {
     font-size: 16px;
     line-height: 1.25;
+  }
+
+  .header__list {
+    gap: 72px;
   }
 
   /* ----------------soc------------------- */
