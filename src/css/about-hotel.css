@@ -1,47 +1,20 @@
-ul,
-h1,
-h2,
-h3,
-h4,
-h5,
-p {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
-.slide_btn_left,
-.slide_btn_right {
-border: none;
-background-color: transparent;
-}
-.svg_btn_left,
-.svg_btn_right {
-  width: 32px;
-  height: 32px;
-}
-
 .about_hotel {
   position: relative;
   background-color: #fffdee;
 }
-
+.studio_apartment_one,
+.studio_apartment_two,
+.about_hotel_slider_one,
+.about_hotel_slider_two {
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  background: #DADADA;
+border-radius: 2px;
+}
 
 .about_hotel_text {
   text-align: right;
 
-  font-family: "Times New Roman";
+  font-family: 'Times New Roman';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -54,7 +27,7 @@ background-color: transparent;
   margin-right: -12px;
   margin-bottom: 16px;
   text-align: right;
-  font-family: "Film P3";
+  font-family: 'Film P3';
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -67,7 +40,7 @@ background-color: transparent;
   margin-left: auto;
   margin-right: 0;
   margin-bottom: 28px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -81,7 +54,7 @@ background-color: transparent;
   margin-bottom: auto;
   margin-right: 24px;
 
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -115,32 +88,40 @@ background-color: transparent;
   margin-top: 28px;
   margin-left: 2px;
 }
+.svg_btn_left,
+.svg_btn_right {
+  width: 32px;
+  height: 32px;
+}
 
 @media screen and (min-width: 320px) and (max-width: 1023px) {
-
-.about_hotel {
-padding-top: 18px;
-padding-bottom: 28px;
+  .about_hotel {
+    padding-top: 18px;
+    padding-bottom: 28px;
   }
   .about_hotel_room_one {
     padding-left: 143px;
-
   }
   .about_hotel_room_two {
-    width: 263px;
-
+    width: 163px;
   }
   .about_hotel_slider {
     position: relative;
     left: -15px;
     max-width: 349px;
     overflow: hidden;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
-
+  .hotel_photo {
+    display: flex;
+    margin-top: 32px;
+    margin-bottom: 17px;
+  }
   .about_hotel_slider_one {
     width: 244px;
     height: 322px;
-  }  
+  }
   .about_hotel_slider_one,
   .about_hotel_slider_two {
     position: relative;
@@ -148,21 +129,29 @@ padding-bottom: 28px;
     max-width: 245px;
     max-height: 245px;
   }
+  .studio_apartment_one {
+    max-width: 244px;
+  }
   .studio_apartment_two {
     max-width: 200px;
-    height: 278px;
   }
-
+  .about_hotel_slider_one,
+  .about_hotel_slider_two {
+    box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.25);
+  }
+  .slide_btn {
+    margin-top: 13px;
+    margin-left: 2px;
+  }
 }
 /* =============MEDIA TABLETS============ */
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
-
-    .about_hotel{
-        height: 1238px;
-        padding-top: 120px;
-        padding-bottom: 58px;
-    }
+  .about_hotel {
+    height: 1238px;
+    padding-top: 120px;
+    padding-bottom: 58px;
+  }
 
   .about_hotel_title {
     text-align: right;
@@ -210,7 +199,7 @@ padding-bottom: 28px;
   }
   .slide_btn {
     position: absolute;
-    bottom: 60px;
+    bottom: 53px;
     margin-left: 28px;
   }
 
@@ -226,18 +215,19 @@ padding-bottom: 28px;
     width: 194px;
     height: 194px;
   }
-
+  .about_hotel_slider_two {
+    margin-right: 20px;
+  }
 }
 
 /* ==============DESCKTOP================================== */
 
 @media screen and (min-width: 1280px) {
-
-  .about_hotel{
+  .about_hotel {
     height: 1238px;
     padding-top: 120px;
     padding-bottom: 58px;
-}
+  }
   .about_hotel_title {
     text-align: right;
     margin-top: 4px;
