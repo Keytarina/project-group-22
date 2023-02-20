@@ -73,6 +73,8 @@
   display: flex;
   overflow: hidden;
   justify-content: right;
+  margin-right: 0;
+  margin-left: 0;
   gap: 16px;
   width: 512px;
 }
