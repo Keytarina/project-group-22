@@ -21,6 +21,10 @@ input::-webkit-inner-spin-button {
   transition: 0.3s all;
 }
 
+.no-scroll{
+  overflow: hidden;
+}
+
 .modal {
   opacity: 0;
   visibility: hidden;
@@ -32,6 +36,8 @@ input::-webkit-inner-spin-button {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 30;
+  overflow-x: hidden;
+  overflow-y: auto;
 
   background-color: var(--bg-light-section);
   border: 1px solid var(--accent-color);
@@ -54,6 +60,18 @@ input::-webkit-inner-spin-button {
   right: 16px;
   fill: #808080;
   cursor: pointer;
+}
+
+.modal-table {
+  height: 668px;
+}
+
+.modal-room {
+  height: 100%;
+}
+
+.modal-price {
+  height: 572px;
 }
 
 .modal__title {
@@ -147,7 +165,7 @@ input::-webkit-inner-spin-button {
   border: 1px solid var(--accent-color);
   border-radius: 2px;
   text-transform: uppercase;
-  padding: 20px 43px;
+  padding: 20px 42px;
   font-family: 'Montserrat';
   color: #fff;
   font-size: 20px;
@@ -252,12 +270,28 @@ input::-webkit-inner-spin-button {
     max-width: 384px;
     width: 100%;
   }
+
+  .modal__btn {
+    padding: 20px 4px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   .modal {
     max-width: 712px;
     padding: 60px;
+  }
+
+  .modal-table {
+    height: 522px;
+  }
+  
+  .modal-room {
+    height: 638px;
+  }
+  
+  .modal-price {
+    height: 493px;
   }
 
   .modal__title {
