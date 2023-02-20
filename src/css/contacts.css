@@ -1,5 +1,5 @@
 .hidden {
-    display: none;
+  z-index: -1;
 }
 .contacts {
     background-color: var(--bg-light-section);
@@ -35,15 +35,19 @@
 .address-list__item {
     display: flex;
     align-items: center;
-    column-gap: 22px;
 }
-.address-list__title {
+
+.address-list__title{
+  max-width:80px;
+}
+
+.address-list__title{
     font-family: 'Montserrat';
+    font-style:normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    min-width: 102px;
     color: var(--brown-color);
 }
 .address-list__phones {
@@ -57,9 +61,12 @@
 .address-list__icon {
     margin-right: 8px;
     fill: var(--brown-color);
+    min-width:24px;
+    min-height:24px;
 }
 .address-list__phone {
     font-family: 'Montserrat';
+    font-style: normal;
     font-weight: 400;
     line-height: 1.2;
     letter-spacing: 0.02em;
@@ -68,11 +75,11 @@
 .address-list__two-phones {
     display: flex;
     gap: 12px;
+    flex-wrap: wrap;
 }
 .address-list__address {
     display: flex;
     align-items: center;
-    margin-left: 124px;
     padding: 8px 33px 7px 10px;
     background-color: #fff;
     border: 0.5px solid var(--accent-color);
@@ -80,10 +87,12 @@
 } 
 .address__text {
     max-width: 185px;
+    font-style:normal;
     font-family: 'Montserrat';
     font-weight: 400;
     line-height: 1.25;
     letter-spacing: 0.01em;
+    color: var(--title-mimino-color);
 }
 .contacts__map {
     display: block;
@@ -94,14 +103,16 @@
     border-radius: 2px;
 }
 @media screen and (min-width: 320px) and (max-width: 414px) {
-    .address-list__title {
+    .address-list__title{
         font-size: 4vw;
     }
-    .address-list__title {
-        width: 80px;
+    .address-list__title{
+        width: 50px;
+        margin-right:40px;
     }
-    .address-list__phones {
-        margin-left: auto;
+
+    .address-list__address{
+      padding:8px 20px 7px 10px;
     }
     .address-list__phone {
         font-size: 3vw;
@@ -118,7 +129,8 @@
     .address-list__item {
         column-gap: 22px;
     }
-    .address-list__title {
+
+    .address-list__title{
         min-width: 102px;
     }
     .address-list__phone {
