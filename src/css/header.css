@@ -41,6 +41,10 @@
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
+.header__link:hover,
+.header__link:focus {
+  color: #fff;
+}
 
 .header__tel-wraper {
   padding-top: 24px;
@@ -53,6 +57,11 @@
 
 .header__svg {
   fill: var(--accent-color);
+}
+
+.header__svg:hover,
+.header__svg:focus {
+  fill: #fff;
 }
 
 .header__contacts-list {
@@ -134,10 +143,11 @@
     border: 1px solid rgba(243, 198, 83, 0.7);
     border-radius: 2px;
   }
-  .header__tel-wraper {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
+  
+  .header__tel:hover,
+  .header__tel:focus {
+    color: #fff;
+    border-color: #fff;
 
   .header__number {
     display: flex;
