@@ -41,6 +41,7 @@
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
+
 .header__link:hover,
 .header__link:focus {
   color: #fff;
