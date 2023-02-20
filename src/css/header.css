@@ -148,7 +148,11 @@
   .header__tel:focus {
     color: #fff;
     border-color: #fff;
-
+  }
+  .header__tel-wraper {     
+    padding-top: 30px;     
+    padding-bottom: 30px; 
+  }
   .header__number {
     display: flex;
   }
