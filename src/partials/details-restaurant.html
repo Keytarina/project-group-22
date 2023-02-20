@@ -14,17 +14,99 @@
           <!-- Контент -->
           <div class="slider">
             <div class="slider__item filter">
-              <img src="./img/homepage/small-img/slider2/1-desk-1x.jpg " alt="">
+              <picture class="towell">
+                <source
+                  srcset="
+                    ./img/homepage/small-img/slider2/1-desk-1x.jpg 1x,
+                    ./img/homepage/small-img/slider2/1-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./img/homepage/small-img/slider2/1-tab-1x.jpg 1x,
+                    ./img/homepage/small-img/slider2/1-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 1024px)"
+                />
+                <source
+                  srcset="
+                    ./img/homepage/small-img/slider2/1-mob-1x.jpg 1x,
+                    ./img/homepage/small-img/slider2/1-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="details-restaurant__slider-one"
+                  src="./img/homepage/small-img/slider2/1-mob-2x.jpg 2x"
+                  alt="restaurant slider two"
+                />
+              </picture>
             </div>
             <div class="slider__item">
-              <img src="./img/homepage/small-img/slider2/2-desk-1x.jpg " alt="">
+              <picture class="towell">
+                <source
+                  srcset="
+                    ./img/homepage/small-img/slider2/2-desk-1x.jpg 1x,
+                    ./img/homepage/small-img/slider2/2-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+
+                <source
+                  srcset="
+                    ./img/homepage/small-img/slider2/2-tab-1x.jpg 1x,
+                    ./img/homepage/small-img/slider2/2-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 1024px)"
+                />
+                <source
+                  srcset="
+                    ./img/homepage/small-img/slider2/2-mob-1x.jpg 1x,
+                    ./img/homepage/small-img/slider2/2-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="details-restaurant__slider-two"
+                  src="./img/homepage/small-img/slider2/2-mob-2x.jpg 2x"
+                  alt="restaurant slider two"
+                />
+              </picture>
             </div>
             <div class="slider__item filter">
-              <img src="./img/homepage/small-img/slider2/3-desk-1x.jpg " alt="">
+              <picture class="towell">
+                <source
+                  srcset="
+                    ./img/homepage/small-img/slider2/3-desk-1x.jpg 1x,
+                    ./img/homepage/small-img/slider2/3-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./img/homepage/small-img/slider2/3-tab-1x.jpg 1x,
+                    ./img/homepage/small-img/slider2/3-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 1024px)"
+                />
+               <source
+                  srcset="
+                    ./img/homepage/small-img/slider2/2-mob-1x.jpg 1x,
+                    ./img/homepage/small-img/slider2/2-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="details-restaurant__slider-two"
+                  src="./img/homepage/small-img/slider2/2-mob-2x.jpg 2x"
+                  alt="restaurant slider two"
+                />
+              </picture>
             </div>
-            <div class="slider__item">
+            <!-- <div class="slider__item">
               <img src="./img/homepage/small-img/slider2/2-desk-1x.jpg" alt="">
-            </div>
+            </div> -->
           </div>
           <div class="arrows"></div>
           <!-- Подключаем jQuery -->
