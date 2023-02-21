@@ -1,246 +1,8 @@
-/* .triple__room {
-  position: relative;
-  background-color: var(--bg-dark-section);
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.triple__room-subtitle {
-  text-align: right;
-  font-family: 'Times New Roman';
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.15;
-  margin-bottom: 8px;
-  color: var(--overhead-title-text);
-}
-
-.triple__rom-logo {
-  display: block;
-  text-align: right;
-  font-family: 'Film P3';
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 1.07;
-  letter-spacing: 0.3em;
-  color: var(--title-mimino-color);
-  margin-bottom: 32px;
-  cursor: pointer;
-}
-
-.triple__room-description {
-  display: block;
-  margin-left: auto;
-  max-width: 304px;
-}
-.triple__room-title {
-  font-family: 'Times New Roman';
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.16;
-  letter-spacing: 0.05em;
-  color: #000000;
-  margin-bottom: 12px;
-}
-
-.triple__room-txt {
-  font-family: 'Montserrat';
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.25;
-  letter-spacing: 0.02em;
-  color: var(--text-grey-color);
-  margin-right: auto;
-  margin-bottom: 32px;
-  width: 258px;
-}
-
-.triple__room-picture {
-  margin-bottom: 32px;
-}
-.triple__room .picture__list {
-  margin-bottom: 32px;
-}
-.triple__room-img {
-  display: block;
-}
-
-.triple__rom-arrow {
-  justify-content: end;
-}
-
-.triple__picture-list {
-  display: flex;
-  overflow: hidden;
-  justify-content: right;
-  margin-right: 0;
-  margin-left: 0;
-  gap: 16px;
-  width: 512px;
-} */
-/*
-@media screen and (max-width: 1023px) {
-  .room__picture {
-    max-width: 244px;
-  }
-
-  .triple__room .room-text {
-    max-width: 258px;
-  }
-
-  .room__picture {
-    margin-left: auto;
-  }
-
-  .double div:not(.picture__list) {
-    margin-bottom: 32px;
-  }
-
-  .room-pic__list .item:not(:last-child) {
-    margin-right: 16px;
-    margin-left: -120px;
-  }
-
-  .room-pic__list {
-    margin-bottom: 20px;
-  }
-
-  .arrow__list {
-    margin-bottom: 20px;
-  }
-}
-
-@media screen and (max-width: 413px) {
-  .container {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 414px) {
-  .triple__room-txt {
-    width: 258px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .triple__room {
-    padding-top: 62px;
-    padding-bottom: 40px;
-  }
-
-  .triple__room-subtitle {
-    font-size: 32px;
-    line-height: 1.15;
-    margin-bottom: 4px;
-  }
-
-  .triple__rom-logo {
-    font-size: 64px;
-    line-height: 1.07;
-    margin-bottom: 62px;
-  }
-  .triple__room-description {
-    max-width: 439px;
-  }
-
-  .triple__room-title {
-    font-size: 30px;
-    line-height: 1.13;
-    margin-bottom: 16px;
-  }
-
-  .triple__room-txt {
-    font-size: 16px;
-    line-height: 1.25;
-    width: 439px;
-    margin-bottom: 176px;
-  }
-
-  .double {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .triple__room-picture {
-    width: 400px;
-  }
-
-  .main__pic {
-    position: absolute;
-    top: -30px;
-  }
-
-  .room__description {
-    margin-right: 26px;
-  }
-
-  .room-pic__list {
-    margin-bottom: 32px;
-  }
-
-  .room-pic__list .item:not(:last-child) {
-    margin-right: 40px;
-  }
-
-  .arrow__list {
-    justify-content: right;
-  }
-
-  .button__list {
-    margin-left: 266px;
-    margin-top: 41px;
-    flex-direction: column;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .triple__room {
-    padding-top: 72px;
-    padding-bottom: 40px;
-  }
-
-  .triple__rom-logo {
-    margin-bottom: 72px;
-  }
-
-  .triple__room-title {
-    font-size: 36px;
-    line-height: 1.13;
-    margin-bottom: 24px;
-  }
-
-  .double__lux .room__text {
-    width: 400px;
-  }
-
-  .room__description {
-    margin-right: 40px;
-  }
-
-  .room__picture {
-    width: 460px;
-  }
-
-  .room-pic__list .item {
-    max-width: 254px;
-  }
-
-  .room-pic__list {
-    margin-bottom: 40px;
-  }
-
-  .buttons {
-    margin-left: auto;
-  }
-} */
-
-@media screen and (min-width: 320px) and (max-width: 414px){
+@media screen and (min-width: 320px) and (max-width: 414px) {
   .triple__title {
     font-size: 4vw;
-  
   }
 }
-
 
 .triple {
   position: relative;
@@ -248,10 +10,7 @@
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.container .triple {
-}
-.triple__description {
-}
+
 .triple__subtitle {
   text-align: end;
   font-family: 'Times New Roman';
@@ -260,6 +19,7 @@
   margin-bottom: 8px;
   color: var(--overhead-title-text);
 }
+
 .triple__logo {
   display: block;
   text-align: end;
@@ -271,6 +31,7 @@
   color: var(--title-mimino-color);
   margin-bottom: 32px;
 }
+
 .triple__subtitle-wraper {
   width: 303px;
   margin-left: auto;
@@ -285,6 +46,7 @@
   letter-spacing: 0.05em;
   color: #000000;
 }
+
 .triple__text {
   font-family: 'Montserrat';
   font-weight: 600;
@@ -296,15 +58,20 @@
   width: 258px;
   margin-bottom: 32px;
 }
+
 .triple__main-pictures {
   margin-bottom: 32px;
 }
-.main-pictures {
+
+.main-pictures img {
+  box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
 }
 
 .triple__continer-pictures {
   overflow: hidden;
 }
+
 @media screen and (min-width: 680px) {
   .triple__continer-pictures {
     overflow: visible;
@@ -318,20 +85,22 @@
   margin-right: -140px;
   flex-direction: row-reverse;
 }
+
+.triple__pictures-list img {
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+}
+
 .triple__pictures-item {
 }
+
 .triple__arrow-list {
   display: flex;
   gap: 34px;
   justify-content: end;
   margin-bottom: 28px;
 }
-.triple__arrow-item {
-}
 
 /* ++++++++++++++++++++++BTN+++++++++++++++++++++++++++ */
-/* .triple__buttons {
-} */
 
 .triple__button-list {
   display: flex;
@@ -341,9 +110,6 @@
   text-align: center;
   align-items: center;
   gap: 16px;
-}
-
-.triple__button-item {
 }
 
 .triple__button-link,
@@ -363,11 +129,6 @@
   width: 236px;
 }
 
-.item {
-}
-
-.triple__btn {
-}
 /* +++++++++++++++++++++TABLET+++++++++++++++++++++++++++++ */
 
 @media screen and (min-width: 1024px) {
@@ -387,25 +148,30 @@
     line-height: 1.07;
     margin-bottom: 62px;
   }
+
   .triple__subtitle-wraper {
     width: 400px;
   }
+
   .triple__title {
     font-size: 30px;
     line-height: 1.13;
     margin-bottom: 16px;
   }
+
   .triple__text {
     font-size: 16px;
     line-height: 1.25;
     width: 100%;
     margin-bottom: 176px;
   }
+
   .triple__main-pictures {
     position: absolute;
     top: -32px;
     left: 112px;
   }
+
   .triple__continer-pictures {
     display: flex;
     flex-direction: row-reverse;
@@ -414,7 +180,9 @@
 
   .triple__pictures-list {
     margin-right: 0;
+    gap: 40px;
   }
+
   .triple__arrow-list {
     justify-content: start;
   }
@@ -438,10 +206,12 @@
     font-size: 36px;
     margin-bottom: 24px;
   }
+
   .triple__main-pictures {
     left: 180px;
   }
-.triple__continer-pictures {
+
+  .triple__continer-pictures {
     gap: 326px;
   }
 }
