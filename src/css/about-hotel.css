@@ -2,19 +2,23 @@
   position: relative;
   background-color: #fffdee;
 }
-.studio_apartment_one,
-.studio_apartment_two,
-.about_hotel_slider_one,
-.about_hotel_slider_two {
-  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-  background: #DADADA;
-border-radius: 2px;
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .about_hotel_text {
   text-align: right;
 
-  font-family: 'Times New Roman';
+  font-family: "Times New Roman";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -27,7 +31,7 @@ border-radius: 2px;
   margin-right: -12px;
   margin-bottom: 16px;
   text-align: right;
-  font-family: 'Film P3';
+  font-family: "Film P3";
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -40,7 +44,7 @@ border-radius: 2px;
   margin-left: auto;
   margin-right: 0;
   margin-bottom: 28px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -54,7 +58,7 @@ border-radius: 2px;
   margin-bottom: auto;
   margin-right: 24px;
 
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -68,24 +72,22 @@ border-radius: 2px;
   margin-top: 32px;
   margin-bottom: 32px;
 }
+.studio_apartment_one,
+.studio_apartment_two,
+.about_hotel_slider_one,
+.about_hotel_slider_two {
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  background: #dadada;
+  border-radius: 2px;
+}
 .slide_btn_left {
   margin-right: 32px;
 }
 .about_hotel_slider {
   display: flex;
 }
-.about_hotel_slider_one,
-.about_hotel_slider_two {
-  width: 245px;
-  height: 245px;
-}
-.about_hotel_slider_one {
-  opacity: 0.6;
-  margin-right: 20px;
-  overflow: hidden;
-}
+
 .slide_btn {
-  margin-top: 28px;
   margin-left: 2px;
 }
 .svg_btn_left,
@@ -95,6 +97,9 @@ border-radius: 2px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 1023px) {
+  .about_hotel > .container {
+    overflow: hidden;
+  }
   .about_hotel {
     padding-top: 18px;
     padding-bottom: 28px;
@@ -103,56 +108,48 @@ border-radius: 2px;
     padding-left: 143px;
   }
   .about_hotel_room_two {
-    width: 163px;
+    max-width: 163px;
   }
+
   .about_hotel_slider {
     position: relative;
-    left: -15px;
-    max-width: 349px;
-    overflow: hidden;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    left: -205px;
   }
+
+  .about_hotel_slider_item {
+    margin-right: 20px;
+  }
+
   .hotel_photo {
     display: flex;
     margin-top: 32px;
-    margin-bottom: 17px;
+    margin-bottom: 32px;
+    justify-content: space-around;
   }
+
   .about_hotel_slider_one {
-    width: 244px;
-    height: 322px;
+    opacity: 0.6;
   }
+
   .about_hotel_slider_one,
   .about_hotel_slider_two {
-    position: relative;
-    left: -185px;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     max-width: 245px;
-    max-height: 245px;
-  }
-  .studio_apartment_one {
-    max-width: 244px;
-  }
-  .studio_apartment_two {
-    max-width: 200px;
-  }
-  .about_hotel_slider_one,
-  .about_hotel_slider_two {
-    box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.25);
   }
   .slide_btn {
-    margin-top: 13px;
-    margin-left: 2px;
+    margin-top: 28px;
   }
 }
 /* =============MEDIA TABLETS============ */
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .about_hotel {
-    height: 1238px;
     padding-top: 120px;
-    padding-bottom: 58px;
+    padding-bottom: 40px;
   }
-
+  .about_hotel_text {
+    font-size: 32px;
+  }
   .about_hotel_title {
     text-align: right;
     margin-top: 4px;
@@ -166,57 +163,41 @@ border-radius: 2px;
     font-size: 16px;
     line-height: 1.08;
     letter-spacing: 0.02em;
-    margin-bottom: 172px;
+    margin-bottom: 146px;
   }
   .about_hotel_room_two {
     width: 312px;
-    /* margin-right: 24px; */
     font-size: 16px;
     line-height: 1.08;
     letter-spacing: 0.02em;
   }
 
   .studio_apartment_one {
-    /* margin-left: 33px; */
-
     position: absolute;
     top: -30px;
+    margin-left: 65px;
   }
 
   .hotel_photo {
-    position: relative;
-    top: -20px;
     justify-content: right;
-    margin-bottom: 0;
+    margin-bottom: 217px;
   }
-  .about_hotel_img,
-  .about_hotel_gap {
-    width: 194px;
-    height: 194px;
-  }
-  .towell {
-    margin-left: 40px;
-  }
+
   .slide_btn {
     position: absolute;
-    bottom: 53px;
+    bottom: 40px;
     margin-left: 28px;
   }
 
   .about_hotel_slider {
     position: absolute;
     margin-left: 28px;
-    bottom: 116px;
+    bottom: 96px;
     justify-content: left;
     flex-direction: row-reverse;
   }
-  .about_hotel_slider_one,
-  .about_hotel_slider_two {
-    width: 194px;
-    height: 194px;
-  }
-  .about_hotel_slider_two {
-    margin-right: 20px;
+  .about_hotel_slider_item {
+    margin-left: 40px;
   }
 }
 
@@ -224,7 +205,6 @@ border-radius: 2px;
 
 @media screen and (min-width: 1280px) {
   .about_hotel {
-    height: 1238px;
     padding-top: 120px;
     padding-bottom: 58px;
   }
@@ -232,7 +212,7 @@ border-radius: 2px;
     text-align: right;
     margin-top: 4px;
     margin-bottom: 24px;
-    margin-right: -20px;
+    margin-right: -25px;
     font-size: 64px;
     line-height: 1.08;
   }
@@ -242,7 +222,7 @@ border-radius: 2px;
     font-size: 16px;
     line-height: 1.08;
     letter-spacing: 0.02em;
-    margin-bottom: 172px;
+    margin-bottom: 162px;
   }
   .about_hotel_room_two {
     width: 311px;
@@ -254,45 +234,28 @@ border-radius: 2px;
 
   .studio_apartment_one {
     margin-left: 95px;
-    width: 400px;
-    height: 524px;
     position: absolute;
     top: -20px;
-  }
-  .studio_apartment_one,
-  .studio_apartment_two {
-    width: 460px;
-    height: 574px;
   }
 
   .hotel_photo {
     justify-content: right;
-    margin-bottom: 0;
-  }
-  .about_hotel_img,
-  .about_hotel_gap {
-    width: 194px;
-    height: 194px;
+    margin-bottom: 197px;
   }
   .slide_btn {
     position: absolute;
-    bottom: 25px;
+    bottom: 58px;
   }
 
   .about_hotel_slider {
     display: flex;
     position: absolute;
-    bottom: 81px;
+    bottom: 122px;
     justify-content: left;
     flex-direction: row-reverse;
   }
-  .about_hotel_slider_one,
-  .about_hotel_slider_two {
-    width: 194px;
-    height: 194px;
-  }
-  .about_hotel_slider_one {
+
+  .about_hotel_slider_item {
     margin-left: 40px;
-    margin-right: 0;
   }
 }
