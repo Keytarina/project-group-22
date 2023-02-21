@@ -92,6 +92,7 @@
     padding: 64px 6px 14px;
   }
   .room-hero__title {
+    width: 286px;
     font-size: 27px;
   }
   .main-hero__sub {

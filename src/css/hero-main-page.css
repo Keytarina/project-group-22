@@ -103,7 +103,7 @@
 }
 .main-hero__sub {
   display: block;
-  width: 318px;
+  max-width: 318px;
   margin: 0 auto;
   margin-bottom: 113px;
 
@@ -116,10 +116,14 @@
   color: #ffffff;
 }
 @media screen and (max-width: 340px) {
+  .main-hero__title {
+    width: 276px;
+    font-size: 86px;
+  }
   .hero__section {
     padding: 64px 6px 14px;
   }
-  .main-hero__sub {
+  .hero__sub {
     font-size: 31px;
   }
 }
@@ -132,7 +136,7 @@
 }
 .hero__prices-btn {
   display: block;
-  max-width: 237px;
+  min-width: 237px;
   padding: 12px 22px;
   margin: 0 auto;
   text-align: center;

@@ -26,7 +26,6 @@
 }
 /* TITLES */
 .rest-hero__title {
-  width: 303px;
   margin: 0 auto;
   margin-bottom: 20px;
   margin-top: 70px;
@@ -54,7 +53,6 @@
 }
 .rest-hero__sub {
   display: block;
-  width: 318px;
   margin: 0 auto;
   margin-bottom: 113px;
 
@@ -66,8 +64,15 @@
 
   color: #fdfbec;
 }
+.hero__prices-link {
+  max-width: 237px;
+}
 @media screen and (max-width: 340px) {
-  .rest-hero__sub {
+  .rest-hero__title {
+    width: 276px;
+    font-size: 86px;
+  }
+  .hero__sub {
     font-size: 31px;
   }
 }
