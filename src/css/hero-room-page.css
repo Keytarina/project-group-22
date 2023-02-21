@@ -78,7 +78,6 @@
 .room-hero__sub {
   max-width: 325px;
   margin-bottom: 17px;
-  padding-bottom: 3px;
 
   font-family: 'Montserrat';
   font-weight: 700;
@@ -150,7 +149,7 @@
 @media screen and (min-width: 1024px) {
   .room-hero__section {
     width: 1024px;
-    padding: 340px 47px 102px;
+    padding: 340px 47px 62px;
   }
   /* ADRESS-LINK */
   .room-hero__section .hero-adress__link {
@@ -193,9 +192,9 @@
   }
   /* BTN */
   .room__prices-btn {
-    position: absolute;
-    right: 47px;
-    bottom: 62px;
+    margin-bottom: 0;
+    margin-left: auto;
+    transform: translateY(-7%);
   }
 }
 /* ---------------DESKTOP--------------- */
@@ -233,6 +232,9 @@
   /* ADRESS-LINK */
   .room-hero__section .hero-adress__link {
     display: none;
+  }
+  .room-hero__btns {
+    margin-bottom: 73px;
   }
   /* SOC-LINKS */
   .room-hero__thumb {
