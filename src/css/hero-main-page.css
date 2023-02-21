@@ -103,7 +103,7 @@
 }
 .main-hero__sub {
   display: block;
-  max-width: 318px;
+  width: 318px;
   margin: 0 auto;
   margin-bottom: 113px;
 
