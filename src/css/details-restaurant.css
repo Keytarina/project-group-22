@@ -1,6 +1,5 @@
 /* ==========================MOBILE============================== */
 .details-restaurant__container {
-  /* display: flex; */
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 24px;
@@ -47,6 +46,97 @@
   color: #bababa;
 }
 
+/*============================ SLICK-SLIDER============================ */
+
+
+
+.wrapper{
+	display: flex;
+	position: relative;
+	justify-content: start;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.details-restaurant__slider__arrows {
+	margin-left: 15px;
+  position: absolute;
+  bottom: -16px;
+  transform: translateY(100%);
+}
+
+
+/* Основные стили */
+
+/* Слайдер */
+.slick-slider{
+	min-width: 0;
+}
+.details-restaurant__slider {
+	width: 384px;
+}
+/* Ограничивающая оболочка */
+.slick-list {
+	overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+	display: flex;
+	align-items: flex-start;
+}
+
+
+.slick-arrow:not(:last-child) {
+	margin-right: 32px;
+}
+/* Конкретный слайдер */
+
+
+.slick-prev, .slick-next {
+  background-color: transparent;
+	z-index: 10;
+	font-size: 0;
+	width: 32px;
+	height: 32px;
+  border: none;
+  
+}
+
+.details-restaurant__container-first .wrapper {
+  justify-content: start;
+}
+
+.details-restaurant__slider__item {
+	padding-right: 24px;
+	text-align: center;
+}
+.details-restaurant__slider__item img{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+@media (min-width: 1024px) {
+	.details-restaurant__slider__item {
+		padding-right: 34px;
+	}
+  .details-restaurant__slider {
+    width: 662px;
+  }
+	
+}
+
+@media (min-width: 1280px) {
+	.details-restaurant__slider__item {
+		padding-right: 86px;
+	}
+  .details-restaurant__slider {
+    width: 842px;
+  }
+
+}
+
+/*============================ /SLICK-SLIDER============================ */
+
 
 /*==============SLIDER ================*/
 .details-restaurant_slider-list {
@@ -60,17 +150,8 @@
 .details-restaurant-slider__buttons {
   display: flex;
   margin-bottom: 32px;
-}
-
-.details-restaurant__slider-two {
-  opacity: 0.6;
-  overflow: hidden;
-}
-
-@media screen and (min-width: 582px) {
-  .details-restaurant__slider-two {
-    opacity: 1;
-  }
+  margin-left: 15px;
+  margin-top: 16px;
 }
 
 .details-restaurant__slider-three {
@@ -90,54 +171,15 @@
   fill: #fff;
 }
 
+.details-restaurant-slider__icon:hover,
+.details-restaurant-slider__icon:active
+ {
+  fill: var(--accent-color);
+}
+
 .details-restaurant-slider__buttons {
   gap: 32px;
 }
-
-
-/* .details-restaurant__slider {
-  display: flex;
-  flex-direction: row-reverse;
-  position: relative;
-  max-width: 349px; 
-  margin-bottom: 16px;
-  
-}
-
-
-.details-restaurant__slider-one,
-.details-restaurant__slider-two {
-  width: 274px;
-  height: 270px;
-  max-width: none;
-  margin-right: 20px;
-}
-
-.details-restaurant-slider__list {
-  display: flex;
-  justify-content: end;
-  column-gap: 20px;
-  margin-bottom: 16px;
-  overflow-x: hidden;
-}
-.details-restaurant-slider__buttons {
-  display: flex;
-  justify-content: end;
-  margin-bottom: 32px;
-  padding-right: 20px;
-}
-.details-restaurant-slider__icon {
-  fill: #fff;
-}
-.details-restaurant-slider__item {
-  border: none;
-  background-color: transparent;
-  margin: 0;
-  padding: 0;
-}
-.details-restaurant-slider__item:not(:last-child) {
-  margin-right: 32px;
-} */
 
 /*==============/SLIDER ================*/
 
@@ -335,6 +377,7 @@
 
   .details-restaurant-slider__buttons {
     margin-bottom: 0;
+  
   }
 
   .details-restaurant__container-second {
@@ -377,14 +420,20 @@
     margin: 0;
   }
 
+  .details-restaurant__text-wrapper {
+    margin-left: -15px;
+  }
+
   .details-restaurant_slider-list {
     gap: 86px;
   }
 
+  .details-restaurant__slider-two,
   .details-restaurant__slider-three {
-    width: 270px;
+    width: 100%;
     height: 270px;
   }
+
 
 }
 /* ==========================/DESKTOP============================= */
