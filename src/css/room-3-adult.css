@@ -199,6 +199,10 @@
     padding-top: 72px;
     padding-bottom: 40px;
   }
+  
+  .triple__description {
+    margin-right: 58px;
+  }
 
   .triple__logo {
     margin-bottom: 72px;
