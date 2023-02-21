@@ -26,6 +26,7 @@
 }
 /* TITLES */
 .rest-hero__title {
+  width: 303px;
   margin: 0 auto;
   margin-bottom: 20px;
   margin-top: 70px;
@@ -52,6 +53,7 @@
   color: #fdfbec;
 }
 .rest-hero__sub {
+  width: 320px;
   display: block;
   margin: 0 auto;
   margin-bottom: 113px;
