@@ -158,7 +158,6 @@
   }
   
   .contacts {
-    position: relative;
     padding-top: 56px;
     padding-bottom: 44px;
   }
@@ -217,6 +216,21 @@
   }
   .contacts__map{
     width:535px;
+    height:412px;
+  }
+}
+
+@media screen and (min-width:1280px){
+  .contacts{
+    padding-bottom:73px;
+  }
+
+  .address{
+    margin-right:191px;
+  }
+
+  .contacts__map{
+    width:634px;
     height:412px;
   }
 }
