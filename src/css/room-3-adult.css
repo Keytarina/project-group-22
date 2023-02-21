@@ -61,8 +61,22 @@
 .triple__room .picture__list {
   margin-bottom: 32px;
 }
-.triple__room-img{
+.triple__room-img {
+  display: block;
+}
+
+.triple__rom-arrow {
+  justify-content: end;
+}
+
+.triple__picture-list {
   display: flex;
+  overflow: hidden;
+  justify-content: right;
+  margin-right: 0;
+  margin-left: 0;
+  gap: 16px;
+  width: 512px;
 }
 
 @media screen and (max-width: 1023px) {

@@ -41,6 +41,7 @@
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
+
 .header__link:hover,
 .header__link:focus {
   color: #fff;
@@ -104,6 +105,15 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .header {
+    top: 5%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 1024px;
+  }
+
   .header__logo {
     width: 127px;
     padding-top: 24px;
@@ -143,15 +153,15 @@
     border: 1px solid rgba(243, 198, 83, 0.7);
     border-radius: 2px;
   }
-  
+
   .header__tel:hover,
   .header__tel:focus {
     color: #fff;
     border-color: #fff;
   }
-  .header__tel-wraper {     
-    padding-top: 30px;     
-    padding-bottom: 30px; 
+  .header__tel-wraper {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
   .header__number {
     display: flex;
