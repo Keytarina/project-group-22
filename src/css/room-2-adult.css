@@ -58,6 +58,7 @@
 .main__pic,
 .room-pic__list img {
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
 }          
 .arrow__list {
     display: flex;
@@ -218,10 +219,6 @@
         position: absolute;
         top: -32px;
     }
-    .room__description {
-        margin-right: 26px;
-    }
-
     .room-pic__list {
         margin-bottom: 32px;
     }
@@ -240,7 +237,11 @@
         flex-direction: column;
     }
 }
-
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    .room__description-two {
+        margin-right: 26px;
+    }
+}
 @media screen and (min-width: 1280px) {
     .double__lux {
         padding-top: 72px;
@@ -261,8 +262,8 @@
         width: 400px;
     }
 
-    .room__description {
-        margin-right: 40px;
+    .room__description-two {
+        margin-right: 140px;
     }
 
     .room__picture {
