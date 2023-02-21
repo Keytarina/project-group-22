@@ -310,6 +310,100 @@
   display: flex;
   gap: 34px;
   justify-content: end;
+  margin-bottom: 28px;
 }
 .triple__arrow-item {
+}
+
+/* ++++++++++++++++++++++BTN+++++++++++++++++++++++++++ */
+.triple__buttons {
+}
+
+.triple__button-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.triple__button-item {
+}
+
+.triple__button-link,
+.triple__btn {
+  display: block;
+  white-space: nowrap;
+  padding: 14px 37px;
+  background-color: #000000;
+  border: 2px solid #fffdee;
+  border-radius: 25px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  width: 236px;
+}
+
+.item {
+}
+
+.triple__btn {
+}
+/* +++++++++++++++++++++TABLET+++++++++++++++++++++++++++++ */
+
+@media screen and (min-width: 1024px) {
+  .triple {
+    padding-top: 62px;
+    padding-bottom: 40px;
+  }
+
+  .triple__subtitle {
+    font-size: 32px;
+    line-height: 1.15;
+    margin-bottom: 4px;
+  }
+
+  .triple__logo {
+    font-size: 64px;
+    line-height: 1.07;
+    margin-bottom: 62px;
+  }
+  .triple__subtitle-wraper {
+    width: 400px;
+  }
+  .triple__title {
+    font-size: 30px;
+    line-height: 1.13;
+    margin-bottom: 16px;
+  }
+  .triple__text {
+    font-size: 16px;
+    line-height: 1.25;
+    width: 100%;
+    margin-bottom: 176px;
+  }
+}
+/* +++++++++++++++++++++desktop+++++++++++++++++++++++++ */
+@media screen and (min-width: 1280px) {
+  .triple {
+    padding-top: 72px;
+    padding-bottom: 40px;
+  }
+
+  .triple__logo {
+    margin-bottom: 72px;
+  }
+
+  .triple__subtitle-wraper {
+    width: 454px;
+  }
+
+  .triple__title {
+    font-size: 36px;
+    margin-bottom: 24px;
+  }
 }
