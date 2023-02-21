@@ -166,6 +166,10 @@
   .contacts__tablet{
     display:flex;
   }
+
+  .contacts__logo__section{
+    width:294px;
+  }
   .contacts__logo {
     font-size: 64px;
   }
@@ -210,8 +214,5 @@
   .contacts__map{
     width:535px;
     height:412px;
-    position: absolute;
-    top: 69px;
-    right: 47px;
   }
 }
