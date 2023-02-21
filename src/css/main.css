@@ -79,3 +79,49 @@ svg {
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%; */
 }
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+.is-hidden {
+	visibility: hidden;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.btn {
+  display: block;
+  padding: 14px 24px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  border-radius: 25px;
+}
+.section-btn {
+  background: #000000;
+  border: 2px solid #FFFFFF;
+}
+.hero-btn {
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid #FFFFFF;
+}
+.section-btn:hover, .section-btn:focus, .section-btn:active,
+.hero-btn:hover, .hero-btn:focus, .hero-btn:active {
+  background-color: #FFFFFF;
+  border: 2px solid var(--accent-color);
+}
+
+

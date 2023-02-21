@@ -310,6 +310,7 @@
   }
 
   .details-hotel {
+    width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
       url(../img/homepage/bg-imgs/2-tab-1x.jpg);
   }
@@ -419,6 +420,7 @@
 
 @media screen and (min-width: 1280px) {
   .details-hotel {
+    width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
       url(../img/homepage/bg-imgs/2-desk-1x.jpg);
   }

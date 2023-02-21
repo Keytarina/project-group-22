@@ -25,7 +25,6 @@
     letter-spacing: 0.3em;
     color: var(--title-mimino-color);
     margin-bottom: 32px;
-    cursor: pointer;
 }
 
 .double__lux .room__title {
@@ -57,7 +56,7 @@
     max-width: 194px;
 }
 .main__pic,
-.room-pic__list picture {
+.room-pic__list img {
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
 }          
 .arrow__list {
@@ -240,8 +239,6 @@
         margin-top: 41px;
         flex-direction: column;
     }
-
-
 }
 
 @media screen and (min-width: 1280px) {
