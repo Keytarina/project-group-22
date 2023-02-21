@@ -75,6 +75,7 @@
     font-size: 86px;
   }
   .hero__sub {
+    width: 310px;
     font-size: 31px;
   }
 }
