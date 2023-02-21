@@ -44,22 +44,6 @@
   }
 }
 
-button {
-  transition: color var(--transition-property),
-		background-color var(--transition-property),
-		box-shadow var(--transition-property),
-		border-color var(--transition-property);
-}
-a {
-  transition: color var(--transition-property),
-		background-color var(--transition-property),
-		box-shadow var(--transition-property),
-		border-color var(--transition-property);
-}
-svg {
-  transition: fill var(--transition-property)
-}
-
 :root {
 	--accent-color: #F3C653; /* Akzent yellow */
   --brown-color: #C79002; /* Brown */
@@ -78,6 +62,26 @@ svg {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%; */
+}
+
+button {
+  transition: color var(--transition-property),
+		background-color var(--transition-property),
+		box-shadow var(--transition-property),
+		border-color var(--transition-property);
+}
+a {
+  transition: color var(--transition-property),
+		background-color var(--transition-property),
+		box-shadow var(--transition-property),
+		border-color var(--transition-property);
+}
+svg {
+  transition: fill var(--transition-property)
+}
+
+img {
+  border-radius: 2px;
 }
 
 .visually-hidden {
