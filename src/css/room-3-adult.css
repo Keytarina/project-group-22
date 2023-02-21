@@ -1,14 +1,9 @@
-@media screen and (min-width: 320px) and (max-width: 414px) {
-  .triple__title {
-    font-size: 4vw;
-  }
-}
-
 .triple {
   position: relative;
-  background-color: var(--bg-dark-section);
+  overflow: hidden;
   padding-top: 32px;
   padding-bottom: 32px;
+  background-color: var(--bg-dark-section);
 }
 
 .triple__subtitle {
@@ -22,7 +17,6 @@
 
 .triple__logo {
   display: block;
-  text-align: end;
   font-family: 'Film P3';
   font-weight: 700;
   font-size: 40px;
@@ -30,6 +24,8 @@
   letter-spacing: 0.3em;
   color: var(--title-mimino-color);
   margin-bottom: 32px;
+  width: 127px;
+  margin-left: auto;
 }
 
 .triple__subtitle-wraper {
@@ -69,7 +65,6 @@
 }
 
 .triple__continer-pictures {
-  overflow: hidden;
 }
 
 @media screen and (min-width: 680px) {
@@ -130,9 +125,15 @@
 }
 
 /* +++++++++++++++++++++TABLET+++++++++++++++++++++++++++++ */
+@media screen and (min-width: 320px) and (max-width: 414px) {
+  .triple__title {
+    font-size: 23px;
+  }
+}
 
 @media screen and (min-width: 1024px) {
   .triple {
+    overflow: visible;
     padding-top: 62px;
     padding-bottom: 40px;
   }
@@ -147,6 +148,7 @@
     font-size: 64px;
     line-height: 1.07;
     margin-bottom: 62px;
+    width: 202px;
   }
 
   .triple__subtitle-wraper {
@@ -208,6 +210,7 @@
   }
 
   .triple__main-pictures {
+    width: 460px;
     left: 180px;
   }
 
