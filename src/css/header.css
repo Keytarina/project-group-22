@@ -154,15 +154,20 @@
     border-radius: 2px;
   }
 
+  .header__tel:hover .header__svg,
+  .header__tel:focus .header__svg,
   .header__tel:hover,
   .header__tel:focus {
+    fill: #fff;
     color: #fff;
     border-color: #fff;
   }
+
   .header__tel-wraper {
     padding-top: 30px;
     padding-bottom: 30px;
   }
+
   .header__number {
     display: flex;
   }
@@ -170,11 +175,10 @@
 
 @media screen and (min-width: 1280px) {
   .header {
-    /* position: absolute; */
-    top: 5%;
+    /* top: 5%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
     width: 100%;
     max-width: 1280px;
   }
@@ -208,9 +212,11 @@
     align-items: center;
     gap: 20px;
   }
+
   .header__contacts-link {
     width: 24px;
   }
+  
   .header__contacts-icon {
     display: block;
     fill: var(--accent-color);
