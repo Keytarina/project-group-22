@@ -6,12 +6,13 @@
   padding-top: 24px;
   padding-bottom: 40px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .details-hotel__text-wrapper {
   width: 269px;
   margin-right: auto;
-  margin-left: 15px;
+  margin-left: 45px;
   margin-bottom: 48px;
 }
 
@@ -31,7 +32,6 @@
 
 .details-hotel__container-first-title {
   margin-bottom: 20px;
-  padding-right: 20px;
   font-family: 'Montserrat';
   font-size: 20px;
   text-align: end;
@@ -55,16 +55,21 @@
 .wrapper{
 	display: flex;
 	position: relative;
-	justify-content: start;
+	justify-content: end;
 	align-items: center;
 	flex-wrap: wrap;
+
+}
+
+.details-hotel__container-first .wrapper {
+    overflow: hidden;
 }
 
 .details-hotel__slider__arrows {
-	margin-left: 15px;
-  position: absolute;
-  bottom: -16px;
-  transform: translateY(100%);
+	position: absolute;
+  bottom: 32px;
+  right: 36px;
+  z-index: 1000;
 }
 
 
@@ -75,11 +80,13 @@
 	min-width: 0;
 }
 .details-hotel__slider {
-	width: 384px;
+	width: 359px;
+
 }
 /* Ограничивающая оболочка */
-.slick-list {
+.details-hotel__slider .slick-list {
 	overflow: hidden;
+  margin-left: -235px;
 }
 /* Лента слайдов */
 .slick-track{
@@ -100,7 +107,7 @@
 	font-size: 0;
 	width: 32px;
 	height: 32px;
-  /* border: none; */
+  border: none;
   
 }
 
@@ -118,7 +125,24 @@
 		padding-right: 34px;
 	}
   .details-hotel__slider {
-    width: 662px;
+    width: 656px;
+    margin-bottom: 56px;
+    margin-right: 32px;
+  }
+  .details-hotel__slider .slick-list {
+    overflow: hidden;
+    margin-left: -196px;
+  }
+
+  .details-hotel__slider__arrows {
+    bottom: 0;
+  }
+
+  .details-hotel-slider__buttons {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+   
   }
 	
 }
@@ -128,8 +152,14 @@
 		padding-right: 86px;
 	}
   .details-hotel__slider {
-    width: 842px;
+    width: 767px;
   }
+  .details-hotel__slider .slick-list {
+    overflow: hidden;
+    margin-left: 0;
+  }
+  
+  
 }
 
 /*============================ /SLICK-SLIDER============================ */
@@ -149,12 +179,10 @@
   display: flex;
   justify-content: end;
   margin-bottom: 32px;
+  margin-right: 38px;
+  margin-top: 16px;
 }
 
-.details-hotel__slider-two {
-  opacity: 0.6;
-  overflow: hidden;
-}
 
 .details-hotel__slider-three {
   display: none;
@@ -164,9 +192,7 @@
   .details-hotel__slider-three {
     display: block;
   } 
-  .details-hotel__slider-two {
-    opacity: 1;
-  }
+
 }
 
 .details-hotel-slider__icon {
@@ -308,7 +334,10 @@
 
   }
 
-
+  .details-hotel__container-first {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   .details-hotel__container-first-paragraph {
     margin-bottom: 16px;
@@ -344,7 +373,7 @@
 
   .details-hotel__slider-two,
   .details-hotel__slider-three {
-    width: 162px;
+    width: 100%;
     height: 270px;
   }
 
@@ -355,7 +384,7 @@
   .details-hotel__text-wrapper {
     width: 549px;
     margin-bottom: 40px;
-    margin-left: auto;
+    margin-left: 138px;
     margin-right: 0;
   }
 
@@ -393,6 +422,7 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
       url(../img/homepage/bg-imgs/2-desk-1x.jpg);
   }
+  
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
     screen and (min-resolution: 192dpi) and (min-width: 1280px),
@@ -427,10 +457,12 @@
     margin-left: 0;
     gap: 86px;
   }
-
   .details-hotel__slider-three {
     width: 270px;
     height: 270px;
+  }
+  .details-hotel__text-wrapper {
+    margin-left: 240px;
   }
 
 }
