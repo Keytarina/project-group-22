@@ -1,6 +1,6 @@
 .about_hotel {
   position: relative;
-  background-color: #fffdee;
+  background-color: var(--bg-light-section);
 }
 .visually-hidden {
   position: absolute;
@@ -17,14 +17,12 @@
 
 .about_hotel_text {
   text-align: right;
-
   font-family: "Times New Roman";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.08;
-
-  color: #b4b4b4;
+  color: var(--overhead-title-text);
 }
 .about_hotel_title {
   margin-top: 6px;
@@ -38,7 +36,7 @@
   line-height: 1.08;
   letter-spacing: 0.3em;
 
-  color: #494848;
+  color: var(--title-mimino-color);
 }
 .about_hotel_room_one {
   margin-left: auto;
@@ -51,7 +49,7 @@
   line-height: 1.08;
   letter-spacing: 0.02em;
 
-  color: #7a7a7a;
+  color: var(--text-grey-color);
 }
 .about_hotel_room_two {
   margin-top: auto;
@@ -65,7 +63,7 @@
   line-height: 1.08;
   letter-spacing: 0.02em;
 
-  color: #c79002;
+  color: var( --brown-color);
 }
 .hotel_photo {
   display: flex;
