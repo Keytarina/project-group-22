@@ -180,8 +180,11 @@
   }
   .room__soc-list {
     display: flex;
-    margin-top: 47px;
-    margin-left: 372px;
+    position: absolute;
+    bottom: 36px;
+    right: 372px;
+    left: 50%;
+    transform: translateX(-100%);
   }
   .room__soc-item + .room__soc-item {
     margin-top: 0px;
