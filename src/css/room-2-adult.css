@@ -85,17 +85,6 @@
 .room__button,
 .room__link {
     padding: 14px 37px;
-    background-color: #000000;
-    border: 2px solid #FFFDEE;
-    border-radius: 25px;
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    color: var(--accent-color);
-    width: 100%;
-    display: block;
     white-space: nowrap;
 
 }
@@ -117,21 +106,6 @@
     align-items: center;
 }
 
-.room__button,
-.room__link {
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.room__button:hover,
-.room__button:focus,
-.room__link:hover,
-.room__link:focus {
-    color: var(--accent-color);
-    background-color: #ffffff;
-    border-color: var(--accent-color);
-}
 
 @media screen and (max-width: 1023px) {
     .room__picture {
@@ -146,7 +120,7 @@
         margin-left: auto;
     }
 
-    .double div:nth-child(-n+2) {
+    .container-double div:nth-child(-n+2) {
         margin-bottom: 32px;
     }
 
@@ -207,7 +181,7 @@
         margin-bottom: 176px;
     }
 
-    .double {
+    .container-double {
         display: flex;
         flex-wrap: wrap;
     }

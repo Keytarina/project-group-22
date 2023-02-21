@@ -109,18 +109,8 @@
 
 .triple__button-link,
 .triple__btn {
-  display: block;
   white-space: nowrap;
   padding: 14px 37px;
-  background-color: #000000;
-  border: 2px solid #fffdee;
-  border-radius: 25px;
-  font-family: 'Montserrat';
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.02em;
-  color: var(--accent-color);
   width: 236px;
 }
 
