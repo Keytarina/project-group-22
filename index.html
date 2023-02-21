@@ -20,7 +20,7 @@
     />
     
     <script type="module" crossorigin src="/project-group-22/assets/main-8a418681.js"></script>
-    <link rel="stylesheet" href="/project-group-22/assets/main-88c61e00.css">
+    <link rel="stylesheet" href="/project-group-22/assets/main-0ec083b5.css">
   </head>
   <body>
     <header class="header">
@@ -140,9 +140,10 @@
             sint. Velit officia consequat duis enim velit mollit.
           </p>
         </div>
-        <div class="details-restaurant__slider">
-          <ul class="details-restaurant_slider-list">
-            <li class="details-restaurant_slider-item">
+        <div class="wrapper">
+          <!-- Контент -->
+          <div class="details-restaurant__slider">
+            <div class="details-restaurant__slider__item">
               <picture class="towell">
                 <source
                   srcset="/project-group-22/assets/1-desk-1x-4304891e.jpg 1x, /project-group-22/assets/1-desk-2x-4e8f993b.jpg 2x"
@@ -162,8 +163,8 @@
                   alt="restaurant slider two"
                 />
               </picture>
-            </li>
-            <li class="details-restaurant_slider-item">
+            </div>
+            <div class="details-restaurant__slider__item">
               <picture class="towell">
                 <source
                   srcset="/project-group-22/assets/2-desk-1x-be5a3025.jpg 1x, /project-group-22/assets/2-desk-2x-68a51688.jpg 2x"
@@ -184,8 +185,8 @@
                   alt="restaurant slider two"
                 />
               </picture>
-            </li>
-            <li class="details-restaurant_slider-item">
+            </div>
+            <div class="details-restaurant__slider__item">
               <picture class="towell">
                 <source
                   srcset="/project-group-22/assets/3-desk-1x-bdbf62ae.jpg 1x, /project-group-22/assets/3-desk-2x-b1f15a9c.jpg 2x"
@@ -195,21 +196,30 @@
                   srcset="/project-group-22/assets/3-tab-1x-3826e8dd.jpg 1x, /project-group-22/assets/3-tab-2x-22ca3bc3.jpg 2x"
                   media="(min-width: 1024px)"
                 />
-                <source
-                  srcset="
-                    ./img/homepage/small-img/slider2/3-mob-1x.jpg 1x,
-                    ./img/homepage/small-img/slider2/3-mob-2x.jpg 2x
-                  "
+               <source
+                  srcset="/project-group-22/assets/2-mob-1x-6b18494c.jpg 1x, /project-group-22/assets/2-mob-2x-546b7413.jpg 2x"
                   media="(min-width: 320px)"
                 />
                 <img
-                  class="details-restaurant__slider-three"
-                  src="./img/homepage/small-img/slider2/3-mob-2x.jpg 2x"
+                  class="details-restaurant__slider-two"
+                  src="./img/homepage/small-img/slider2/2-mob-2x.jpg 2x"
                   alt="restaurant slider two"
                 />
               </picture>
-            </li>
-          </ul>
+            </div>
+            <!-- <div class="slider__item">
+              <img src="./img/homepage/small-img/slider2/2-desk-1x.jpg" alt="">
+            </div> -->
+          </div>
+          <div class="details-restaurant__slider__arrows"></div>
+          <!-- Подключаем jQuery -->
+          <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+          <!-- Подключаем слайдер Slick -->
+          <script src="../js/slick.min.js"></script>
+          <!-- Подключаем файл скриптов -->
+          <script src="../js/script.js"></script>
+        </div>            
+        <div class="details-restaurant__arrows">
           <ul class="details-restaurant-slider__buttons">
             <li class="details-restaurant-slider__item">
               <svg class="details-restaurant-slider__icon" width="32" height="32">
@@ -373,9 +383,10 @@
             sint. Velit officia consequat duis enim velit mollit.
           </p>
         </div>
-        <div class="details-hotel__slider">
-          <ul class="details-hotel_slider-list">
-            <li class="details-hotel_slider-item">
+        <div class="wrapper">
+          <!-- Контент -->
+          <div class="details-hotel__slider">
+            <div class="details-hotel__slider__item">
               <picture class="towell"> 
                 <source
                 srcset="/project-group-22/assets/3-desk-1x-4af52283.jpg 1x, /project-group-22/assets/3-desk-2x-05389aba.jpg 2x"
@@ -395,9 +406,9 @@
                   alt="hotel slider four"
                 />
               </picture>
-            </li>
-            <li class="details-hotel_slider-item">
-              <picture class="towell">
+            </div>
+            <div class="details-hotel__slider__item">
+               <picture class="towell">
                 <source
                   srcset="/project-group-22/assets/2-desk-1x-d59ece11.jpg 1x, /project-group-22/assets/2-desk-2x-6e927080.jpg 2x"
                   media="(min-width: 1280px)"
@@ -417,8 +428,8 @@
                   alt="hotel slider four"
                 />
               </picture>
-            </li>
-            <li class="details-hotel_slider-item">
+            </div>
+            <div class="details-hotel__slider__item">
               <picture class="towell">
                 <source
                   srcset="/project-group-22/assets/1-desk-1x-2b7c22f8.jpg 1x, /project-group-22/assets/1-desk-2x-22bd440f.jpg 2x"
@@ -433,27 +444,33 @@
                   media="(min-width: 320px)"
                 />
                 <img
-                  class="details-hotel__slider-three"
+                  class="details-hotel__slider-two"
                   src="./img/homepage/small-img/slider4/2-mob-2x.jpg 2x"
                   alt="hotel slider four"
                 />
               </picture>
-            </li>
-          </ul>
-          <ul class="details-hotel-slider__buttons">
-            <li class="details-hotel-slider__item">
-              <svg class="details-hotel-slider__icon" width="32" height="32">
-                <use href="/project-group-22/assets/sprite-4e4bbea7.svg#icon-arrow-left"></use>
-              </svg>
-            </li>
-            <li class="details-hotel-slider__item">
-              <svg class="details-hotel-slider__icon" width="32" height="32">
-                <use href="/project-group-22/assets/sprite-4e4bbea7.svg#icon-arrow-right"></use>
-              </svg>
-            </li>
-          </ul>
+            </div>
+            <!-- <div class="slider__item">
+              <img src="./img/homepage/small-img/slider2/2-desk-1x.jpg" alt="">
+            </div> -->
+          </div>
+          <div class="details-hotel__slider__arrows">
+          </div>
+          <div class="details-hotel__arrows">
+            <ul class="details-hotel-slider__buttons">
+              <li class="details-hotel-slider__item">
+                <svg class="details-hotel-slider__icon" width="32" height="32">
+                  <use href="/project-group-22/assets/sprite-4e4bbea7.svg#icon-arrow-left"></use>
+                </svg>
+              </li>
+              <li class="details-hotel-slider__item">
+                <svg class="details-hotel-slider__icon" width="32" height="32">
+                  <use href="/project-group-22/assets/sprite-4e4bbea7.svg#icon-arrow-right"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
       <div class="details-hotel__container-second">
         <button class="details-hotel__container-second-btn js-open-modal" type="button" data-modal="2">
           Забронювати номер
