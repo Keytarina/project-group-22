@@ -211,6 +211,10 @@
     max-width:264px;
   }
 
+  .contacts__maps{
+    display:flex;
+    align-items: flex-end;
+  }
   .contacts__map{
     width:535px;
     height:412px;
