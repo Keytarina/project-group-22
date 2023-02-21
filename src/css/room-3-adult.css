@@ -185,6 +185,10 @@
     gap: 40px;
   }
 
+  .triple__button-list {
+    padding-bottom: 101px;
+  }
+
   .triple__arrow-list {
     justify-content: start;
   }
