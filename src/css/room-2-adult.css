@@ -52,27 +52,24 @@
     display: flex;
 }
 
-.room-pic__list .item {
+.picture__list-item {
     max-width: 194px;
 }
-
 .main__pic,
 .room-pic__list img {
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-}
-
+}          
 .arrow__list {
     display: flex;
 }
 
-.arrow__list .item:not(:last-child) {
+.arrow__list-item:not(:last-child) {
     margin-right: 32px;
 }
 
 .arrow-list svg {
     fill: #000000;
 }
-
 .button__arrow {
     border: none;
     background-color: inherit;
@@ -84,7 +81,6 @@
 .button__arrow:focus {
     fill: var(--accent-color);
 }
-
 .room__button,
 .room__link {
     padding: 14px 37px;
@@ -103,11 +99,11 @@
 
 }
 
-.button__list .item:not(:last-child) {
+.button__list-item:not(:last-child) {
     margin-bottom: 16px;
 }
 
-.button__list .item {
+.button__list-item {
     width: 236px;
 }
 
@@ -149,11 +145,11 @@
         margin-left: auto;
     }
 
-    .double div:not(.picture__list) {
+    .double div:nth-child(-n+2) {
         margin-bottom: 32px;
     }
 
-    .room-pic__list .item:not(:last-child) {
+    .picture__list-item:not(:last-child) {
         margin-right: 16px;
         margin-left: -120px;
     }
@@ -161,19 +157,16 @@
     .room-pic__list {
         margin-bottom: 20px;
     }
-
     .arrow__list {
         margin-bottom: 20px;
     }
 
 }
-
 @media screen and (max-width: 413px) {
     .container {
         width: 100%;
     }
 }
-
 @media screen and (min-width: 414px) {
 
 
@@ -188,7 +181,6 @@
         padding-top: 62px;
         padding-bottom: 40px;
     }
-
     .double__lux .subtitle {
         font-size: 32px;
         line-height: 1.15;
@@ -222,12 +214,10 @@
     .room__picture {
         width: 400px;
     }
-
     .main__pic {
         position: absolute;
-        top: -30px;
+        top: -32px;
     }
-
     .room__description {
         margin-right: 26px;
     }
@@ -236,7 +226,7 @@
         margin-bottom: 32px;
     }
 
-    .room-pic__list .item:not(:last-child) {
+    .picture__list-item:not(:last-child) {
         margin-right: 40px;
     }
 
@@ -249,8 +239,6 @@
         margin-top: 41px;
         flex-direction: column;
     }
-
-
 }
 
 @media screen and (min-width: 1280px) {
@@ -273,15 +261,15 @@
         width: 400px;
     }
 
-    .room__description-two {
-        margin-right: 140px;
+    .room__description {
+        margin-right: 40px;
     }
 
     .room__picture {
         width: 460px;
     }
 
-    .room-pic__list .item {
+    .picture__list-item {
         max-width: 254px;
     }
 
