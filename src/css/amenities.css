@@ -105,14 +105,10 @@ margin-bottom: 20px;
 }
 
 .amenities__link:hover .amenities__icon,
-.amenities__link:focus .amenities__icon{
+.amenities__link:focus .amenities__icon,
+.amenities__link:active .amenities__icon {
     fill: var(--accent-color);
 }
-
-
-/* .container {
-    outline: solid ;
-} */
 
 
 /* ------------MOBILE----------- */
@@ -149,15 +145,15 @@ margin-bottom: 20px;
 }
 
 .amenities__item:last-child {
-    margin-bottom: 44px;
+    margin-bottom: 40px;
 }
 
 
 .amenities__button {
     margin-right: 0;
-    margin-bottom: 28px;
+    margin-bottom: 32px;
     font-size: 24px;
-    padding: 18px 39px;
+    padding: 18px 38px;
     
 }
  
@@ -184,12 +180,6 @@ margin-bottom: 20px;
     gap: 159px;
 }
 
-.amenities__button{
-    margin-bottom: 32px;
-}
-.amenities__item:last-child {
-    margin-bottom: 40px;
-}
 
 }
 
