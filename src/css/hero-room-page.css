@@ -37,9 +37,7 @@
     max-width: none;
   }
 }
-
 /* SLIDER */
-
 .room-hero__btns {
   display: flex;
   align-items: center;
@@ -62,12 +60,9 @@
 }
 .arrow-icon:hover,
 .arrow-icon:focus {
-  fill: #fff;
-  background-color: var(--accent-color);
+  background-color: #fff;
 }
-
 /* TITLES */
-
 .room-hero__title {
   max-width: 325px;
   margin-bottom: 14px;
@@ -103,9 +98,7 @@
     font-size: 31px;
   }
 }
-
 /* LINKS */
-
 .room-hero__thumb {
   display: flex;
   align-items: center;
@@ -118,34 +111,12 @@
 .room__soc-item + .room__soc-item {
   margin-top: 8px;
 }
-
 /* BTN */
-
 .room__prices-btn {
+  width: 232px;
   padding: 12px 33px;
-
-  font-family: 'Montserrat';
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.02em;
-
-  background-color: rgba(0, 0, 0, 0.4);
-  color: var(--accent-color);
-  border: 2px solid #ffffff;
-  border-radius: 25px;
-  transition-property: background-color, border;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.room__prices-btn:hover,
-.room__prices-btn:focus {
-  background-color: #fff;
-  border: 2px solid var(--accent-color);
-}
-
-
 /* ---------------TABLET--------------- */
-
 /* bg-features */
 @media screen and (min-width: 600px) {
   .room-hero__overlay {
@@ -221,7 +192,6 @@
     margin-left: auto;
   }
 }
-
 /* ---------------DESKTOP--------------- */
 /* bg-geatures */
 @media screen and (min-width: 1280px) {
@@ -273,7 +243,6 @@
     margin: 0;
   }
 }
-
 /* BG-4K */
 @media screen and (min-width: 1440px) {
   .room-hero__overlay {

@@ -24,9 +24,7 @@
       url('../img/hero/hotel/mob-2x.jpg');
   }
 }
-
 /* TITLES */
-
 .hotel-hero__title {
   width: 303px;
   margin: 0 auto;
@@ -54,7 +52,6 @@
 
   color: #ffffff;
 }
-
 /* ---------------TABLET--------------- */
 /* bg-features */
 @media screen and (min-width: 600px) {
@@ -95,7 +92,6 @@
     margin-bottom: 226px;
   }
 }
-
 /* ---------------DESKTOP--------------- */
 /* bg-geatures */
 @media screen and (min-width: 1280px) {
@@ -129,7 +125,6 @@
     margin-bottom: 249px;
   }
 }
-
 /* BG-4K */
 @media screen and (min-width: 1440px) {
   .hotel-hero__overlay {

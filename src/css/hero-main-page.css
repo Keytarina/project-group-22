@@ -35,7 +35,6 @@
   }
 }
 /* ADRESS-LINK */
-
 .hero-adress__link {
   display: flex;
   width: 210px;
@@ -69,9 +68,7 @@
 .hero-adress__link:focus .location__sub {
   color: var(--accent-color);
 }
-
 /* TITLES */
-
 .main-hero__title {
   display: block;
   width: 303px;
@@ -126,9 +123,7 @@
     font-size: 31px;
   }
 }
-
 /* BTNS */
-
 .hero__btns-list {
   display: block;
   margin-left: auto;
@@ -140,26 +135,8 @@
   max-width: 237px;
   padding: 12px 22px;
   margin: 0 auto;
-
-  /* font-family: 'Montserrat';
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.02em;
-  text-align: center; */
-
-  /* background-color: rgba(0, 0, 0, 0.4);
-  color: var(--accent-color);
-  border: 2px solid #ffffff;
-  border-radius: 25px;
-  transition-property: background-color, border, color;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+  text-align: center;
 }
-/* .hero__prices-btn:hover,
-.hero__prices-btn:focus {
-  background-color: #fff;
-  border: 2px solid var(--accent-color);
-} */
 .hero__btns-item + .hero__btns-item {
   margin-top: 24px;
 }
@@ -167,9 +144,7 @@
   display: flex;
   gap: 20px;
 }
-
 /* SOC-LINKS */
-
 .hero__soc-list {
   display: flex;
 }
@@ -190,7 +165,6 @@
 .hero__soc-icon:focus {
   fill: #fff;
 }
-
 /* ---------------TABLET--------------- */
 /* bg-features */
 @media screen and (min-width: 600px) {
@@ -281,7 +255,6 @@
     min-width: 243px;
   }
 }
-
 /* ---------------DESKTOP--------------- */
 /* bg-features */
 @media screen and (min-width: 1280px) {
@@ -342,7 +315,6 @@
     display: none;
   }
 }
-
 /* BG-4K */
 @media screen and (min-width: 1440px) {
   .main-hero__overlay {
