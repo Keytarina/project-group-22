@@ -52,6 +52,15 @@
 
   color: #ffffff;
 }
+@media screen and (max-width: 340px) {
+  .hotel-hero__title {
+    width: 276px;
+    font-size: 86px;
+  }
+  .hero__sub {
+    font-size: 31px;
+  }
+}
 /* ---------------TABLET--------------- */
 /* bg-features */
 @media screen and (min-width: 600px) {
