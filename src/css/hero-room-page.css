@@ -78,6 +78,7 @@
 .room-hero__sub {
   max-width: 325px;
   margin-bottom: 17px;
+  padding-bottom: 3px;
 
   font-family: 'Montserrat';
   font-weight: 700;
@@ -149,7 +150,7 @@
 @media screen and (min-width: 1024px) {
   .room-hero__section {
     width: 1024px;
-    padding: 340px 47px 36px;
+    padding: 340px 47px 102px;
   }
   /* ADRESS-LINK */
   .room-hero__section .hero-adress__link {
@@ -192,8 +193,9 @@
   }
   /* BTN */
   .room__prices-btn {
-    margin-bottom: 26px;
-    margin-left: auto;
+    position: absolute;
+    right: 47px;
+    bottom: 62px;
   }
 }
 /* ---------------DESKTOP--------------- */
