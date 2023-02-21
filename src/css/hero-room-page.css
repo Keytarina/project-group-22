@@ -233,6 +233,9 @@
   .room-hero__section .hero-adress__link {
     display: none;
   }
+  .room-hero__btns {
+    margin-bottom: 73px;
+  }
   /* SOC-LINKS */
   .room-hero__thumb {
     position: absolute;
