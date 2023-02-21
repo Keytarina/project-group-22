@@ -24,9 +24,7 @@
       url('../img/hero/restaurant/mob-2x.jpg');
   }
 }
-
 /* TITLES */
-
 .rest-hero__title {
   width: 303px;
   margin: 0 auto;
@@ -73,7 +71,6 @@
     font-size: 31px;
   }
 }
-
 /* ---------------TABLET--------------- */
 /* bg-features */
 @media screen and (min-width: 600px) {
@@ -124,7 +121,6 @@
     line-height: 1.13;
   }
 }
-
 /* ---------------DESKTOP--------------- */
 /* bg-geatures */
 @media screen and (min-width: 1280px) {
@@ -161,7 +157,6 @@
     margin-bottom: 144px;
   }
 }
-
 /* BG-4K */
 @media screen and (min-width: 1440px) {
   .rest-hero__overlay {
