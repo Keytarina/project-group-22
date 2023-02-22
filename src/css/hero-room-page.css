@@ -87,6 +87,9 @@
 
   color: #ffffff;
 }
+.location__sub-span {
+  display: block;
+}
 @media screen and (max-width: 346px) {
   .room-hero__section {
     padding: 64px 6px 14px;
