@@ -164,6 +164,10 @@
   .rest-hero__sub {
     margin-bottom: 144px;
   }
+  /* BTNS */
+  .hero__prices-link {
+    min-width: 243px;
+  }
 }
 /* BG-4K */
 @media screen and (min-width: 1440px) {
