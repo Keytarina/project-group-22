@@ -160,32 +160,6 @@
       url(../img/homepage/bg-imgs/2-mob-2x.jpg);
   }
 }
-/* 
-@media screen and (min-width: 414px) {
-  .container {
-    width: 384px;
-    padding: 0 15px;
-  }
-  .details-hotel {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-      url(../img/homepage/bg-imgs/1-tab-1x.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-}
-
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 414px),
-  screen and (min-resolution: 192dpi) and (min-width: 414px),
-  screen and (min-resolution: 2dppx) and (min-width: 414px) {
-  .details-hotel {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-      url(../img/homepage/bg-imgs/1-tab-2x.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-} */
 /* ==========================/MOBILE============================== */
 
 /* ==========================TABET============================= */
