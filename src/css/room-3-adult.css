@@ -95,8 +95,6 @@
   margin-bottom: 28px;
 }
 
-/* ++++++++++++++++++++++BTN+++++++++++++++++++++++++++ */
-
 .triple__button-list {
   display: flex;
   flex-wrap: wrap;
@@ -114,7 +112,6 @@
   width: 236px;
 }
 
-/* +++++++++++++++++++++TABLET+++++++++++++++++++++++++++++ */
 @media screen and (min-width: 320px) and (max-width: 414px) {
   .triple__title {
     font-size: 23px;
@@ -126,6 +123,10 @@
     overflow: visible;
     padding-top: 62px;
     padding-bottom: 40px;
+  }
+
+  .triple__container {
+    position: relative;
   }
 
   .triple__subtitle {
@@ -160,8 +161,8 @@
 
   .triple__main-pictures {
     position: absolute;
-    top: -32px;
-    left: 112px;
+    top: -96px;
+    left: 80px;
   }
 
   .triple__continer-pictures {
@@ -183,13 +184,18 @@
     justify-content: start;
   }
 }
-/* +++++++++++++++++++++desktop+++++++++++++++++++++++++ */
+
 @media screen and (min-width: 1280px) {
   .triple {
     padding-top: 72px;
     padding-bottom: 40px;
   }
-  
+
+  .triple__main-pictures {
+    top: -103px;
+    left: 112px;
+  }
+
   .triple__description {
     margin-right: 58px;
   }
@@ -209,7 +215,7 @@
 
   .triple__main-pictures {
     width: 460px;
-    left: 180px;
+    left: 110px;
   }
 
   .triple__continer-pictures {
