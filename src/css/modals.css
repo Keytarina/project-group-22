@@ -256,6 +256,10 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 414px) {
+  .modal__btn {
+    font-size: 18px;
+  }
+
   .modal-table__form,
   .modal-room__form {
     max-width: 384px;
