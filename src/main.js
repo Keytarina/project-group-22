@@ -2065,6 +2065,8 @@ $(document).ready(function () {
     adaptiveHeight: true,
     spaceBetween: 20,
     variableWidth: true,
+    prevArrow: '<li class="details-restaurant__item left"></li>',
+    nextArrow: '<li class="details-restaurant__item right"></li>',
     appendArrows: $('.details-restaurant__slider__arrows'),
   });
 
