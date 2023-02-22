@@ -1,3 +1,8 @@
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
+
+global.require = require;
+
 // modal start
 !(function (e) {
   'function' != typeof e.matches &&
