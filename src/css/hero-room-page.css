@@ -114,7 +114,7 @@
 }
 /* BTN */
 .room__prices-btn {
-  width: 232px;
+  max-width: 234px;
   padding: 12px 33px;
 }
 /* ---------------TABLET--------------- */
