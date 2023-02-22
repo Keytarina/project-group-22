@@ -6,13 +6,12 @@
   padding-top: 24px;
   padding-bottom: 40px;
   margin: 0 auto;
-  overflow: hidden;
 }
 
 .details-hotel__text-wrapper {
   width: 269px;
   margin-right: auto;
-  margin-left: 45px;
+  margin-left: 15px;
   margin-bottom: 48px;
 }
 
@@ -32,6 +31,7 @@
 
 .details-hotel__container-first-title {
   margin-bottom: 20px;
+  padding-right: 20px;
   font-family: 'Montserrat';
   font-size: 20px;
   text-align: end;
@@ -50,112 +50,6 @@
   color: #bababa;
 }
 
-/*============================ SLICK-SLIDER============================ */
-
-.wrapper{
-	display: flex;
-	position: relative;
-	justify-content: end;
-	align-items: center;
-	flex-wrap: wrap;
-
-}
-
-.details-hotel__container-first .wrapper {
-    overflow: hidden;
-}
-
-.details-hotel__slider__arrows {
-	position: absolute;
-  bottom: 32px;
-  right: 36px;
-  z-index: 1000;
-}
-.details-hotel__slider {
-	width: 359px;
-
-}
-/* Ограничивающая оболочка */
-.details-hotel__slider .slick-list {
-	overflow: hidden;
-  margin-left: -235px;
-}
-/* Лента слайдов */
-.slick-track{
-	display: flex;
-	align-items: flex-start;
-}
-
-
-/* .slick-arrow:not(:last-child) {
-	margin-right: 32px;
-} */
-/* Конкретный слайдер */
-
-
-.slick-prev, .slick-next {
-  /* position: relative; */
-  background-color: transparent;
-	z-index: 10;
-	font-size: 0;
-	width: 32px;
-	height: 32px;
-  border: none;
-  
-}
-
-.details-hotel__slider__item {
-	padding-right: 24px;
-	text-align: center;
-}
-.details-hotel__slider__item img{
-	max-width: 100%;
-	max-height: 100%;
-}
-
-@media (min-width: 1024px) {
-	.details-hotel__slider__item {
-		padding-right: 34px;
-	}
-  .details-hotel__slider {
-    width: 656px;
-    margin-bottom: 56px;
-    margin-right: 32px;
-  }
-  .details-hotel__slider .slick-list {
-    overflow: hidden;
-    margin-left: -196px;
-  }
-
-  .details-hotel__slider__arrows {
-    bottom: 0;
-  }
-
-  .details-hotel-slider__buttons {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-  }
-	
-}
-
-@media (min-width: 1280px) {
-	.details-hotel__slider__item {
-		padding-right: 86px;
-	}
-  .details-hotel__slider {
-    width: 767px;
-  }
-  .details-hotel__slider .slick-list {
-    overflow: hidden;
-    margin-left: 0;
-  }
-  
-  
-}
-
-/*============================ /SLICK-SLIDER============================ */
-
 
 /*==============SLIDER ================*/
 .details-hotel_slider-list {
@@ -171,10 +65,12 @@
   display: flex;
   justify-content: end;
   margin-bottom: 32px;
-  margin-right: 38px;
-  margin-top: 16px;
 }
 
+.details-hotel__slider-two {
+  opacity: 0.6;
+  overflow: hidden;
+}
 
 .details-hotel__slider-three {
   display: none;
@@ -184,6 +80,9 @@
   .details-hotel__slider-three {
     display: block;
   } 
+  .details-hotel__slider-two {
+    opacity: 1;
+  }
 }
 
 .details-hotel-slider__icon {
@@ -202,12 +101,34 @@
 }
 .details-hotel__container-second-btn,
 .details-hotel__container-second-link {
-  min-width: 237px;
-  padding: 12px 22px;
-  margin: 0 auto;
-  text-align: center;
+  width: 236px;
+  height: 48px;
+  padding: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 700;
+  color: var(--accent-color);
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.4);;
+  border: 2px solid #fff;
+  border-radius: 25px;
+
 }
 
+.details-hotel__container-second-btn:hover,
+.details-hotel__container-second-btn:focus,
+.details-hotel__container-second-btn:active,
+.details-hotel__container-second-link:hover,
+.details-hotel__container-second-link:focus,
+.details-hotel__container-second-link:active {
+  background-color: #fff;
+  border-color: var(--accent-color);
+}
 
 .details-hotel__container-second {
   display: flex;
@@ -219,7 +140,7 @@
   gap: 16px;
 }
 .details-hotel {
-  width: 100%;
+  width: 100%;;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../img/homepage/bg-imgs/2-mob-1x.jpg);
   background-position: 50%;
@@ -239,7 +160,6 @@
       url(../img/homepage/bg-imgs/2-mob-2x.jpg);
   }
 }
-
 /* ==========================/MOBILE============================== */
 
 /* ==========================TABET============================= */
@@ -276,12 +196,6 @@
 
   .details-hotel__container {
     gap: 29px;
-
-  }
-
-  .details-hotel__container-first {
-    display: flex;
-    flex-wrap: wrap;
   }
 
   .details-hotel__container-first-paragraph {
@@ -318,7 +232,7 @@
 
   .details-hotel__slider-two,
   .details-hotel__slider-three {
-    width: 100%;
+    width: 162px;
     height: 270px;
   }
 
@@ -329,7 +243,7 @@
   .details-hotel__text-wrapper {
     width: 549px;
     margin-bottom: 40px;
-    margin-left: 138px;
+    margin-left: auto;
     margin-right: 0;
   }
 
@@ -368,7 +282,6 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
       url(../img/homepage/bg-imgs/2-desk-1x.jpg);
   }
-  
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
     screen and (min-resolution: 192dpi) and (min-width: 1280px),
@@ -403,12 +316,10 @@
     margin-left: 0;
     gap: 86px;
   }
+
   .details-hotel__slider-three {
     width: 270px;
     height: 270px;
-  }
-  .details-hotel__text-wrapper {
-    margin-left: 240px;
   }
 
 }
