@@ -208,6 +208,12 @@
 
   .address-list__phones_two{
     max-width:264px;
+    display: flex;
+    align-items: center;
+    padding: 9px 7px 8px 8px;
+    background-color: #fff;
+    border: 0.5px solid var(--accent-color);
+    border-radius: 2px;
   }
 
   .contacts__maps{
