@@ -1,7 +1,7 @@
-import { createRequire } from 'module';
-const require = createRequire(import.meta.url);
+// import { createRequire } from 'module';
+// const require = createRequire(import.meta.url);
 
-global.require = require;
+// global.require = require;
 
 // modal start
 !(function (e) {
