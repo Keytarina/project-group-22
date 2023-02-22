@@ -71,14 +71,6 @@
   right: 36px;
   z-index: 1000;
 }
-
-
-/* Основные стили */
-
-/* Слайдер */
-.slick-slider{
-	min-width: 0;
-}
 .details-hotel__slider {
 	width: 359px;
 
@@ -95,13 +87,14 @@
 }
 
 
-.slick-arrow:not(:last-child) {
+/* .slick-arrow:not(:last-child) {
 	margin-right: 32px;
-}
+} */
 /* Конкретный слайдер */
 
 
 .slick-prev, .slick-next {
+  /* position: relative; */
   background-color: transparent;
 	z-index: 10;
 	font-size: 0;
@@ -142,7 +135,6 @@
     position: absolute;
     right: 0;
     bottom: 0;
-   
   }
 	
 }
@@ -192,7 +184,6 @@
   .details-hotel__slider-three {
     display: block;
   } 
-
 }
 
 .details-hotel-slider__icon {
@@ -211,34 +202,16 @@
 }
 .details-hotel__container-second-btn,
 .details-hotel__container-second-link {
-  width: 236px;
-  height: 48px;
-  padding: 14px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 700;
-  color: var(--accent-color);
-  letter-spacing: 0.02em;
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.4);;
-  border: 2px solid #fff;
-  border-radius: 25px;
-
+  min-width: 237px;
+  padding: 12px 22px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.details-hotel__container-second-btn:hover,
-.details-hotel__container-second-btn:focus,
-.details-hotel__container-second-btn:active,
-.details-hotel__container-second-link:hover,
-.details-hotel__container-second-link:focus,
-.details-hotel__container-second-link:active {
-  background-color: #fff;
-  border-color: var(--accent-color);
+.details-hotel__container-second-link {
+  padding-bottom: 14px 32px;
 }
+
 
 .details-hotel__container-second {
   display: flex;
@@ -270,32 +243,7 @@
       url(../img/homepage/bg-imgs/2-mob-2x.jpg);
   }
 }
-/* 
-@media screen and (min-width: 414px) {
-  .container {
-    width: 384px;
-    padding: 0 15px;
-  }
-  .details-hotel {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-      url(../img/homepage/bg-imgs/1-tab-1x.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-}
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 414px),
-  screen and (min-resolution: 192dpi) and (min-width: 414px),
-  screen and (min-resolution: 2dppx) and (min-width: 414px) {
-  .details-hotel {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-      url(../img/homepage/bg-imgs/1-tab-2x.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-} */
 /* ==========================/MOBILE============================== */
 
 /* ==========================TABET============================= */
