@@ -2,7 +2,7 @@
 .details-hotel__container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-end;
   padding-top: 24px;
   padding-bottom: 40px;
   margin: 0 auto;
@@ -10,11 +10,14 @@
 
 .details-hotel__text-wrapper {
   width: 269px;
-  margin-right: auto;
-  margin-left: 15px;
+  margin-right: 125px;
+  margin-left: auto;
   margin-bottom: 48px;
 }
 
+.details-hotel__container-first {
+  min-width: 342px;
+}
 
 .details-hotel__container-first-paragraph {
   display: block;
@@ -23,7 +26,7 @@
   font-style: normal;
   font-weight: 700;
   text-align: end;
-  font-size: 64px;
+  font-size: 40px;
   line-height: 1.08;
   letter-spacing: 0.3em;
   color: #ffffff;
@@ -31,7 +34,6 @@
 
 .details-hotel__container-first-title {
   margin-bottom: 20px;
-  padding-right: 20px;
   font-family: 'Montserrat';
   font-size: 20px;
   text-align: end;
@@ -40,7 +42,7 @@
   color: #ffffff;
 }
 .details-hotel__container-first-description {
-  max-width: 259px;
+  min-width: 243px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
@@ -67,9 +69,20 @@
   margin-bottom: 32px;
 }
 
+.details-hotel__slider {
+  margin-right: 32px;
+}
+
 .details-hotel__slider-two {
   opacity: 0.6;
   overflow: hidden;
+}
+
+@media screen and (min-width: 680px){
+  .details-hotel__slider-two {
+    opacity: 1;
+    overflow: hidden;
+  }
 }
 
 .details-hotel__slider-three {
@@ -194,16 +207,14 @@
     }
   }
 
-  .details-hotel__container {
-    gap: 29px;
-  }
-
   .details-hotel__container-first-paragraph {
     margin-bottom: 16px;
+    font-size: 64px;
   }
 
   .details-hotel__container-first-title {
     margin-bottom: 8px;
+    font-size: 24px;
   }
 
   .details-hotel_slider {
@@ -218,6 +229,7 @@
   .details-hotel_slider-list {
     margin-left: 0;
     gap: 34px;
+    margin-bottom: 24px;
   }
 
   .details-hotel__slider-three {
@@ -253,7 +265,6 @@
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.02em;
-
     color: #BABABA;
   }
 
