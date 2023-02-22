@@ -53,7 +53,7 @@
   color: #fdfbec;
 }
 .rest-hero__sub {
-  width: 315px;
+  width: 318px;
   display: block;
   margin: 0 auto;
   margin-bottom: 113px;
@@ -75,6 +75,7 @@
     font-size: 86px;
   }
   .hero__sub {
+    width: 310px;
     font-size: 31px;
   }
 }
