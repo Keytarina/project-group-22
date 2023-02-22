@@ -30,6 +30,13 @@
     />
     
 
+    <script>
+      import { createRequire } from 'module';
+      const require = createRequire(import.meta.url);
+
+      global.require = require;
+    </script>
+
     <script
       type="text/javascript"
       src="//code.jquery.com/jquery-1.11.0.min.js"
