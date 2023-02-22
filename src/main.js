@@ -1,7 +1,4 @@
-// import { createRequire } from 'module';
-// const require = createRequire(import.meta.url);
-
-// global.require = require;
+import 'https://requirejs.org/docs/release/2.3.6/r.js';
 
 // modal start
 !(function (e) {

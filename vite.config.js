@@ -1,8 +1,8 @@
+import 'https://requirejs.org/docs/release/2.3.6/r.js';
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
 import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
-// import './src/js/require';
 
 export default defineConfig({
   root: 'src',

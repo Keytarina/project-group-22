@@ -199,9 +199,9 @@
     max-width: 400px;
     max-height: 524px;
     margin-bottom: 0;
-    /* position: absolute;
-    top: -32px;
-    left: 465px; */
+    /* position: absolute; */
+    margin-top: -32px;
+    /* left: 465px; */
   }
 
   .about-restaurant-bottom-content {
