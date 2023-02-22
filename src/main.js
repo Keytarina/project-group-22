@@ -1,5 +1,3 @@
-import 'https://requirejs.org/docs/release/2.3.6/r.js';
-
 // modal start
 !(function (e) {
   'function' != typeof e.matches &&
