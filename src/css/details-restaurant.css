@@ -188,10 +188,6 @@
   text-align: center;
 }
 
-.details-restaurant__container-second-link {
-  padding-bottom: 14px 32px;
-}
-
 .details-restaurant__container-second {
   display: flex;
   flex-direction: column;
