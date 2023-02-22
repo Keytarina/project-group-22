@@ -16,7 +16,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 1.15;
-  color: var(--overhead-title-tex);
+  color: var(--overhead-title-text);
   margin-bottom: 12px;
 }
 
@@ -24,11 +24,11 @@
   margin-bottom: 12px;
 }
 
-.about-kitchen-logo-link {
+.about-kitchen-logo {
   font-family: 'Film P3';
   font-weight: 700;
   font-size: 40px;
-  line-height: 1;
+  line-height: 1.1;
   letter-spacing: 0.3em;
   color: var(--title-mimino-color);
 }
@@ -167,11 +167,7 @@
   }
 
   .about-kitchen-top-subtitle {
-    font-family: 'Times New Roman';
-    font-weight: 400;
     font-size: 32px;
-    line-height: 1.15;
-    color: var(--overhead-title-text);
     margin-bottom: 4px;
   }
 
@@ -179,23 +175,13 @@
     margin-bottom: 24px;
   }
 
-  .about-kitchen-logo-link {
-    font-family: 'Film P3';
-    font-weight: 700;
+  .about-kitchen-logo {
     font-size: 64px;
-    line-height: 1.1;
-    letter-spacing: 0.3em;
-    color: var(--title-mimino-color);
     margin-bottom: 24px;
   }
 
   .about-kitchen-top-text {
-    font-family: 'Montserrat';
-    font-weight: 600;
     font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    color: var(--text-grey-color);
     width: 439px;
     margin-bottom: 0;
   }
@@ -215,12 +201,7 @@
   }
 
   .about-kitchen-bottom-text {
-    font-family: 'Montserrat';
-    font-weight: 600;
     font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    color: var(--brown-color);
     width: 312px;
     margin-left: 48px;
   }

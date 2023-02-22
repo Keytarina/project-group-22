@@ -17,7 +17,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 1.15;
-  color: var(--overhead-title-tex);
+  color: var(--overhead-title-text);
   margin-bottom: 12px;
 }
 
@@ -25,7 +25,7 @@
   margin-bottom: 12px;
 }
 
-.about-restaurant-logo-link {
+.about-restaurant-logo {
   font-family: 'Film P3';
   font-weight: 700;
   font-size: 40px;
@@ -161,6 +161,7 @@
   }
 
   .about-restaurant-top-content {
+    position: relative;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -168,15 +169,13 @@
   }
 
   .about-restaurant-top-inner {
+    margin-top: 120px;
     margin-right: 26px;
+    margin-bottom: 155px;
   }
 
   .about-restaurant-top-subtitle {
-    font-family: 'Times New Roman';
-    font-weight: 400;
     font-size: 32px;
-    line-height: 1.15;
-    color: var(--overhead-title-text);
     margin-bottom: 4px;
   }
 
@@ -184,23 +183,13 @@
     margin-bottom: 24px;
   }
 
-  .about-restaurant-logo-link {
-    font-family: 'Film P3';
-    font-weight: 700;
+  .about-restaurant-logo {
     font-size: 64px;
-    line-height: 1.1;
-    letter-spacing: 0.3em;
-    color: var(--title-mimino-color);
     margin-bottom: 24px;
   }
 
   .about-restaurant-top-text {
-    font-family: 'Montserrat';
-    font-weight: 600;
     font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    color: var(--text-grey-color);
     width: 439px;
     margin-bottom: 0;
   }
@@ -209,8 +198,10 @@
     box-shadow: 2px 2px 60px 2px rgb(0 0 0 / 25%);
     max-width: 400px;
     max-height: 524px;
-    margin-top: -32px;
     margin-bottom: 0;
+    position: absolute;
+    top: -32px;
+    left: 465px;
   }
 
   .about-restaurant-bottom-content {
@@ -220,12 +211,7 @@
   }
 
   .about-restaurant-bottom-text {
-    font-family: 'Montserrat';
-    font-weight: 600;
     font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    color: var(--brown-color);
     width: 312px;
     margin-left: 48px;
   }
@@ -234,7 +220,9 @@
     box-shadow: 2px 2px 60px 2px rgb(0 0 0 / 25%);
     max-width: 350px;
     max-height: 500px;
-    margin-top: -17px;
+    position: absolute;
+    top: 1196px;
+    left: 47px;
   }
 
   .about-restaurant-slider-photos {
