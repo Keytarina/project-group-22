@@ -85,6 +85,13 @@
 
 .details-restaurant-slider__icon {
   fill: #fff;
+  cursor: pointer;
+}
+
+.details-restaurant-slider__icon:hover,
+.details-restaurant-slider__icon:focus,
+.details-restaurant-slider__icon:active {
+  fill: var(--accent-color);
 }
 
 .details-restaurant-slider__buttons {
