@@ -135,6 +135,7 @@
   margin-bottom: 58px;
 }
 .hero__prices-btn {
+  min-width: 232px;
   display: block;
   padding: 12px 22px;
   margin: 0 auto;
@@ -142,9 +143,6 @@
 }
 .hero__btns-item + .hero__btns-item {
   margin-top: 24px;
-}
-.hero__tab-item {
-  display: none;
 }
 /* SOC-LINKS */
 .hero__soc-list {
@@ -258,13 +256,7 @@
     margin-left: 40px;
   }
   .hero__prices-btn {
-    min-width: 243px;
-  }
-  .hero__mob-item {
-    display: none;
-  }
-  .hero__tab-item {
-    display: block;
+    min-width: 232px;
   }
 }
 /* ---------------DESKTOP--------------- */
@@ -319,7 +311,6 @@
     margin-left: 60px;
   }
   .hero__prices-btn {
-    max-width: 260px;
     padding: 13px 33px;
   }
   /* SOC-LINKS */
