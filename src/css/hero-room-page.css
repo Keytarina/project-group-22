@@ -116,9 +116,7 @@
   margin-top: 8px;
 }
 /* BTN */
-.room__prices-btn {
-  padding: 12px 33px;
-}
+
 /* ---------------TABLET--------------- */
 /* bg-features */
 @media screen and (min-width: 600px) {
