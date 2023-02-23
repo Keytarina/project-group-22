@@ -86,7 +86,12 @@
   letter-spacing: 0.01em;
   color: var(--title-mimino-color);
 }
-.contacts__map {
+.contacts__map{
+  display:flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.contacts__map-img {
   width: 384px;
   height: 220px;
   border: 1px solid #bababa;
@@ -112,7 +117,7 @@
     font-size: 3vw;
   }
 
-  .contacts__map {
+  .contacts__map-img {
     width: 290px;
   }
 }
@@ -131,6 +136,10 @@
   .address-list__title {
     min-width: 102px;
   }
+
+  .contacts__map-img{
+    width:384px;
+  }
 }
 
 @media screen and (max-width: 1023px) {
@@ -141,7 +150,6 @@
     display: flex;
     align-items: center;
   }
-
 
   .contacts__location{
     display:none;
@@ -208,19 +216,9 @@
 
   .address-list__phones_two{
     max-width:264px;
-    display: flex;
-    align-items: center;
-    padding: 9px 7px 8px 8px;
-    background-color: #fff;
-    border: 0.5px solid var(--accent-color);
-    border-radius: 2px;
   }
 
-  .contacts__maps{
-    display:flex;
-    align-items: flex-end;
-  }
-  .contacts__map{
+  .contacts__map-img{
     width:535px;
     height:412px;
   }
@@ -235,7 +233,7 @@
     margin-right:191px;
   }
 
-  .contacts__map{
+  .contacts__map-img{
     width:634px;
     height:412px;
   }
