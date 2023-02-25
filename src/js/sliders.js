@@ -4,14 +4,8 @@
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    inverse: true,
-    speed: 500,
+    speed: 1000,
     loop: true,
-    dots: false,
-    infinite: true,
-    adaptiveHeight: true,
-    variableWidth: true,
-    slidesToShow: 3,
 
     breakpoints: {
       // when window width is >= 414px
@@ -70,9 +64,6 @@
     spaceBetween: 40,
     freeMode: true,
     speed: 500,
-    slidesToScroll: 1,
-    // slidesToShow: 3,
-
 
     navigation: {
       nextEl: '.swiper-button-next',
@@ -89,9 +80,9 @@
       },
       // when window width is >= 930px
 
-      // 1280: {
-      //   spaceBetween: 86,
-      // },
+      1280: {
+        spaceBetween: 86,
+      },
     },
     loop: true,
     slideToClickedSlide: true,

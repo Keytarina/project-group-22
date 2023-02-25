@@ -52,9 +52,73 @@
   letter-spacing: 0.02em;
   color: #bababa;
 }
+/*=============SLIDER-SWIPER=============  */
+.details-restaurant__slider {
+  margin-left: 14px;
+  margin-right: 0px;
+  margin-bottom: 40px;
+}
+
+.mySwiper_2 {
+  overflow: hidden;
+  margin-left: 32px;
+}
+
+.details-restaurant .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.details-restaurant .swiper-slide {
+  width: auto;
+}
+
+.details-restaurant .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+}
+
+.details-restaurant-slider__buttons {
+  display: flex;
+  justify-content: left;
+  gap: 34px;
+
+  padding-left: 25px;
+}
+
+.details-restaurant__button-arrow {
+  /* background-color: transparent; */
+}
+
+.details-restaurant-slider__icon {
+  fill: var(--white-color);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: static;
+  width: 32px;
+  height: 32px;
+  margin-top: 30px;
+  z-index: 100;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.details-restaurant .swiper-button-next::after,
+.details-restaurant .swiper-button-prev::after {
+  content: '';
+}
+
+/*=============/SLIDER-SWIPER=============  */
 
 /*==============SLIDER ================*/
-.details-restaurant_slider-list {
+/* .details-restaurant_slider-list {
   display: flex;
   gap: 20px;
   margin-bottom: 16px;
@@ -96,7 +160,7 @@
 
 .details-restaurant-slider__buttons {
   gap: 32px;
-}
+} */
 
 /*==============/SLIDER ================*/
 
@@ -182,7 +246,7 @@
     margin-bottom: 8px;
   }
 
-  .details-restaurant_slider {
+  /* .details-restaurant_slider {
     max-width: none;
     gap: 20px;
   }
@@ -218,11 +282,11 @@
   .details-restaurant__slider-three {
     width: 162px;
     height: 270px;
-  }
+  } */
 
-  .towell {
+  /* .towell {
     margin-left: 0;
-  }
+  } */
 
   .details-restaurant__text-wrapper {
     width: 610px;
@@ -240,10 +304,10 @@
 
     color: #bababa;
   }
-
+  /* 
   .details-restaurant-slider__list {
     margin-bottom: 24px;
-  }
+  } */
 
   .details-restaurant-slider__buttons {
     margin-bottom: 0;
@@ -286,7 +350,7 @@
     margin: 0;
   }
 
-  .details-restaurant_slider-list {
+  /* .details-restaurant_slider-list {
     gap: 70px;
     margin-left: 32px;
   }
@@ -298,6 +362,6 @@
 
   .details-restaurant-slider__buttons {
     padding-left: 32px;
-  }
+  } */
 }
 /* ==========================/DESKTOP============================= */
