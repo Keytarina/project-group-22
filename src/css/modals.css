@@ -54,14 +54,17 @@
 
 .modal-table {
   height: 100%;
+  max-height: 684px;
 }
 
 .modal-room {
   height: 100%;
+  max-height: 782px;
 }
 
 .modal-price {
   height: 100%;
+  max-height: 575px;
 }
 
 .modal__title {
