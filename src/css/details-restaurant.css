@@ -53,15 +53,16 @@
   color: #bababa;
 }
 /*=============SLIDER-SWIPER=============  */
+
+.mySwiper_2 {
+  overflow: hidden;
+  margin-left: 25px;
+}
+
 .details-restaurant__slider {
   margin-left: 14px;
   margin-right: 0px;
   margin-bottom: 40px;
-}
-
-.mySwiper_2 {
-  overflow: hidden;
-  margin-left: 32px;
 }
 
 .details-restaurant .swiper {
@@ -83,17 +84,17 @@
 .details-restaurant-slider__buttons {
   display: flex;
   justify-content: left;
-  gap: 34px;
-
+  gap: 32px;
   padding-left: 25px;
 }
 
 .details-restaurant__button-arrow {
-  /* background-color: transparent; */
+  background-color: transparent;
+  border: none;
 }
 
 .details-restaurant-slider__icon {
-  fill: var(--white-color);
+  fill: #fff;
 }
 
 .swiper-button-prev,
@@ -101,7 +102,8 @@
   position: static;
   width: 32px;
   height: 32px;
-  margin-top: 30px;
+  margin-top: 16px;
+  margin-bottom: 32px;
   z-index: 100;
   cursor: pointer;
   display: flex;
@@ -110,11 +112,44 @@
   background-color: transparent;
 }
 
+.swiper-button-prev:hover .details-restaurant-slider__icon,
+.swiper-button-prev:focus .details-restaurant-slider__icon,
+.swiper-button-next:hover .details-restaurant-slider__icon,
+.swiper-button-next:focus .details-restaurant-slider__icon {
+  fill: var(--accent-color);
+}
+
 .details-restaurant .swiper-button-next::after,
 .details-restaurant .swiper-button-prev::after {
   content: '';
 }
 
+@media screen and (min-width: 1024px) {
+  .mySwiper_2 {
+    margin-left: 34px;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .mySwiper_2 {
+    margin-left: 15px;
+  }
+  .details-restaurant__container {
+    gap: 17px;
+  }
+  .details-restaurant-slider__buttons {
+    padding-left: 15px;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    margin-top: 24px;
+  }
+}
 /*=============/SLIDER-SWIPER=============  */
 
 /*==============SLIDER ================*/
@@ -308,11 +343,6 @@
   .details-restaurant-slider__list {
     margin-bottom: 24px;
   } */
-
-  .details-restaurant-slider__buttons {
-    margin-bottom: 0;
-    padding-left: 29px;
-  }
 
   .details-restaurant__container-second {
     padding-bottom: 56px;
