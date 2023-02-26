@@ -18,9 +18,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     
-    <script type="module" crossorigin src="/project-group-22/assets/main-8a418681.js"></script>
-    <link rel="stylesheet" href="/project-group-22/assets/main-5b2d2980.css">
+    <script type="module" crossorigin src="/project-group-22/assets/sliders-8b1ea5cc.js"></script>
+    <link rel="stylesheet" href="/project-group-22/assets/sliders-17ae6901.css">
   </head>
   <body>
     <header class="header">
@@ -297,9 +298,9 @@
             sint. Velit officia consequat duis enim velit mollit.
           </p>
         </div>
-        <div class="details-restaurant__slider">
-          <ul class="details-restaurant_slider-list">
-            <li class="details-restaurant_slider-item">
+        <div class="mySwiper_2 details-restaurant_slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
               <picture class="towell">
                 <source
                   srcset="/project-group-22/assets/1-desk-1x-4304891e.jpg 1x, /project-group-22/assets/1-desk-2x-4e8f993b.jpg 2x"
@@ -319,8 +320,8 @@
                   alt="restaurant slider two"
                 />
               </picture>
-            </li>
-            <li class="details-restaurant_slider-item">
+            </div>
+            <div class="swiper-slide">
               <picture class="towell">
                 <source
                   srcset="/project-group-22/assets/2-desk-1x-be5a3025.jpg 1x, /project-group-22/assets/2-desk-2x-68a51688.jpg 2x"
@@ -341,8 +342,8 @@
                   alt="restaurant slider two"
                 />
               </picture>
-            </li>
-            <li class="details-restaurant_slider-item">
+            </div>
+            <div class="swiper-slide">
               <picture class="towell">
                 <source
                   srcset="/project-group-22/assets/3-desk-1x-bdbf62ae.jpg 1x, /project-group-22/assets/3-desk-2x-b1f15a9c.jpg 2x"
@@ -362,21 +363,196 @@
                   alt="restaurant slider two"
                 />
               </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="towell">
+                <source
+                  srcset="/project-group-22/assets/1-desk-1x-4304891e.jpg 1x, /project-group-22/assets/1-desk-2x-4e8f993b.jpg 2x"
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="/project-group-22/assets/1-desk-1x-4304891e.jpg 1x, /project-group-22/assets/1-tab-2x-dbb95a51.jpg 2x"
+                  media="(min-width: 1024px)"
+                />
+                <source
+                  srcset="/project-group-22/assets/1-mob-1x-d96fe433.jpg 1x, /project-group-22/assets/1-mob-2x-9acedfdb.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="details-restaurant__slider-one"
+                  src="/project-group-22/assets/1-mob-2x-9acedfdb.jpg"
+                  alt="restaurant slider two"
+                />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="towell">
+                <source
+                  srcset="/project-group-22/assets/2-desk-1x-be5a3025.jpg 1x, /project-group-22/assets/2-desk-2x-68a51688.jpg 2x"
+                  media="(min-width: 1280px)"
+                />
+
+                <source
+                  srcset="/project-group-22/assets/2-tab-1x-25b975b2.jpg 1x, /project-group-22/assets/2-tab-2x-a04c0a28.jpg 2x"
+                  media="(min-width: 1024px)"
+                />
+                <source
+                  srcset="/project-group-22/assets/2-mob-1x-6b18494c.jpg 1x, /project-group-22/assets/2-mob-2x-546b7413.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="details-restaurant__slider-two"
+                  src="/project-group-22/assets/2-mob-2x-546b7413.jpg"
+                  alt="restaurant slider two"
+                />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="towell">
+                <source
+                  srcset="/project-group-22/assets/3-desk-1x-bdbf62ae.jpg 1x, /project-group-22/assets/3-desk-2x-b1f15a9c.jpg 2x"
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="/project-group-22/assets/3-tab-1x-3826e8dd.jpg 1x, /project-group-22/assets/3-tab-2x-22ca3bc3.jpg 2x"
+                  media="(min-width: 1024px)"
+                />
+                <source
+                  srcset="/project-group-22/assets/2-mob-1x-6b18494c.jpg 1x, /project-group-22/assets/2-mob-2x-546b7413.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="details-restaurant__slider-three"
+                  src="/project-group-22/assets/2-mob-2x-546b7413.jpg"
+                  alt="restaurant slider two"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div class="details-restaurant-slider__buttons">
+          <div class="swiper-button-prev">
+            <button class="details-restaurant__button-arrow">
+              <svg class="details-restaurant-slider__icon" width="32" height="32">
+                <use href="/project-group-22/assets/sprite-4e4bbea7.svg#icon-arrow-left"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="swiper-button-next">
+            <button class="details-restaurant__button-arrow">
+              <svg class="details-restaurant-slider__icon" width="32" height="32">
+                <use href="/project-group-22/assets/sprite-4e4bbea7.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!-- <div class="details-restaurant__slider">
+          <ul class="details-restaurant_slider-list">
+            <li class="details-restaurant_slider-item">
+              <picture class="towell">
+                <source
+                  srcset="
+                    ./img/homepage/small-img/slider2/1-desk-1x.jpg 1x,
+                    ./img/homepage/small-img/slider2/1-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./img/homepage/small-img/slider2/1-tab-1x.jpg 1x,
+                    ./img/homepage/small-img/slider2/1-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 1024px)"
+                />
+                <source
+                  srcset="
+                    ./img/homepage/small-img/slider2/1-mob-1x.jpg 1x,
+                    ./img/homepage/small-img/slider2/1-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="details-restaurant__slider-one"
+                  src="./img/homepage/small-img/slider2/1-mob-2x.jpg"
+                  alt="restaurant slider two"
+                />
+              </picture>
+            </li>
+            <li class="details-restaurant_slider-item">
+              <picture class="towell">
+                <source
+                  srcset="
+                    ./img/homepage/small-img/slider2/2-desk-1x.jpg 1x,
+                    ./img/homepage/small-img/slider2/2-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+
+                <source
+                  srcset="
+                    ./img/homepage/small-img/slider2/2-tab-1x.jpg 1x,
+                    ./img/homepage/small-img/slider2/2-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 1024px)"
+                />
+                <source
+                  srcset="
+                    ./img/homepage/small-img/slider2/2-mob-1x.jpg 1x,
+                    ./img/homepage/small-img/slider2/2-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="details-restaurant__slider-two"
+                  src="./img/homepage/small-img/slider2/2-mob-2x.jpg"
+                  alt="restaurant slider two"
+                />
+              </picture>
+            </li>
+            <li class="details-restaurant_slider-item">
+              <picture class="towell">
+                <source
+                  srcset="
+                    ./img/homepage/small-img/slider2/3-desk-1x.jpg 1x,
+                    ./img/homepage/small-img/slider2/3-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./img/homepage/small-img/slider2/3-tab-1x.jpg 1x,
+                    ./img/homepage/small-img/slider2/3-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 1024px)"
+                />
+                <source
+                  srcset="
+                    ./img/homepage/small-img/slider2/2-mob-1x.jpg 1x,
+                    ./img/homepage/small-img/slider2/2-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="details-restaurant__slider-three"
+                  src="./img/homepage/small-img/slider2/2-mob-2x.jpg"
+                  alt="restaurant slider two"
+                />
+              </picture>
             </li>
           </ul>
           <ul class="details-restaurant-slider__buttons">
             <li class="details-restaurant-slider__item">
               <svg class="details-restaurant-slider__icon" width="32" height="32">
-                <use href="/project-group-22/assets/sprite-4e4bbea7.svg#icon-arrow-left"></use>
+                <use href="./img/svg/sprite.svg#icon-arrow-left"></use>
               </svg>
             </li>
             <li class="details-restaurant-slider__item">
               <svg class="details-restaurant-slider__icon" width="32" height="32">
-                <use href="/project-group-22/assets/sprite-4e4bbea7.svg#icon-arrow-right"></use>
+                <use href="./img/svg/sprite.svg#icon-arrow-right"></use>
               </svg>
             </li>
           </ul>
-        </div>
+        </div> -->
       </div>
       <div class="details-restaurant__container-second">
         <button class="details-restaurant__container-second-btn btn section-btn js-open-modal" type="button" data-modal="1">
@@ -1166,6 +1342,8 @@
 <script src="./main.js"></script>
 
 
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     
   </body>
 </html>
